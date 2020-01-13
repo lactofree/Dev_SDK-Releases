@@ -1,1 +1,119 @@
+## 최신 다운로드
+
+#### V1.18.1.0 (Jan 16, 2020)
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=unity_V1.18.1.0.zip">Unity_v1.18.1.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>지원하지 않음</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=cocos_V1.18.1.0.zip">Cocos_v1.18.1.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=iOS_V1.18.1.0.zip">iOS_v1.18.1.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+## 릴리즈 노트
+
+#### V1.18.1.0 (Jan 16, 2020)
+
+##### New Features
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Peppermint] 챗봇 페이지를 호출하는 API 추가 <span style="font-size: 8pt;"><a href="../../../v1/webview/social-webview/#sns-show">자세히</a></span>
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Peppermint] iOS 13 버전부터 사용 가능한 Apple Sign-In 인증 추가 <span style="font-size: 8pt;"><a href="../../../v1/porting-building-hive/unity-ios/#projectsetting">자세히</a></span>
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* 더이상 사용하지 않는 기능과 코드를 제거
+* 챗봇을 이용한 고객센터 1:1 문의하기 페이지를 세로로 고정하도록 변경
+* 사용 중인 QQ 라이브러리를 최신 버전으로 변경
+   * 변경 전: [Android] v3.3.3, [iOS] v3.3.3
+   * 변경 후: [Android] v3.3.7, [iOS] v3.3.6 
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* Google Play Service에서 Broadcast API와 install_referrer intent 서비스를 중단함에 따라 Play Install Referrer 라이브러리로 변경 <span style="font-size: 8pt;"><a href="../../../v1/porting-building-hive/">자세히</a>
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [ActiveUser] Xcode 빌드 시 권한 페이지 UI 관련 경고가 뜨지 않도록 권한 페이지 UI의 구성 환경을 변경하였습니다.
+[/markdown]</li>
+</ul>
+
+##### Bug Fixes
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] Android 10 기기 화면이 잠금 상태일 때 수신한 푸시 알림이 노출되지 않는 오류 수정
+* [Peppermint] targetSDK 29로 빌드할 경우 Android 10 기기에서 발생하는 로그인 오류 수정
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [All] WebView 노출 시 iOS 13 iPad가 iPad로 탐지되도록 변경되었습니다. GCPSDK-14
+* [Peppermint] iOS 11 미만 환경에서 HIVE 로그인이 간헐적으로 정상 실행되지 않는 오류 수정 
+   * HIVE SDK v1.18.0 이상에서 발생
+
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v1.18.1.0 기준)
+
+* Facebook SDK (Android) v5.5.1
+* Facebook SDK (iOS) v5.6.0
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.4.0
+* Android Support Library (Android) v27.1.0+
+* <span style="color: blue;">QQ Open SDK (Android) v3.3.7</span>
+* <span style="color: blue;">QQ Open SDK (iOS) v3.3.6</span>
+
+**IAP**
+
+* Galaxy Store (Android) v5.1.0
+* ONE store (Android) IAP v4 (세부 버전 v17.01.00)
+* ONE store (Android) IAP v5 (세부 버전 v17.02.00)
+* WeChat (Android) v5.0.8
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * Android: v4.18.1
+   * iOS: v4.18.3
+* Singluar
+   * Android: v9.2.5
+   * iOS: v9.2.1
+
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
+
 
