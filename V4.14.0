@@ -1,0 +1,190 @@
+## 최신 다운로드
+
+#### V4.14.0.0 (Jan 21, 2020)
+
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.0.zip">HIVE_SDK_Unity_v4.14.0.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.0.zip">HIVE_SDK_Unreal_v4.14.0.0.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.0_Sample.zip">HIVE_SDK_Cocos_v4.14.0.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.0.zip">HIVE_SDK_Android_v4.14.0.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.0.zip">HIVE_SDK_iOS_v4.14.0.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+
+## 릴리즈 노트
+
+#### V4.14.0.0 (Jan 21, 2020)
+
+##### New Features
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v4/Provider] 인증 수단으로 LINE과 Twitter를 추가 <span style="font-size: 8pt;"><a href="../../../dev4/analytics/#funnel-log">자세히</a></span>
+* [Analytics] 마케팅 어트리뷰션 툴 목록에 AppsFlyer를 추가
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] <span style="color: red;">iOS 10 미만 버전 지원 중단</span>
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v4] 게임 서비스 종료 시나리오에 따라 결과값 처리를 변경
+   * **AuthV4** 클래스의 `setup()` 메서드 사용 시
+      * 자동 로그인이 가능한 상태에서 허용된 IdP가 없을 경우 결과값을 성공으로 변경
+      * 자동 로그인이 불가능한 상태에서 허용된 IdP가 없을 경우 결과값을 실패로 변경
+* [Auth v1/Auth v4] `showInquiry()` 메서드 사용 시 챗봇 URL로 연결될 경우 세로모드 UI로 화면이 고정되도록 변경 
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v1/Auth v4/Promotion] Google Play Service에서 Broadcast API와 install_referrer intent 서비스를 중단함에 따라 Play Install Referrer 라이브러리로 변경
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common/Auth v1] iOS 11 미만에서도 활용할 수 있도록 웹동작 방식을 변경
+   * [Common] 알림 및 확인 팝업 지원
+* [Analytics] 사용 중인 Adjust 라이브러리를 최신 버전으로 변경
+* [Auth v4/Provider] 사용 중인 VK 라이브러리를 최신 버전으로 변경
+   * WKWebView가 적용된 라이브러리로 변경
+* [Auth v4/Provider] 사용 중인 QQ 라이브러리를 최신 버전으로 변경
+   * WKWebView가 적용된 라이브러리로 변경
+* [Auth v4/Provider] 사용 중인 WeChat 라이브러리를 최신 버전으로 변경
+   * WKWebView가 적용된 라이브러리로 변경
+
+| 라이브러리 이름 | 대상 플랫폼 | 이전 버전 | 변경 버전 |
+| ------------- | ----------- | --------- | --------- |
+| Adjust | iOS | 4.18.1 | 4.18.3 |
+| VK | iOS | 1.4.6 | 1.5.1 |
+| QQ | iOS | 1.0.0 | 3.3.6 |
+| WeChat | iOS | 1.7 | 1.8.6.1 |
+
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+*  [Auth v4] 계정 충돌 팝업에 표시하는 Provider 이름을 정정 
+   * HIVE SDK v4.12.1 신규 기능 
+* [Push] SDK 버전 업그레이드 시 공지 알림과 야간 알림 설정값이 초기화되는 오류 수정
+   * HIVE SDK v4.13.0.0 이상에서 발생
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [PlatformHelper] **PlatformHelper** 클래스의 `requestUserPermissions()` 메서드가 아니라 Unity같은 **게임 엔진에서 제공하는 requestPermissions API를 사용할 때** 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.13.0 이상에서 발생
+* [Auth v1, Auth v4] `showTerms()` 메서드를 사용하여 약관 다시보기를 노출을 진행하는 도중 돌아가기(Back) 키를 탭했을 때 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.11.7 이상에서 발생
+* [공통] 웹뷰를 사용하는 화면으로 전환시 깜빡이는 현상을 수정합니다. #20895
+   * [Provider] 간헐적으로 프리징이 되는 현상도 수정합니다.
+   * HIVE SDK v4.11.7 이상에서 발생
+* [공통] Android 10 기기에서 UI 일부가 보이지 않는 오류 수정
+   * MultiWindow 지원
+   * HIVE SDK v4 모든 버전에서 발생
+* [공통] 노치영역을 가지는 기기에서 HIVE UI가 노출될때 노치 영역을 불투명하게 수정합니다. #24354
+* [Push] Android 10 기기 화면이 잠금 상태일 때 수신한 푸시 알림이 노출되지 않는 오류 수정
+   * HIVE SDK v4 모든 버전에서 발생
+* [Auth v1][Auth v4] 동의하지 않은 HIVE SDK 에서 사용하는 OS 권한이 있는 경우 재요청하는 오류를 수정합니다. #24227 #24554
+   * HIVE SDK v4.12.1 이상에서 발생
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Promotion] UA를 통한 매칭 시도 시 Advertising ID를 전송하도록 변경
+   * HIVE SDK v4.13.0 신규 기능
+* [Auth v4/Auth v1] iOS 13 미만의 기기에서 권한고지 및 점검팝업, 계정 출돌 팝업, 게임센터 취소 팝업에서 스크롤이 동작하지 않는 오류를 수정합니다. #24362 #24449
+   * HIVE SDK v4.13.0 이상에서 발생
+* [Promotion] iOS 10.3 미만에서 동작하는 ReviewPopup 노출시 스크롤이 동작하지 않는 오류를 수정합니다. #24449
+   * HIVE SDK v4.13.0 이상에서 발생
+* [공통] 홈 버튼이 없는 기기에서 노출되는 홈 인디케이터가 갱신되지 않는 오류를 수정합니다. #24523 #24708
+   * HIVE SDK v4.13.0 이상에서 발생
+[/markdown]</li></ul>
+
+&nbsp;
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v4.14.0.0 기준)
+
+###### 공통 항목
+
+* AndroidX (Android) v1.0.0+
+* Firebase Library (Android) v20.0.0
+
+**IDP**
+
+* Facebook SDK (Android) v5.5.1
+* Facebook SDK (iOS) v5.6.0
+* GooglePlay Services Game, Auth (Android) v17.0.0
+* Google Sign-In SDK (iOS) v4.1.2
+
+**IAP**
+
+* Google Play Billing (Android) v2.0.0
+
+###### 선택 항목
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* <span style="color: blue;">QQ (iOS) v3.3.6</span>
+* VK (Android) v1.6.9
+* <span style="color: blue;">VK (iOS) v1.5.1</span>
+* WeChat (Android) v1.4.0
+* <span style="color: blue;">WeChat (iOS) v1.8.6.1</span>
+* <span style="color: blue;">LINE (Android) v5.5.1</span>
+* <span style="color: blue;">LINE (iOS) v5.4.0</span>
+* <span style="color: blue;">Twitter (Android) v3.3.0</span>
+* <span style="color: blue;">Twitter (iOS) v3.4.2</span>
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.18.1
+* <span style="color: blue;">Adjust (iOS) v4.18.3</span>
+* Singular (Android) v9.2.5
+* Singular (iOS) v9.2.1
+* <span style="color: blue;">AppsFlyer v5.0.0</span>
+[/markdown]
+
+
+<hr class="guide_line_1" />
