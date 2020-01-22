@@ -37,14 +37,14 @@
 <ul class="clList labelList">
   <li><span class="targetLabel common">All</span>[markdown]
 
-* [Auth v4/Provider] 인증 수단으로 LINE과 Twitter를 추가 <span style="font-size: 8pt;"><a href="../../../dev4/authv4/#v4-idplist">자세히</a></span>
-* [Analytics] 마케팅 어트리뷰션 툴 목록에 AppsFlyer를 추가 <span style="font-size: 8pt;"><a href="../../../dev4/marketing-attribution">자세히</a></span>
+* [Auth v4/Provider] Added LINE and Twitter to the ID providers. <span style="font-size: 8pt;"><a href="../../../develop/authv4/#v4-idplist">See more</a></span>
+* [Analytics] Added AppsFlyer, a new marketing attribution tool. <span style="font-size: 8pt;"><a href="../../../develop/marketing-attribution">See more</a></span>
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Common] <span style="color: red;">iOS 10 미만 버전 지원 중단</span>
+* [Common] <span style="color: red;">Stopped supporting the iOS versions lower than 10.</span>
 [/markdown]</li></ul>
 
 [markdown]
@@ -58,7 +58,7 @@
    * **AuthV4** 클래스의 `setup()` 메서드 사용 시
       * 자동 로그인이 가능한 상태에서 허용된 IdP가 없을 경우 결과값을 성공으로 변경
       * 자동 로그인이 불가능한 상태에서 허용된 IdP가 없을 경우 결과값을 실패로 변경
-* [Auth v1/Auth v4] `showInquiry()` 메서드 사용 시 챗봇 URL로 연결될 경우 세로모드 UI로 화면이 고정되도록 변경 <span style="font-size: 8pt;"><a href="../../../dev4/hive-webview/#inquiry-chatbot">자세히</a></span>
+* [Auth v1/Auth v4] `showInquiry()` 메서드 사용 시 챗봇 URL로 연결될 경우 세로모드 UI로 화면이 고정되도록 변경 <span style="font-size: 8pt;"><a href="../../../develop/hive-webview/#inquiry-chatbot">See more</a></span>
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
@@ -70,17 +70,17 @@
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Common/Auth v1] iOS 11 미만에서도 활용할 수 있도록 웹동작 방식을 변경
-   * [Common] 알림 및 확인 팝업 지원
-* [Analytics] 사용 중인 Adjust 라이브러리를 최신 버전으로 변경
-* [Auth v4/Provider] 사용 중인 VK 라이브러리를 최신 버전으로 변경
-   * WKWebView가 적용된 라이브러리로 변경
-* [Auth v4/Provider] 사용 중인 QQ 라이브러리를 최신 버전으로 변경
-   * WKWebView가 적용된 라이브러리로 변경
-* [Auth v4/Provider] 사용 중인 WeChat 라이브러리를 최신 버전으로 변경
-   * WKWebView가 적용된 라이브러리로 변경
+* [Common/Auth v1] Changed the way of web running to support lower than iOS 11.
+   * [Common] Supported notice and confirm popup.
+* [Analytics] Updated the Adjust library to the latest version.
+* [Auth v4/Provider] Updated the VK library to the latest version.
+   * Updated to the version with WKWebView.
+* [Auth v4/Provider] Updated the QQ library to the latest version.
+   * Updated to the version with WKWebView.
+* [Auth v4/Provider] Updated the WeChat library to the latest version.
+   * Updated to the version with WKWebView.
 
-| 라이브러리 이름 | 대상 플랫폼 | 이전 버전 | 변경 버전 |
+| Library | Platform | Version in Use | Latest version |
 | ------------- | ----------- | --------- | --------- |
 | Adjust | iOS | 4.18.1 | 4.18.3 |
 | VK | iOS | 1.4.6 | 1.5.1 |
@@ -96,45 +96,45 @@
 <ul class="clList labelList">
   <li><span class="targetLabel common">All</span>[markdown]
 
-*  [Auth v4] 계정 충돌 팝업에 표시하는 Provider 이름을 정정 
-   * HIVE SDK v4.12.1 신규 기능 
-* [Push] SDK 버전 업그레이드 시 공지 알림과 야간 알림 설정값이 초기화되는 오류 수정
-   * HIVE SDK v4.13.0 이상에서 발생
+*  [Auth v4] Edited the name of providers on the account conflict popup. 
+   * New feature with HIVE SDK v4.12.1. 
+* [Push] Fixed not to initialize the agreement value on announcement and night-time notification when upgrading the version of HIVE SDK.
+   * Occurred with HIVE SDK v4.13.0.0 and later.
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel android">Android</span>[markdown]
 
-* [PlatformHelper] **PlatformHelper** 클래스의 `requestUserPermissions()` 메서드가 아니라 Unity같은 **게임 엔진에서 제공하는 requestPermissions API를 사용할 때** 크래시가 발생하는 오류 수정
-   * HIVE SDK v4.13.0 이상에서 발생
+* [PlatformHelper] Fixed not to crash **when implementing requestPermissions API provided by game engines such as Unity**, not the `requestUserPermissions()` method in the **PlatformHelper** class.
+   * Occurred with HIVE SDK v4.13.0.0 and later.
 * [Auth v1/Auth v4] `showTerms()` 메서드를 사용하여 약관 다시보기를 노출을 진행하는 도중 돌아가기(Back) 키를 탭했을 때 크래시가 발생하는 오류 수정
-   * HIVE SDK v4.11.7 이상에서 발생
-* [Common] 웹뷰 사용 화면으로 전환 시 화면이 깜빡이는 오류 수정
-   * [Provider] 간헐적 응답없음(freezing) 수정
-   * HIVE SDK v4.11.7 이상에서 발생
+   * Occurred with HIVE SDK v4.11.7 and later.
+* [Common] Fixed not to flicker when screen converts to the WebView screen. 
+   * [Provider] Fixed irregular freezing.
+   * Occurred with HIVE SDK v4.11.7 and later.
 * [Common] Android 10 기기에서 UI 일부가 보이지 않는 오류 수정
-   * MultiWindow 지원
-   * HIVE SDK v4 모든 버전에서 발생
+   * Supported MultiWindow.
+   * Occurred with all versions of HIVE SDK v4.
 * [Common] 노치 디자인 기기에서 HIVE UI가 노출될 때 노치 영역을 불투명하게 수정
-* [Push] Android 10 기기 화면이 잠금 상태일 때 수신한 푸시 알림이 노출되지 않는 오류 수정
-   * HIVE SDK v4 모든 버전에서 발생
+* [Push] Fixed to expose push notifications on the device with Android 10 when its screen is locked.
+   * Occurred with all versions of HIVE SDK v4.
 * [Auth v1/Auth v4] HIVE SDK 초기화 시 유저가 OS 권한 사용에 동의하지 않았을 경우 게임을 시작할 때마다 OS 권한을 요청하는 오류 수정
-   * HIVE SDK v4.12.1 이상에서 발생
+   * Occurred with HIVE SDK v4.12.1 and later.
 * [Push] 푸시 토큰 발급에 필요한 SenderId를 정상 수신하지 못한 경우 크래시가 발생하는 오류 수정
-   * HIVE SDK v4.13.0 이상에서 발생
+   * Occurred with HIVE SDK v4.13.0.0 and later.
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
 * [Promotion] UA 보상 정보를 확인할 때 Advertising ID를 전송하도록 변경
-   * HIVE SDK v4.13.0 신규 기능
+   * New feature with HIVE SDK v4.13.0.
 * [Auth v4/Auth v1] iOS 13 미만 기기에서 권한고지 및 점검 팝업, 계정충돌 팝업, 게임센터 취소 팝업의 스크롤이 동작하지 않는 오류 수정
-   * HIVE SDK v4.13.0 이상에서 발생
+   * Occurred with HIVE SDK v4.13.0.0 and later.
 * [Promotion] iOS 10.3 미만에서 동작하는 리뷰 팝업 노출 시 스크롤이 동작하지 않는 오류 수정
-   * HIVE SDK v4.13.0 이상에서 발생
+   * Occurred with HIVE SDK v4.13.0.0 and later.
 * [Common] 홈 버튼이 없는 기기에 노출되는 홈 인디케이터가 갱신되지 않는 오류 수정
-   * HIVE SDK v4.13.0 이상에서 발생
+   * Occurred with HIVE SDK v4.13.0.0 and later.
 [/markdown]</li></ul>
 
 &nbsp;
