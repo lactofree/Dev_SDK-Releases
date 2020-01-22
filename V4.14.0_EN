@@ -54,17 +54,17 @@
 <ul class="clList labelList">
   <li><span class="targetLabel common">All</span>[markdown]
 
-* [Auth v4] 게임 서비스 종료 시나리오에 따라 결과값 처리를 변경
-   * **AuthV4** 클래스의 `setup()` 메서드 사용 시
-      * 자동 로그인이 가능한 상태에서 허용된 IdP가 없을 경우 결과값을 성공으로 변경
-      * 자동 로그인이 불가능한 상태에서 허용된 IdP가 없을 경우 결과값을 실패로 변경
-* [Auth v1/Auth v4] `showInquiry()` 메서드 사용 시 챗봇 URL로 연결될 경우 세로모드 UI로 화면이 고정되도록 변경 <span style="font-size: 8pt;"><a href="../../../develop/hive-webview/#inquiry-chatbot">See more</a></span>
+* [Auth v4] Changed the result process in accordance with the stop scenario of game service.
+   * When using `setup()` method in the **AuthV4** class,
+      * The result value is success if automatic login is available with no IdP permitted. 
+      * The result value is failure if automatic login is unavailable with no IdP permitted.
+* [Auth v1/Auth v4] Changed to fix portrait mode when `showInquiry()` method connects to chatbot URL. <span style="font-size: 8pt;"><a href="../../../develop/hive-webview/#inquiry-chatbot">See more</a></span>
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel android">Android</span>[markdown]
 
-* [Auth v1/Auth v4/Promotion] Google Play Service에서 Broadcast API와 install_referrer intent 서비스를 중단함에 따라 Play Install Referrer 라이브러리로 변경
+* [Auth v1/Auth v4/Promotion] Changed to Play Install Referrer library as Google Play Service stops Broadcast API and install_referrer intent service. 
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
@@ -107,33 +107,33 @@
 
 * [PlatformHelper] Fixed not to crash **when implementing requestPermissions API provided by game engines such as Unity**, not the `requestUserPermissions()` method in the **PlatformHelper** class.
    * Occurred with HIVE SDK v4.13.0.0 and later.
-* [Auth v1/Auth v4] `showTerms()` 메서드를 사용하여 약관 다시보기를 노출을 진행하는 도중 돌아가기(Back) 키를 탭했을 때 크래시가 발생하는 오류 수정
+* [Auth v1/Auth v4] Fixed not to crash if user tabs **Back** key while running `showTerms()` method to display Terms of Service.
    * Occurred with HIVE SDK v4.11.7 and later.
 * [Common] Fixed not to flicker when screen converts to the WebView screen. 
    * [Provider] Fixed irregular freezing.
    * Occurred with HIVE SDK v4.11.7 and later.
-* [Common] Android 10 기기에서 UI 일부가 보이지 않는 오류 수정
+* [Common] Fixed not to have veiled part of UI on devices with Android 10.
    * Supported MultiWindow.
    * Occurred with all versions of HIVE SDK v4.
-* [Common] 노치 디자인 기기에서 HIVE UI가 노출될 때 노치 영역을 불투명하게 수정
+* [Common] Fixed cut-out diaplay part opaquely on notch device when displaying HIVE UI.
 * [Push] Fixed to expose push notifications on the device with Android 10 when its screen is locked.
    * Occurred with all versions of HIVE SDK v4.
-* [Auth v1/Auth v4] HIVE SDK 초기화 시 유저가 OS 권한 사용에 동의하지 않았을 경우 게임을 시작할 때마다 OS 권한을 요청하는 오류 수정
+* [Auth v1/Auth v4] Fixed not to request the access permission to OS whenever game starts if user did not allow the access to OS when initializing HIVE SDK.
    * Occurred with HIVE SDK v4.12.1 and later.
-* [Push] 푸시 토큰 발급에 필요한 SenderId를 정상 수신하지 못한 경우 크래시가 발생하는 오류 수정
+* [Push] Fixed the crash when SenderId for issuing push tokens is sent wrong.
    * Occurred with HIVE SDK v4.13.0.0 and later.
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Promotion] UA 보상 정보를 확인할 때 Advertising ID를 전송하도록 변경
+* [Promotion] Changed to send Advertising ID to confirm the rewards through UA.
    * New feature with HIVE SDK v4.13.0.
-* [Auth v4/Auth v1] iOS 13 미만 기기에서 권한고지 및 점검 팝업, 계정충돌 팝업, 게임센터 취소 팝업의 스크롤이 동작하지 않는 오류 수정
+* [Auth v4/Auth v1] Fixed to scroll the popups displaying permission notice and maintenance, account conflict, cancellation to access game center with iOS versions lower than 13.
    * Occurred with HIVE SDK v4.13.0.0 and later.
-* [Promotion] iOS 10.3 미만에서 동작하는 리뷰 팝업 노출 시 스크롤이 동작하지 않는 오류 수정
+* [Promotion] Fixed to scroll the exposed review popup with iOS versions lower than 10.3.
    * Occurred with HIVE SDK v4.13.0.0 and later.
-* [Common] 홈 버튼이 없는 기기에 노출되는 홈 인디케이터가 갱신되지 않는 오류 수정
+* [Common] Fixed to renew the home indicator button on devices with no button.
    * Occurred with HIVE SDK v4.13.0.0 and later.
 [/markdown]</li></ul>
 
