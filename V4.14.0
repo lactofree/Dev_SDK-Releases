@@ -38,7 +38,7 @@
   <li><span class="targetLabel common">All</span>[markdown]
 
 * [Auth v4/Provider] 인증 수단으로 LINE과 Twitter를 추가 <span style="font-size: 8pt;"><a href="../../../dev4/authv4/#v4-idplist">자세히</a></span>
-* [Analytics] 마케팅 어트리뷰션 툴 목록에 AppsFlyer를 추가
+* [Analytics] 마케팅 어트리뷰션 툴 목록에 AppsFlyer를 추가 <span style="font-size: 8pt;"><a href="../../../dev4/marketing-attribution">자세히</a></span>
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
