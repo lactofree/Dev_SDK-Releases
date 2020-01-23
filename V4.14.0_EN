@@ -1,34 +1,106 @@
 ## Downloads
 
-#### V4.14.0.0 (Jan 21, 2020)
+#### V4.14.0.1 (Jan 23, 2020)
 
 <table>
 <tbody>
 <tr>
 <th>Unity®</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.0.zip">HIVE_SDK_Unity_v4.14.0.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.0.1.zip">HIVE_SDK_Unity_v4.14.0.1.zip</a></td>
 </tr>
 <tr>
 <th>Unreal</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.0.zip">HIVE_SDK_Unreal_v4.14.0.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.0.1.zip">HIVE_SDK_Unreal_v4.14.0.1.zip</a></td>
 </tr>
 <tr>
 <th>Cocos2D-X</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.0_Sample.zip">HIVE_SDK_Cocos_v4.14.0.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.0.1_Sample.zip">HIVE_SDK_Cocos_v4.14.0.1.zip</a></td>
 </tr>
 <tr>
 <th>Android</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.0.zip">HIVE_SDK_Android_v4.14.0.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.0.1.zip">HIVE_SDK_Android_v4.14.0.1.zip</a></td>
 </tr>
 <tr>
 <th>iOS</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.0.zip">HIVE_SDK_iOS_v4.14.0.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.0.1.zip">HIVE_SDK_iOS_v4.14.0.1.zip</a></td>
 </tr>
 </tbody>
 </table>
 
 
 ## Release Notes
+
+#### V4.14.0.1 (Jan 23, 2020)
+
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+
+<ul class="clList labelList">
+  <li><span class="targetLabel ios">iOS</span>[markdown]
+
+* [Analytics] Fixed an error to run Adjust, Singular, AppsFlyer on 32-bit devices.
+   * Occurred with HIVE SDK v4.14.0.0.
+[/markdown]</li></ul>
+
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.14.0.1
+
+###### Common item
+
+
+* AndroidX (Android) v1.0.0+
+* Firebase Library (Android) v20.0.0
+
+**IDP**
+
+* Facebook SDK (Android) v5.5.1
+* Facebook SDK (iOS) v5.6.0
+* GooglePlay Services Game, Auth (Android) v17.0.0
+* Google Sign-In SDK (iOS) v4.1.2
+
+**IAP**
+
+* Google Play Billing (Android) v2.0.0
+
+###### Optional item
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* <span style="color: blue;">QQ (iOS) v3.3.6</span>
+* VK (Android) v1.6.9
+* <span style="color: blue;">VK (iOS) v1.5.1</span>
+* WeChat (Android) v1.4.0
+* <span style="color: blue;">WeChat (iOS) v1.8.6.1</span>
+* <span style="color: blue;">LINE (Android) v5.5.1</span>
+* <span style="color: blue;">LINE (iOS) v5.4.0</span>
+* <span style="color: blue;">Twitter (Android) v3.3.0</span>
+* <span style="color: blue;">Twitter (iOS) v3.4.2</span>
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.18.1
+* <span style="color: blue;">Adjust (iOS) v4.18.3</span>
+* Singular (Android) v9.2.5
+* Singular (iOS) v9.2.1
+* <span style="color: blue;">AppsFlyer v5.0.0</span>
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
 
 #### V4.14.0.0 (Jan 21, 2020)
 
@@ -138,56 +210,6 @@
 [/markdown]</li></ul>
 
 &nbsp;
-
-[markdown]
-##### Version of third-party Libraries for HIVE SDK v4.14.0.0
-
-###### Common item
-
-
-* AndroidX (Android) v1.0.0+
-* Firebase Library (Android) v20.0.0
-
-**IDP**
-
-* Facebook SDK (Android) v5.5.1
-* Facebook SDK (iOS) v5.6.0
-* GooglePlay Services Game, Auth (Android) v17.0.0
-* Google Sign-In SDK (iOS) v4.1.2
-
-**IAP**
-
-* Google Play Billing (Android) v2.0.0
-
-###### Optional item
-
-**IDP**
-
-* QQ (Android) v2.0.2 (r5961)
-* <span style="color: blue;">QQ (iOS) v3.3.6</span>
-* VK (Android) v1.6.9
-* <span style="color: blue;">VK (iOS) v1.5.1</span>
-* WeChat (Android) v1.4.0
-* <span style="color: blue;">WeChat (iOS) v1.8.6.1</span>
-* <span style="color: blue;">LINE (Android) v5.5.1</span>
-* <span style="color: blue;">LINE (iOS) v5.4.0</span>
-* <span style="color: blue;">Twitter (Android) v3.3.0</span>
-* <span style="color: blue;">Twitter (iOS) v3.4.2</span>
-
-**IAP**
-
-* ONE Store (Android) v17.02.00
-* ONE Store (Android) v16.05.00
-* WeChat (Android) v1.4.0
-
-**Marketing Tracking Analytics**
-
-* Adjust (Android) v4.18.1
-* <span style="color: blue;">Adjust (iOS) v4.18.3</span>
-* Singular (Android) v9.2.5
-* Singular (iOS) v9.2.1
-* <span style="color: blue;">AppsFlyer v5.0.0</span>
-[/markdown]
 
 
 <hr class="guide_line_1" />
