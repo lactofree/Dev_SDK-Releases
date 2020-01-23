@@ -43,7 +43,7 @@
 ##### Bug Fixes
 
 <ul class="clList labelList">
-  <li><span class="targetLabel ios">iOS</span>[markdown]
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
 
 * [Analytics] Fixed an error to run Adjust, Singular, AppsFlyer on 32-bit devices.
    * Occurred with HIVE SDK v4.14.0.0.
