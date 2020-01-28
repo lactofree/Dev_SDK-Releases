@@ -1,28 +1,28 @@
 ## Downloads
 
-#### V4.13.0.4 (Dec 18, 2019)
+#### V4.13.0.5 (Jan 29, 2020)
 
 <table>
 <tbody>
 <tr>
 <th>Unity®</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.13.0.4.zip">HIVE_SDK_Unity_v4.13.0.4.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.13.0.5.zip">HIVE_SDK_Unity_v4.13.0.5.zip</a></td>
 </tr>
 <tr>
 <th>Unreal</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.13.0.4.zip">HIVE_SDK_Unreal_v4.13.0.4.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.13.0.5.zip">HIVE_SDK_Unreal_v4.13.0.5.zip</a></td>
 </tr>
 <tr>
 <th>Cocos2D-X</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.13.0.4_Sample.zip">HIVE_SDK_Cocos_v4.13.0.4.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.13.0.5_Sample.zip">HIVE_SDK_Cocos_v4.13.0.5.zip</a></td>
 </tr>
 <tr>
 <th>Android</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.13.0.4.zip">HIVE_SDK_Android_v4.13.0.4.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.13.0.5.zip">HIVE_SDK_Android_v4.13.0.5.zip</a></td>
 </tr>
 <tr>
 <th>iOS</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.13.0.4.zip">HIVE_SDK_iOS_v4.13.0.4.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.13.0.5.zip">HIVE_SDK_iOS_v4.13.0.5.zip</a></td>
 </tr>
 </tbody>
 </table>
@@ -31,7 +31,7 @@
 
 ## Release Notes
 
-#### V4.13.0.4 (Dec 18, 2019)
+#### V4.13.0.5 (Jan 29, 2020)
 
 ##### New Features
 
@@ -39,20 +39,38 @@
 
 ##### Changed Features
 
-* None
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
 
+* [Auth v1/Auth v4/Promotion] Changed to Play Install Referrer library as Google Play Service stops Broadcast API and install_referrer intent service. 
+[/markdown]</li></ul>
+
+[markdown]
 ##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v1/Auth v4] Fixed not to crash if user tabs **Back** key while running `showTerms()` method to display Terms of Service.
+   * Occurred with HIVE SDK v4.11.7 and later.
+* [Common] Fixed cut-out diaplay part opaquely on notch device when displaying HIVE UI.
+* [Auth v1/Auth v4] Fixed not to request the access permission to OS whenever game starts if user did not allow the access to OS when initializing HIVE SDK.
+   * Occurred with HIVE SDK v4.12.1 and later.
+[/markdown]</li></ul>
 
 <ul class="clList labelList">
-  <li><span class="targetLabel common">All</span>[markdown]
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Push] Fixed not to initialize the agreement value on announcement and night-time notification when upgrading the version of HIVE SDK.
+* [Common] Fixed to renew the home indicator button on devices with no button.
    * Occurred with HIVE SDK v4.13.0.0 and later.
 [/markdown]</li></ul>
 
 
+
+
+
 [markdown]
-##### Version of third-party Libraries for HIVE SDK v4.13.0.4
+##### Version of third-party Libraries for HIVE SDK v4.13.0.5
 
 * <span style="color: blue;">Facebook SDK (Android) v5.5.1</span>
 * <span style="color: blue;">Facebook SDK (iOS) v5.6.0</span>
@@ -88,6 +106,33 @@
 * <span style="color: blue;">Singular (Android) v9.2.5</span>
 * <span style="color: blue;">Singular (iOS) v9.2.1</span>
 [/markdown]
+
+
+
+
+&nbsp;
+<hr class="guide_line_1" />
+
+
+#### V4.13.0.4 (Dec 18, 2019)
+
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Push] Fixed not to initialize the agreement value on announcement and night-time notification when upgrading the version of HIVE SDK.
+   * Occurred with HIVE SDK v4.13.0.0 and later.
+[/markdown]</li></ul>
+
 
 &nbsp;
 <hr class="guide_line_1" />
