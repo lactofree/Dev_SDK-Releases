@@ -1,0 +1,289 @@
+## Downloads
+
+#### V4.13.0.4 (Dec 18, 2019)
+
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.13.0.4.zip">HIVE_SDK_Unity_v4.13.0.4.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.13.0.4.zip">HIVE_SDK_Unreal_v4.13.0.4.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.13.0.4_Sample.zip">HIVE_SDK_Cocos_v4.13.0.4.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.13.0.4.zip">HIVE_SDK_Android_v4.13.0.4.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.13.0.4.zip">HIVE_SDK_iOS_v4.13.0.4.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+## Release Notes
+
+#### V4.13.0.4 (Dec 18, 2019)
+
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Push] Fixed not to initialize the agreement value on announcement and night-time notification when upgrading the version of HIVE SDK.
+   * Occurred with HIVE SDK v4.13.0.0 and later.
+[/markdown]</li></ul>
+
+
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.13.0.4
+
+* <span style="color: blue;">Facebook SDK (Android) v5.5.1</span>
+* <span style="color: blue;">Facebook SDK (iOS) v5.6.0</span>
+* <span style="color: blue;">Firebase Library (Android) v20.0.0</span>
+* <span style="color: blue;">GooglePlay Services Game, Auth (Android) v17.0.0</span>
+* Google Sign-In SDK (iOS) v4.1.2
+* Google Play Billing (Android) v2.0.0
+* <span style="color: blue;">AndroidX (Android) v1.0.0+</span>
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* <del>Jpush (Android) v1.7.2</del>
+
+**Marketing Tracking Analytics**
+
+* <span style="color: blue;">Adjust (Android) v4.18.1</span>
+* <span style="color: blue;">Adjust (iOS) v4.18.1</span>
+* <span style="color: blue;">Singular (Android) v9.2.5</span>
+* <span style="color: blue;">Singular (iOS) v9.2.1</span>
+[/markdown]
+
+&nbsp;
+<hr class="guide_line_1" />
+#### V4.13.0.3 (Dec 10, 2019)
+
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] Fixed to expose push notifications on the device with Android 10 when its screen is locked.
+   * Occurred with all versions of HIVE SDK v4.
+[/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1">
+
+[markdown]
+#### V4.13.0.2 (Nov 22, 2019)
+
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [PlatformHelper] Fixed not to crash **when implementing requestPermissions API provided by game engines such as Unity**, not the `requestUserPermissions()` method in the **PlatformHelper** class.
+[/markdown]</li></ul>
+
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.13.0.1 (Nov 14, 2019)
+
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] Fixed an error unavailable to access a webpage in case SSL Certificate does not match the domain.
+   *  Delete the exception rules in accordance with <a href="https://support.google.com/faqs/answer/7071387?hl=en">the recommenation for handling SSL error by Google</a>.
+   * Occurred with all versions of HIVE SDK v4.
+[/markdown]</li></ul>
+
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.13.0.0 (Oct 29, 2019)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics/Auth v1] Supported to send funnel logs in case of initializing Authentication v1 as well. <span style="font-size: 8pt;"><a href="../../../en/develop/analytics/#funnel-log">See more</a></span>
+   * Available to send funnel logs with HIVE SDK v4.11.0 and later after initializing Authentication v4.
+* [Promotion] Added new promotion type for rolling banner. <span style="font-size: 8pt;"><a href="../../../en/develop/promotion/advanced/#rolling-banner">See more</a></span>
+   * Use `getBannerInfo()` method in the **Promotion** class.
+* [Auth v1] Provided a limited function to sign in with the used account in case user can't sign in due to server communication error.
+   * Implement `setEmergencyMode()` method in the **Auth** class and if activated, it returns `true` as a response.
+   * Implement `getAccount()` method in the **Auth** class to obtain the details of the used sign-in account.
+   * Unavailable features: Auth v1, Social, UE, UA, NU
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4/ProviderApple] Added a new authentication, Apple Sign-In, which is available on iOS 13. <span style="font-size: 8pt;"><a href="../../../en/develop/porting-building-hive/ios-xcode/#idp-apple">See more</a></span>
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v1/Auth v4] Changed the action related to HIVE Cafe due to service termination.
+   * Go to profile page when user clicks HIVE logo on social dialog.
+* [Auth v1/Promotion] Changed not to create nor send client cookies from HIVE SDK.
+* [Auth v1/Auth v4] Added the adult-verifying function again which had deleted due to unused state.
+* [Promotion] Improved the design visibility of review popup.
+* [Push] Used new server API which optimizes push function.
+   * Stopped supporting  JPush service.
+* [Analytics] Updated the version of Adjust library in use.
+   * Used version: [Android] v4.14.0, [iOS] v4.14.1
+   * Updated version: [Android] v4.18.1, [iOS] v4.18.1
+* [Analytics] Updated the version of Singular library in use.
+   * Used version: [Android] v7.4.2, [iOS] v8.4.2
+   * Updated version: [Android] v9.2.5, [iOS] v9.2.1
+* [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] Updated the version of Facebook SDK in use.
+   * Used version: [Android] v5.0.0, [iOS] 5.0.1
+   * Updated version: [Android] v5.5.1, [iOS] v5.6.0
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] Fixed the problems occurred on dual screen devices.
+* [Auth v4/Push] Updated the version of some libraries for compatibility with the latest Firebase.
+   * Updated GooglePlay Services Game Auth library on which Firebase library is dependant.
+      * Used version: [Firebase Library] v15.0.1+, [GooglePlay Services Game Auth] v15.0.1+
+      * Updated version: [Firebase Library] v20.0.0, [GooglePlay Services Game Auth] v17.0.0
+   * Updated Android Support library on which GooglePlay Service Games Auth library is dependant.
+      * Used version: [Android Support Library] v27.0.1+
+      * Updated version: [AndroidX] v1.0.0+
+* [Auth v4/ProviderGoogle] Added an API which checks the PlayerID and ServerAuthCode of Google Play Games when user signed in your game with GoogleProvider.
+   * Use `getGooglePlayerId()` method in the **ProviderGoogle** class.
+* [Auth v1] Fixed to go to the previous page on the detailed Terms popup when user taps **Back** key on user device.
+* [Unity/PlugIn] Updated the version of PlayServiceResolver in Unity distribiution package.
+   * Used version: [PlayServiceResolver] v1.2.80
+   * Updated version: [PlayServiceResolver] v1.2.124
+* [IAP v4] Changed purchase log to include the original price if Google discounts the product.
+   * Supported from HIVE SDK v4.12.0.0 and later. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] Fixed to minimize the interference with external UI by changing HIVE SDK UI to have its unique section.
+* [Auth v4/ProviderApple] Fixed to process cancellation response even when user taps cancel button more than twice not to run the Game Center on the device with iOS 13.
+* [Auth v1/Auth v4/Promotion] Changed the type of WebView for HIVE SDK from UIWEbView to WKWebkit.
+   * Agreement dialog on Terms of Service, Login dialog for HIVE Membership, Account Selection popup due to conflict, Promotion banner dialog, etc.
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+*  [Analytics] Fixed not to set a wrong value prior to initialization for companyIndex, which distinguishes the third corporate, before initialization.
+   * Occurred with HIVE SDK v4.11.4.0 and later.
+* [Common] Fixed not to have UI layout issues on Galaxy Fold.
+   * Basic UI: Resize the minimum width of UI layout as 320 dp.
+   * Tablet UI: Resize the minimum width of UI layout as 585 dp.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] Fixed an error that exposes English when device language is Indonesian without setting game language.
+   * Occurred with all versions of HIVE SDK v4.
+* [Common] Fixed not to change the language exposed on the app into the device language which user had set on Android 8.0 (API Level 26) and later. 
+   * Occurred with HIVE SDK v4.11.7.0 and later.
+* [Auth v4] Fixed an error that sends the restricted user data as a result of calling `checkBlacklist()` method in case of general user.
+   * Occurred with HIVE SDK v4.7.0 and later.
+* [Auth v4] Fixed to delete the session if INVALID_SESSION is responded to the result of calling `signIn()` method.
+   * Occurred with HIVE SDK v4.7.0 and later.
+* [Push] Fixed not to crash when sending push alarm by using Push v1 server API.
+   * Occurred with HIVE SDK v4.11.2.0 and later.
+* [Push] Fixed not to crash when sending push alarm without setting an app icon. 
+   * Occurred with all versions of HIVE SDK v4.
+* [Promotion] Fixed to send normal logs when user clicks on ImageView-typed full banner. 
+   * Occurred with HIVE SDK v4.12.1.0 and later.
+* [Promotion] Fixed not to crash irregularly when displaying banners.
+   * Occurred with HIVE SDK v4.11.7.0 and later.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] Fixed to send the hardware ID in accordance with the value sent from server, not with the value of AgeGate.
+   * Occurred with HIVE SDK v4.11.1.0 and later.
+* [Auth v4/ProviderApple] Fixed to send a normal response even when sign-in window for Game Center is exposed in duplicate.
+   * Occurred with HIVE SDK v4.3.0 and later.
+* [Common] Fixed an error that changes game language when device language is changed without setting game language. After the fix, the game language keeps its state in the first run of the game.
+   * Occurred with all versions of HIVE SDK v4.
+[/markdown]</li></ul>
+
+
+&nbsp;
+
+<hr class="guide_line_1" />
