@@ -1,0 +1,360 @@
+<h2 id="android">Android</h2>
+
+<table>
+<tbody>
+<tr>
+<th>Circle</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_Android_v3.1.1.jar">Circle_Android_v3.1.1.jar</a></td>
+</tr>
+<tr>
+<th>Guide</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Guide_Android_v3.1.1.zip">Guide_Android_v3.1.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Release Notes</h4>
+
+<h5></h5>
+
+<ul>
+    <li><strong>버전</strong>: v3.1.1</li>
+    <li><strong>배포일</strong>: 2019-May-28</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul><ul>
+<li>푸시 알림을 껐을 때 리모트 푸시와 로컬 푸시가 모두 비활성화되지 않고 각각 켜고 끌(On/Off) 수 있도록 변경 </li>
+</ul></ul>
+
+<h5>Bug Fixes</h5>
+
+<ul><ul>
+  <li>없음</li>
+</ul></ul>
+
+<h5>적용 방법</h5>
+
+<ul><ul>
+  <li>Android 서클 라이브러리 .jar 파일을 3.1.1 버전으로 교체 (.zip으로 압축되어 있으므로 압축 해제하여 사용)</li>  
+  <li>별도 첨부된 'GAMEVIL Circle 푸시 적용 가이드'를 참고하여 설정</li>  
+</ul></ul>
+
+<hr class="guide_line_1" />
+
+<h5>연동된 서드파티 라이브러리 버전 (Circle v3.1.1 기준)</h5>
+
+<ul>
+<li>Gamevil Live 1.1.1</li>
+<li>Gamevil CPI 1.1.3</li>
+<li>Firebase Library (Android) v11.2.0</li>
+<li>GooglePlay Services Game, Auth (Android) v11.2.0</li>
+<li>Android Support Library (Android) v27.1.0</li>
+</ul>
+
+&nbsp;
+
+<h3>More for Android</h3>
+
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="Circle v3.1.0"]
+<h4>Circle 다운로드하기</h4>
+<table>
+<tbody>
+<tr>
+<th>Circle</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_Android_v3.1.0.jar">Circle_Android_v3.1.0.jar</a></td>
+</tr>
+<tr>
+<th>FCM GUIDE</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_FCM_Guide.zip">Circle_FCM_Guide.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Release Notes</h4>
+
+<h5></h5>
+
+<ul>
+    <li><strong>버전</strong>: v3.1.0</li>
+    <li><strong>배포일</strong>: 2018-Sep-03</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul><ul>
+<li>서비스 만료 예정인 GCM을 FCM으로 변경</li>
+</ul></ul>
+
+<h5>Bug Fixes</h5>
+
+<ul><ul>
+  <li>없음</li>
+</ul></ul>
+
+<h5>적용 방법</h5>
+
+<ul><ul>
+  <li>Android 서클 라이브러리 .jar 파일을 3.1.0 버전으로 교체 (.zip으로 압축되어 있으므로 압축 해제하여 사용)</li>  
+  <li>별도 첨부된 'Circle FCM 적용 가이드'를 참고하여 FCM 관련 설정을 적용</li>  
+</ul></ul>
+<hr class="guide_line_1" />
+<h5> 연동된 서드파티 라이브러리 버전 (Circle v3.1.0 기준)</h5>
+[markdown]
+
+* Gamevil Live 1.1.1
+* Gamevil CPI 1.1.3
+* Firebase Library (Android) v11.2.0
+* GooglePlay Services Game, Auth (Android) v11.2.0
+* Android Support Library (Android) v27.1.0
+[/markdown]
+[/av_toggle]
+[av_toggle title="Circle v3.0.9"]
+<h4>Circle 다운로드하기</h4>
+<table>
+<tbody>
+<tr>
+<th>Circle</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_Android_v3.0.9.jar">Circle_Android_v3.0.9.jar</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Release Notes</h4>
+
+<h5></h5>
+
+<ul>
+    <li><strong>버전</strong>: v3.0.9</li>
+    <li><strong>배포일</strong>: 2018-Jul-16</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul><ul>
+<li>없음</li>
+</ul></ul>
+
+<h5>Bug Fixes</h5>
+
+<ul><ul>
+  <li>Android Target SDK 27로 빌드된 앱을 Android API 27 이상 OS가 설치된 단말에서 실행하면 푸시 수신 시 크래시가 발생하는 현상 수정</li>
+</ul></ul>
+
+<h5>적용 방법</h5>
+
+<ul><ul>
+  <li>기존 클라이언트 설정에서 따로 추가해야 하는 부분이나 변경할 부분은 없으며, Android 서클 라이브러리 .jar 파일을 3.0.9 버전으로 교체 (.zip으로 압축되어 있으므로 압축 해제하여 사용)</li>  
+  <li>Gamevil Circle 3.0.9 버전을 적용할 경우 android-support-v4 라이브러리는 27 버전 이상을 사용해야 함</li>  
+</ul></ul>
+[/av_toggle]
+[av_toggle title="Circle v3.0.8"]
+<h4>Circle 다운로드하기</h4>
+<table>
+<tbody>
+<tr>
+<th>Circle</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_Android_v3.0.8.jar">Circle_Android_v3.0.8.jar</a></td>
+</tr>
+<tr>
+<th>Live</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Live_Android_v1.1.1.zip">Live_Android_v1.1.1.zip</a></td>
+</tr>
+<tr>
+<th>CPI</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=CPI_Android_v1.1.3.jar">CPI_Android_v1.1.3.jar</a></td>
+</tr>
+<tr>
+<th>Guide</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Guide_Android.zip">Guide_Android.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Release Notes</h4>
+
+<h5></h5>
+
+<ul>
+    <li><strong>버전</strong>: v3.0.8</li>
+    <li><strong>배포일</strong>: 2017-Dec-18</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul><ul>
+<li>없음</li>
+</ul></ul>
+
+<h5>Bug Fixes</h5>
+
+<ul><ul>
+  <li>Android 7.0 이상 단말에서 단말 언어가 중국어일 경우 약관 동의 화면이 두번 노출되는 현상 수정
+<ul><li>Android 7.0 (API Level 24) 이상에서 Locale 정보를 얻어올 때 단말의 언어가 중국어 간체/번체일 경우, zh-CN/zh-TW와 같이 "언어_국가코드" 형태가 아닌 zh-CN#Hans/zh-TW#Hant 형태로 Locale 값이 반환되는 현상이 발견되어, Locale 정보를 기존 형태와 같은 "언어_국가코드"로 반환될 수 있도록 수정</li></ul>
+  </li>
+</ul></ul>
+
+<h5>적용 방법</h5>
+
+<ul><ul>
+  <li>기존 클라이언트 설정에서 따로 추가해야 하는 부분이나 변경할 부분은 없으며, Android 서클 라이브러리 .jar 파일을 3.0.8 버전으로 교체 (.zip으로 압축되어 있으므로 압축 해제하여 사용)</li>  
+</ul></ul>
+[/av_toggle]
+[av_toggle title="Circle v3.0.7"]
+<h4>Circle 다운로드하기</h4>
+<table>
+<tbody>
+<tr>
+<th>Circle</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_Android_v3.0.7.jar">Circle_Android_v3.0.7.jar</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Release Notes</h4>
+
+<h5></h5>
+
+<ul>
+    <li><strong>버전</strong>: v3.0.7</li>
+    <li><strong>배포일</strong>: 2017-Sep-29</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul><ul>
+<li>없음</li>
+</ul></ul>
+
+<h5>Bug Fixes</h5>
+
+<ul><ul>
+  <li>Android O 버전의 Push 기능 수정
+  <ul>Android O를 타겟(targetSDK=26)으로 앱을 빌드할 경우 Push 수신이 되지 않는 현상 수정</ul>
+  </li>
+</ul></ul>
+
+<h5>적용 방법</h5>
+
+<ul><ul>
+  <li>기존 클라이언트 설정에서 따로 추가해야 하는 부분이나 변경할 부분은 없으며 안드로이드 서클 라이브러리 jar 파일을 3.0.7 버전으로 교체(zip으로 압축되어 있으므로 압축 해제하여 사용)</li>  
+</ul></ul>
+
+[/av_toggle]
+[/av_toggle_container]
+
+&nbsp;
+[su_divider divider_color="#65737e" link_color="#65737e" size="1"]
+
+<h2 id="ios">iOS</h2>
+
+<table>
+<tbody>
+<tr>
+<th>Circle</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_iOS_v1.1.9.zip">Circle_iOS_v1.1.9.zip</a></td>
+</tr>
+<tr>
+<th>Live</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Live_iOS_v1.0.5_lite_iOS9.0.zip">Live_iOS_v1.0.5_lite_iOS9.0.zip</a></td>
+</tr>
+<tr>
+<th>Guide</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Guide_iOS_v1.1.9.zip">Guide_iOS_v1.1.9.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Release Notes</h4>
+
+<ul>
+    <li><strong>버전</strong>: v1.1.9</li>
+    <li><strong>배포일</strong>: 2019-May-28</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul><ul>
+<li>빌드 용량 문제로 서브미션을 통과하지 못하는 상황에 대비하여 iOS 5.1이던 deployment target을 9.0으로 변경 
+    <ul>
+    <li>GAMEVIL Live 빌드 버전은 그대로 유지하되 deployment target만 업데이트</li>
+    <li>이 버전을 사용할 경우 iOS 9.0 미만 기기에서는 게임 이용 불가</li>
+    </ul>
+</li>
+</ul></ul>
+
+<h5>Bug Fixes</h5>
+
+<ul><ul>
+  <li>없음</li>
+</ul></ul>
+
+<h5>적용 방법</h5>
+
+<ul><ul>
+  <li>Circle_iOS_v1.1.9.zip 파일을 다운로드해 압축 해제한 후 gamevilCircle.a 파일만 교체하여 사용</li>
+  <li>Live_iOS_v1.0.5_lite_iOS9.0.zip 파일을 다운로드해 압축 해제한 후 gamevilCircle.a 파일만 교체하여 사용</li>
+  <li>별도 첨부된 'GAMEVIL Circle 푸시 적용 가이드'를 참고하여 설정</li>  
+</ul></ul>
+
+&nbsp;
+
+<h3>More for iOS</h3>
+
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="Circle v1.1.8"]
+<h4>Circle 다운로드하기</h4>
+<table>
+<tbody>
+<tr>
+<th>Circle</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_iOS_v1.1.8.zip">Circle_iOS_v1.1.8.zip</a></td>
+</tr>
+<tr>
+<th>Live</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Live_iOS_v1.0.5_lite.zip">Live_iOS_v1.0.5_lite.zip</a></td>
+</tr>
+<tr>
+<th>Guide</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Guide_iOS.zip">Guide_iOS.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Release Notes</h4>
+
+<ul>
+    <li><strong>버전</strong>: v1.1.8</li>
+    <li><strong>배포일</strong>: 2017-Oct-17</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul><ul>
+<li>아이폰X 해상도 대응
+    <ul>
+    <li>약관 동의 화면</li>
+    <li>전면 배너, 부분 배너 화면</li>
+    <li>GamevilLive UI 화면</li>
+    <li>Gamevil CI 화면</li>
+    </ul>
+</li>
+</ul></ul>
+
+<h5>Bug Fixes</h5>
+
+<ul><ul>
+  <li>iOS8 Device USIM 제거 후 한글 설정 시 약관 미노출 버그 수정  
+ </li>
+</ul></ul>
+
+<h5>적용 방법</h5>
+
+<ul><ul>
+  <li>Circle_iOS_v1.1.8.zip파일을 다운로드해 압축 해제한 후 gamevilCircle.a 파일만 교체하여 사용</li>     
+</ul></ul>
+
+[/av_toggle]
+[/av_toggle_container]
