@@ -273,7 +273,7 @@
 <h5>Changed Features</h5>
 
 <ul><ul>
-<li>GAMEVIL Circle과 Live에서 사용하는 UIWebview를 WKWebview로 변경</li>
+<li>GAMEVIL Circle과 Live에서 사용하는 UIWebView를 WKWebView로 변경</li>
 </ul></ul>
 
 <h5>Bug Fixes</h5>
