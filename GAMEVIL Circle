@@ -254,6 +254,53 @@
 <tbody>
 <tr>
 <th>Circle</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_iOS_v1.2.0.zip">Circle_iOS_v1.2.0.zip</a></td>
+</tr>
+<tr>
+<th>Live</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Live_iOS_v1.1.0_lite.zip">Live_iOS_v1.1.0_lite.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Release Notes</h4>
+
+<ul>
+    <li><strong>버전</strong>: v1.2.0</li>
+    <li><strong>배포일</strong>: 2020-Jan-30</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul><ul>
+<li>GAMEVIL Circle과 Live에서 사용하는 UIWebview를 WKWebview로 변경</li>
+</ul></ul>
+
+<h5>Bug Fixes</h5>
+
+<ul><ul>
+  <li>Live 진행 시 해상도가 고정이던 회원가입 페이지를 기기 화면 크기로 수정</li>
+  <li>iOS 13(xCode 11)에서 변경된 NSData 형태로도 푸시 토큰을 정상적으로 파싱하고 전송할 수 있도록 수정</li>
+</ul></ul>
+
+<h5>적용 방법</h5>
+
+<ul><ul>
+  <li>Circle_iOS_v1.2.0.zip 파일을 다운로드해 압축 해제한 후 gamevilCircle.a 파일만 교체하여 사용</li>
+  <li>Live_iOS_v1.1.0_lite.zip 파일을 다운로드해 압축 해제한 후 gamevilLive.a 파일만 교체하여 사용</li>
+</ul></ul>
+
+&nbsp;
+
+<h3>More for iOS</h3>
+
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="Circle v1.1.9"]
+<h4>Circle 다운로드하기</h4>
+<table>
+<tbody>
+<tr>
+<th>Circle</th>
 <td><a href="https://developers.withhive.com/down.php?SDK=Circle_iOS_v1.1.9.zip">Circle_iOS_v1.1.9.zip</a></td>
 </tr>
 <tr>
@@ -295,15 +342,10 @@
 
 <ul><ul>
   <li>Circle_iOS_v1.1.9.zip 파일을 다운로드해 압축 해제한 후 gamevilCircle.a 파일만 교체하여 사용</li>
-  <li>Live_iOS_v1.0.5_lite_iOS9.0.zip 파일을 다운로드해 압축 해제한 후 gamevilCircle.a 파일만 교체하여 사용</li>
-  <li>별도 첨부된 'GAMEVIL Circle 푸시 적용 가이드'를 참고하여 설정</li>  
+  <li>Live_iOS_v1.0.5_lite_iOS9.0.zip 파일을 다운로드해 압축 해제한 후 gamevilLive.a 파일만 교체하여 사용</li>
+  <li>별도 첨부된 <strong>GAMEVIL Circle 푸시 설정 가이드</strong>를 참고하여 적용</li>  
 </ul></ul>
-
-&nbsp;
-
-<h3>More for iOS</h3>
-
-[av_toggle_container mode='toggle' initial='0']
+[/av_toggle]
 [av_toggle title="Circle v1.1.8"]
 <h4>Circle 다운로드하기</h4>
 <table>
