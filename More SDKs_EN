@@ -1,0 +1,4800 @@
+The old version of HIVE SDK is available to download in this page. See and check the version history as well.
+<!--
+<ul>
+<li><a href="#4.7">HIVE SDK v4.7</a></li>
+<li><a href="#4.6">HIVE SDK v4.6</a></li>
+<li><a href="#4.5">HIVE SDK v4.5</a></li>
+<li><a href="#4.4">HIVE SDK v4.4</a></li>
+<li><a href="#4.3">HIVE SDK v4.3</a></li>
+<li><a href="#4.2">HIVE SDK v4.2</a></li>
+</ul>
+-->
+
+<h2 id="4.12">HIVE SDK v4.12</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.12.0"]
+[markdown]
+
+* Released: 2019-Sep-04
+
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v4] Supported to use the Google Play Billing Library 2.0. 
+   * Available to show discount prices.
+      * Available to show original prices by using displayOriginalPrice and originalPrice field of IAPV4Product.
+      * Available to check image URL by using iconURL field of IAPV4Product after setting icon image of each item.
+   * Automatically refunded if the result of implementing `TransactionFinish()` method in the **IAPV4** class is not success within three days.
+   * Added pending state to the result of implementing `purchase()` method in the **IAPV4** class.[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* None [/markdown]
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.12.0
+
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* <span style="color: blue;">Google Play Billing (Android) v2.0.0</span>
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* Singular (Android) v7.4.2
+* Singular (iOS) v8.4.2
+[/markdown]
+[/av_toggle]
+[/av_toggle_container]
+
+&nbsp;
+
+
+<h2 id="4.11">HIVE SDK v4.11</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.11.4"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td>HIVE_SDK_Unity_v4.11.4.zip</td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>HIVE_SDK_Unreal_v4.11.4.zip</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>HIVE_SDK_Cocos_v4.11.4.zip</td>
+</tr>
+<tr>
+<th>Android</th>
+<td>HIVE_SDK_Android_v4.11.4.zip</td>
+</tr>
+<tr>
+<th>iOS</th>
+<td>HIVE_SDK_iOS_v4.11.4.zip</td>
+</tr>
+</tbody>
+</table>
+[markdown]
+### Release Notes
+
+* Version: v4.11.4
+* Date: 2019-Apr-17
+
+##### New Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Provisioning] Added a popup which restricts the access from selected countries to game. <span style="font-size: 8pt;"><a href="../../develop/basics/#hive-flow">See more</a></span>
+* [Provisioning] Added a feature named remote logging, which collects both HIVE log and game log by activating target user log. <span style="font-size: 8pt;"><a href="../../develop/authv4/initializing-hive/#remote-logging">See more</a></span> [/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Provisioning] Updated the permission notice.
+* [Provisioning] Expanded the range of using HIVE platform to new corporate. <span style="font-size: 8pt;"><a href="../../develop/authv4/terms/#new-corp">See more</a></span>
+* [Promotion] Changed to allow promotion popup to configure YouTube configuration. <span style="font-size: 8pt;"><a href="../../operation/promotion/youtube">See more</a></span>
+* [Auth v4/Auth v1] Changed the inquiry URL of customer service.
+* [Marketing Attribution] Updated the version of Singular library in use.
+   * Used version: [Android] v7.4.0, [iOS] v8.3.4
+   * Updated version: [Android] v7.4.2, [iOS] v8.4.2
+* [Analytics] Added codes to the part of game access to distinguish new user (NU) when sending furnnel logs. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] Changed to run the local push on the same process with game.  [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Push] Changed to use Provisional Authorization on devices with iOS 12 and later. <span style="font-size: 8pt;"><a href="../../develop/notification/#push-ios12">See more</a></span>
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v1/Auth v4] Changed to match the color of buttons on restriction popup regardless of OS. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Promotion] Fixed an error that keeps playing media files back on user device without screen lock. 
+* [Auth v4/Auth v1] Fixed not to display permission notice UI when nothing left to notify.
+* [Auth v1/Provisioning] Fixed not to deliver the download history whenever running your app.
+* [Auth v1/Auth v4] Fixed to close the displayed popups such as access restriction popup, update popup, and server maintenance popup when user taps back button. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] Fixed an error that crashes on **hive_config.xml** file when the key named GoogleClientId has no value. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel unity">Unity</span>[markdown]
+
+* Updated Gradle to the latest version to run on the latest version of Unity. [/markdown]</li></ul>
+
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.11.4
+
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* PartyTrack (Android) v1.15.2
+* PartyTrack (iOS) v1.88
+* Singular (Android) <span style="color: blue;">v7.4.2</span>
+* Singular (iOS) <span style="color: blue;">v8.4.2</span>
+&nbsp;
+[/markdown]
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.11.3"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.11.3.zip">HIVE_SDK_Unity_v4.11.3.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.11.3.zip">HIVE_SDK_Unreal_v4.11.3.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.11.3_Sample.zip">HIVE_SDK_Cocos_v4.11.3.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.11.3.zip">HIVE_SDK_Android_v4.11.3.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.11.3.zip">HIVE_SDK_iOS_v4.11.3.zip</a></td>
+</tr>
+</tbody>
+</table>
+[markdown]
+### Release Notes
+
+* Version: v4.11.3
+* Date: 2019-Feb-28
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Push] Fixed an error that initializes the settings of announcement and night-time notifications regardless of the settings done when game requested to agree Terms and Privacy Policy. [/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.11.3
+
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* PartyTrack (Android) v1.15.2
+* PartyTrack (iOS) v1.88
+* Singular (Android) v7.4.0
+* Singular (iOS) v8.3.4
+&nbsp;
+[/markdown]
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.11.2"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td>HIVE_SDK_Unity_v4.11.2.zip</td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>HIVE_SDK_Unreal_v4.11.2.zip</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>HIVE_SDK_Cocos_v4.11.2.zip</td>
+</tr>
+<tr>
+<th>Android</th>
+<td>HIVE_SDK_Android_v4.11.2.zip</td>
+</tr>
+<tr>
+<th>iOS</th>
+<td>HIVE_SDK_iOS_v4.11.2.zip</td>
+</tr>
+</tbody>
+</table>
+[markdown]
+### Release Notes
+
+* Version: v4.11.2
+* Date: 2019-Jan-23
+
+##### New Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Promotion] Added a sharing function, which was unavailable with one of default function, media transmission, while using User Acquisiton.  
+   * Confirmed the running state on Facebook, LINE and KakaoTalk.
+   * Added `share()` method to **PlatformHelper** class.
+   * Added **PlatformShare** class.[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Push] Changed notification domain and its logic in accordance with the renewal of push notification.
+   * Available to check whether user touched the received push.
+* [Auth v1/Auth v4/Promotion] Changed to support various types of resolution for image resources in HIVE SDK.
+   * Changed for permission notice, full banner and custom webview to support pad or tablet UI.
+* [Auth v4] Changed to customize HIVE permission notice UI.
+   * Added a function to deactivate permission notice UI.
+   * Added a function to provide permission notice data.
+
+* Updated the version of Facebo ok SDK in use. 
+   * Used version: [Android/iOS] v4.38.0
+   * Updated version: [Android] v4.39.0, [iOS] v4.39.1
+* [COPPA] Added a function to control sending Facebook event and advertising identifier. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v2/IAP v4] Changed Lebi domain. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Unity/Plugin] Fixed the exceptional case occurred on Unity in case event handler is not unregistered. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Provisioning] Fixed an error that when the rest time on maintenance popup is more than 24 days, time format becomes negative number and popup closes in a second.
+* [Push] Fixed not to crash on Firebase console when sending push notifications.
+* [Provisioning] Fixed not to request the data-reading authority via SMS whenever user accesses app after user denied to allow reading data on user device. 
+* [Unity/Plugin/Auth v4] Fixed to close soft keys displayed while signing in Google Play Games Services (PGS). [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Provisioning] Fixed to rotate permission notice popup.
+* [CPP/Plugin/Provider/GameCenter] Fixed to progress acheivement after implementing `reportAchievement()` method.
+* [Analytics] Fixed an error that in case `signIn()` method failed to log in, DID in transmitting analytics log is null when `setup()` method of  **AuthV4** class is initialized.
+* [Auth v1] Fixed not to crash the activated COPPA on Authentication v1, which does not support COPPA.
+* [Auth v4/Provisioning] Fixed not to crash on few devices which access from the country where terms of service is not displayed in case  game studio updates HIVE SDK earlier than v4.11.1. [/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+### <b>Hotfix Releases</b>
+<br/>
+#### v4.11.2.1
+
+* Date: 2019-Feb-12
+
+##### New Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [AuthV4/ProviderGoogle] Added an API which returns the current state whether user signed in Google Play Games Services(PGS) or not.
+
+   * Use `isConnected()` method of **ProviderGoogle** class.
+* [AuthV4Helper] Supported achievement and leaderboard function of PGS with **AuthV4Helper** class. The function of PGS was available with **ProviderGoogle** class only.
+   * Use `isConnected()` method of **ProviderGoogle** class. It works in accordance with the login status.
+
+     | ProviderGoogle                      | AuthV4Helper                |
+     | ----------------------------------- | --------------------------- |
+     | ProviderGoogle.achievementsReveal() | Helper.achievementsReveal() |
+     | ProviderGoogle.achievementsUnlock() | Helper.achievementsUnlock() |
+     | ProviderGoogle.achievementsIncrement() | Helper.achievementsIncrement() |
+     | ProviderGoogle.leaderboardsSubmitScore() | Helper.leaderboardsSubmitScore() |
+
+[/markdown]</li></ul>
+   [markdown]
+
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [AuthV4Helper] Changed not to synchronize ID providers (IdP) prior to explicit login in case user cancelled implicit login to Google Play Games Services(PGS).
+* [AuthV4Helper/ProviderGoogle] Changed to sign out the player account in case user who connected with Google Play Games Services (PGS) signed out from leaderboard or achievement view.
+   * If user signed out on PGS UI from Google Provider-used game, it sends an error code, AuthV4GoogleLogout.
+   * If user signed out on PGS UI from AuthV4Helper-used game, it sends an error code, AuthV4GoogleLogout, and signs out from AuthV4Helper.
+ [/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [AuthV4Helper] Fixed not to activate implicit login again if user who did not connect with Google Play Games Services (PGS) signed out a game. [/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.11.2
+
+* Facebook SDK (Android) <span style="color: blue;">v4.39.0</span>
+* Facebook SDK (iOS) <span style="color: blue;">v4.39.1</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* PartyTrack (Android) v1.15.2
+* PartyTrack (iOS) v1.88
+* Singular (Android) v7.4.0
+* Singular (iOS) v8.3.4
+&nbsp;
+[/markdown]
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.11.1"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.11.1.zip">HIVE_SDK_Unity_v4.11.1.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.11.1.zip">HIVE_SDK_Unreal_v4.11.1.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.11.1_Sample.zip">HIVE_SDK_Cocos_v4.11.1.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.11.1.zip">HIVE_SDK_Android_v4.11.1.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.11.1.zip">HIVE_SDK_iOS_v4.11.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+[markdown]
+### Release Notes
+
+* Version: v4.11.1
+* Date: 2018-Nov-28
+
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Provisioning] Changed not to request or use hardware identifiers.
+* Changed not to request or send a MAC address of user device any more. [/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [AuthV4Helper] Fixed not to keep sign-in status after Google Play or Game Center failed synchronization while HIVE session is in use.
+   * Occurred in the case of calling `signIn()` method of **AuthV4.Helper** class.
+[/markdown]</li></ul>
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+### <b>Hotfix Releases</b>
+<br/>
+#### v4.11.1.1
+
+* Date: 2018-Dec-13
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Unity/Plugin] Fixed the exceptional case occurred on Unity in case event handler is not unregistered. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] Fixed not to crash on Firebase console when sending push notifications.
+* [Provisioning] Fixed not to request the data-reading authority via SMS whenever user accesses app after user denied to allow reading data on user device. 
+* [Auth v4] Fixed to close soft keys displayed while signing in Google Play Games Services (PGS). [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v1] Fixed not to crash the activated COPPA on Authentication v1, which does not support COPPA. [/markdown]</li></ul>
+&nbsp;
+[markdown]
+#### v4.11.1.2
+
+* Date: 2018-Dec-28
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4/Provider] Fixed the error failed to sign in HIVE membership for the first time on devices with iOS 11 and earlier.  [/markdown]</li></ul>
+&nbsp;
+[markdown]
+#### v4.11.1.3
+
+* Date: 2019-Jan-14
+
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* Updated the version of Facebook SDK in use.
+   * Used version: [Android/iOS] v4.38.0
+   * Updated version: [Android] v4.39.0, [iOS] v4.39.1
+* [COPPA] Added a function to control sending Facebook event and advertising identifier.
+[/markdown]</li></ul>
+&nbsp;
+[markdown]
+#### V4.11.1.4
+
+* Date: 2019-Jan-22
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4/Provisioning] Fixed not to crash on few devices which access from the country where terms of service is not displayed in case  game studio updates HIVE SDK earlier than v4.11.1. [/markdown]</li></ul>
+&nbsp;
+[markdown]
+#### V4.11.1.5
+
+* Date: 2019-Jan-30
+
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [AuthV4Helper/ProviderGoogle] Changed to sign out the player account in case user who connected with Google Play Games Services (PGS) signed out from leaderboard or achievement view.
+   * If user signed out on PGS UI from Google Provider-used game, it sends an error code, AuthV4GoogleLogout.
+   * If user signed out on PGS UI from AuthV4Helper-used game, it sends an error code, AuthV4GoogleLogout, and signs out from AuthV4Helper. [/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [AuthV4Helper] Fixed not to activate implicit login again if user who did not connect with Google Play Games Services (PGS) signed out a game.[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Analytics] Fixed an error that skips Agreement on Terms (430) when HIVE Analytics sends funnel logs automatically.[/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.11.1
+
+* Facebook SDK (Android) <span style="color: blue;">v4.39.0</span>
+* Facebook SDK (iOS) <span style="color: blue;">v4.39.1</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* PartyTrack (Android) v1.15.2
+* PartyTrack (iOS) v1.88
+* Singular (Android) v7.4.0
+* Singular (iOS) v8.3.4
+&nbsp;
+[/markdown]
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.11.0"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.11.0.zip">HIVE_SDK_Unity_v4.11.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.11.0.zip">HIVE_SDK_Unreal_v4.11.0.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.11.0_Sample.zip">HIVE_SDK_Cocos_v4.11.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.11.0.zip">HIVE_SDK_Android_v4.11.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.11.0.zip">HIVE_SDK_iOS_v4.11.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+* Version: v4.11.0
+* Date: 2018-Nov-06
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics] Added a feature to define and transmit a funnel by section when game starts. Followings are the entry section to games for reference.  <span style="font-size: 8pt;"><a href="../../develop/analytics/#funnel-log">See more</a></span>
+   * 4-1 Permission notice
+   * 4-2 Update/Notice popup
+   * 4-3 Terms of service agreement
+   * 5 Game server selection by manual
+   * 6 Server maintenance popup
+   * 7 Starting/Terminating additional download (API)
+   * 9 Login
+   * 10 Full banner [/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics] Upgraded the processing function of log sent from the client.
+   * A function to set the amount of log to send is added.
+   * By using a memory cache, it overwrites files on the memory at the moment of app termination and restores the files when restarting the app.
+* [Analytics] Changed to support a new type of file extract, GZip, for the client to send logs.
+* Updated the version of Facebook SDK in use.
+   * Used version: Facebook SDK 4.33.0 (Customed)
+   * Updated version: Facebook SDK 4.38.0
+* [Promotion] Supported a function to customize texts on Review/Exit popup.
+* [Promotion] Changed to support various types of resolution for image resources in HIVE SDK.
+* [ResultAPI] Specified the error code in detail.
+* [Provisioning] Changed not to collect or send the advertising ID in case of users under 13, in accordance with COPPA.
+* [Configuration] Changed to set the target user of COPPA on **hive_config.xml** file. 
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v4] Updated the ONE Store SDK in use to the latest version.
+   * Used version: v16.03.00(API v4)
+   * Updated version: v17.02.00(API v5)
+* [IAP v2] Updated the ONE Store SDK in use to the latest version.
+   * Used version:  v16.03.00(API v4)
+   * Updated version:  v16.05.00(API v4) [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] Supported Google Sign-In. <span style="font-size: 8pt;"><a href="../../develop/authv4/#v4-idplist">See more</a> [/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics] Fixed to comply with the identifier policy of HIVE Locale when the client sends language values.
+* [Analytics] Fixed to use Gregorian calender when the client sends date values.
+* [Plugin/C++] Fixed the build errors not to crash at the first use of 64-bit integer values such as PlayerID.  [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v4/Helper] Fixed to comply with the guidelines to sign in apps through Google Play Games Services (PGS).
+* Fixed an error due to random crashes on the Android P (9.0) or later device. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* Fixed not to occur a display error on gallery from new iOS-base devices such as iPhone Xs, iPhone Xs Max and iPhone XR. 
+* [Auth v4/Provision] Fixed an error to save Time zone information to deliver it to the following logic. Related error was occurred because the required Time zone data was sent but unsaved while implementing Provisioning.
+   * Changed to collect push tokens normally.
+* [IAP v4] Changed to check the transmission status of the currently-purchased item.
+   * Before change: Transaction status of all items are checked whether available to restore or not.
+* Fixed to follow the settings on **hive_config.xml** file in case user access the game app through a notice message. [/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.11.0
+
+* Facebook SDK (Android/iOS) v4.38.0
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* PartyTrack (Android) v1.15.2
+* PartyTrack (iOS) v1.88
+* Singular (Android) v7.4.0
+* Singular (iOS) v8.3.4
+
+[/markdown]
+[/av_toggle]
+[/av_toggle_container]
+
+&nbsp;
+
+
+<h2 id="4.10">HIVE SDK v4.10</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.10.4"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.10.4.zip">HIVE_SDK_Unity_v4.10.4.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.10.4.zip">HIVE_SDK_Unreal_v4.10.4.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=/HIVE_SDK_Cocos2d_v4.10.4_Sample.zip">HIVE_SDK_Cocos_v4.10.4.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.10.4.zip">HIVE_SDK_Android_v4.10.4.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.10.4.zip">HIVE_SDK_iOS_v4.10.4.zip</a></td>
+</tr>
+</tbody>
+</table>
+[markdown]
+### Release Notes
+
+* Version: v4.10.4
+* Date: 2019-Jul-04
+
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* [Promotion] Upgraded UX to respond when user taps **Back** button on the device.
+   * Supported **Go back** feature on webview format window.
+   * Supported to close the dialog box if no more pages exist to go back. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] Fixed to send the profile data after recieving the result of upload completion if user signs in your game for the first time.
+* [Plugin/Unity/Auth v4/Auth v4 Helper] Fixed an error to transmit the result callback of `showGameCenterLoginCancelDialog()` method.
+* [Auth v4] Fixed not to show GameCenterLoginCancelDialog again if Game Center login with `showSignIn()` method is failed or cancelled. [/markdown]</li>
+</ul>
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.10.4
+
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * Android: v4.14.0
+   * iOS: v4.14.1
+* PartyTrack
+   * Android: v1.15.2
+   * iOS: v1.88
+* Singluar
+   * Android: v7.4.0
+   * iOS: v8.3.4
+[/markdown]
+&nbsp;
+
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.10.3"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.10.3.zip">HIVE_SDK_Unity_v4.10.3.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.10.3.zip">HIVE_SDK_Unreal_v4.10.3.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.10.3_Sample.zip">HIVE_SDK_Cocos_v4.10.3.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.10.3.zip">HIVE_SDK_Android_v4.10.3.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.10.3.zip">HIVE_SDK_iOS_v4.10.3.zip</a></td>
+</tr>
+</tbody>
+</table>
+[markdown]
+### Release Notes
+
+* Version: v4.10.3
+* Date: 2019-Mar-08
+
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* Updated the version of Facebook SDK in use.
+   * Used version: [Android/iOS] v4.38.0
+   * Updated version: [Android] v4.39.0, [iOS] v4.39.1 [/markdown]</li>
+</ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* [Unity/Plugin] Fixed the exceptional case occurred on Unity in case event handler is not unregistered. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* [Provisioning] Fixed an error that when the rest time on maintenance popup is more than 24 days, time format becomes negative number and popup closes in a second.
+* [Push] Fixed not to crash on Firebase console when sending push notifications.
+* [Unity/Plugin/Auth v4] Fixed to close soft keys displayed while signing in Google Play Games Services (PGS).
+* [Auth v4] Fixed an error that soft keys hide the activated text box while signing in HIVE membership. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Provisioning] Fixed to rotate permission notice popup.
+* [CPP/Plugin/Provider/GameCenter] Fixed to progress acheivement after implementing `reportAchievement()` method.
+* [Analytics] Fixed an error that in case `signIn()` method failed to log in, DID in transmitting analytics log is null when `setup()` method of **AuthV4** class is initialized. [/markdown]</li>
+</ul>
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.10.3
+
+* Facebook SDK (Android) <span style="color: blue;">v4.39.0</span>
+* Facebook SDK (iOS) <span style="color: blue;">v4.39.1</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * Android: v4.14.0
+   * iOS: v4.14.1
+* PartyTrack
+   * Android: v1.15.2
+   * iOS: v1.88
+* Singluar
+   * Android: v7.4.0
+   * iOS: v8.3.4
+[/markdown]
+&nbsp;
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.10.2"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.10.2.zip">HIVE_SDK_Unity_v4.10.2.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.10.2.zip">HIVE_SDK_Unreal_v4.10.2.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.10.2_Sample.zip">HIVE_SDK_Cocos_v4.10.2.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.10.2.zip">HIVE_SDK_Android_v4.10.2.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.10.2.zip">HIVE_SDK_iOS_v4.10.2.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+* Version: v4.10.2
+* Date: 2018-Nov-20
+
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Provisioning] Changed not to collect or send the advertising ID in case of users under 13, in accordance with COPPA.
+* [Configuration] Changed to set the target user of COPPA on **hive_config.xml** file. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] Supported Google Sign-In. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics] Fixed to comply with the identifier policy of HIVE Locale when the client sends language values.
+* [Analytics] Fixed to use Gregorian calender when the client sends date values.
+* [Plugin/C++] Fixed the build errors not to crash at the first use of 64-bit integer values such as PlayerID.  [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v4/Helper] Fixed to comply with the guidelines to sign in apps through Google Play Games.
+* Fixed an error due to random crashes on the Android P (9.0) or later device. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* Fixed not to occur a display error on gallery from new iOS-base devices such as iPhone Xs, iPhone Xs Max and iPhone XR. 
+* [Auth v4/Provision] Fixed an error to save Time zone information to deliver it to the following logic. Related error was occurred because the required Time zone data was sent but unsaved while implementing Provisioning.
+   * Changed to collect push tokens normally.
+* [IAP v4] Changed to check the transmission status of the currently-purchased item.
+   * Before change: Transaction status of all items are checked whether available to restore or not.
+* Fixed to follow the settings on **hive_config.xml** file in case user access the game app through a notice message. [/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.10.2
+
+* Facebook SDK (Android/iOS) <span style="color: blue;">v4.38.0</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* <span style="color: blue;">ONE Store (Android) v17.02.00</span>
+* ONE Store (Android) <span style="color: blue;">v16.05.00</span>
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * Android: v4.14.0
+   * iOS: v4.14.1
+* PartyTrack
+   * Android: v1.15.2
+   * iOS: v1.88
+* Singluar
+   * Android: v7.4.0
+   * iOS: v8.3.4
+[/markdown]
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.10.0"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.10.0.zip">HIVE_SDK_Unity_v4.10.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.10.0.zip">HIVE_SDK_Unreal_v4.10.0.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.10.0_Sample.zip">HIVE_SDK_Cocos_v4.10.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.10.0.zip">HIVE_SDK_Android_v4.10.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.10.0.zip">HIVE_SDK_iOS_v4.10.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+* Version: v4.10.0
+* Date: 2018-Sep-03
+
+##### New Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Provisioning/Auth v4/Promotion/Push] Integrated the Children's Online Privacy Protection Act (COPPA) with games. <span style="font-size: 8pt;"><a href="../../develop/authv4/advanced/#coppa">See more</a></span>
+   * Collects date of birth to the players using US IP.
+   * Collects IMEI and Android ID of the players except under 13.
+   * Allows Guest Login only and prohibits promotion or push services advertising other games for the players under 13.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Promotion] Added Review Popups. <span style="font-size: 8pt;"><a href="../../develop/promotion/popups/#ios-review-popup">See more</a></span>
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Promotion] Updated the way of loading promotions.
+   * Provided a progress bar on the Notice/News/Offerwall page to check the loading status.
+   * Removed the timeout feature setting on webview and changed to use system timeout (60 seconds).
+* [Analytics] Updated the PartyTrack library in use to the latest version.
+* [Analytics] Updated the Singular library in use to the latest version.
+
+| Library | Platform | Version in use | Latest version |
+| ------------- | ----------- | --------- | --------- |
+| PartyTrack | Android | 1.15.0 | 1.15.1 |
+| PartyTrack | iOS | 1.82 | 1.88 |
+| Singular | Android | 7.3.3 | 7.4.0 |
+| Singular | iOS | 8.3.0 | 8.3.4 |
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] Changed GCM to be expired to FCM.
+* [Auth v4/IAP] Updated the utility class of WeChat Pay to respond to XXE(XML External Entity) attack. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v1/Auth v4] Fixed to renew the remaining time on the server maintenance popup when the game is in the background. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Promotion] Fixed to use Intents type on Chrome browser version 25 and later, which are not supported coupon deep link.
+* [Auth v4] Fixed not to display toast popups called by QQ SDK when the value of QQ AppID in hive_config.xml file is null. 
+* [Auth v4] Fixed not to crash in Android P (API Level 28) and later version due to wrong values in QQ settings on Unity builds which use QQ features. 
+* [Auth v4] Fixed not to crash due to the logout function when WeChat SDK is not in use.
+* [Push] Fixed to notify pushes on time without skips if an Android O (API Level 26) and later device entered Doze mode after local push is registered.
+* [Common] Added a new exceptional case of network errors. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] Fixed an error that is unavailable to sign in Game Center if Game Center login with a new account is crashed. 
+* [Auth v4/Helper] Fixed not to occur a crash due to account conflicts while PlayerId is added to the item display lists. [/markdown]</li></ul>
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.10.0
+
+* Facebook SDK (Android/iOS) v4.33.0
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2 
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v16.03.00_20161123
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * Android: v4.14.0
+   * iOS: v4.14.1
+* PartyTrack
+   * Android: v1.15.2
+   * iOS: v1.88
+* Singluar
+   * Android: v7.4.0
+   * iOS: v8.3.4
+[/markdown]
+[/av_toggle]
+[/av_toggle_container]
+
+&nbsp;
+
+
+<h2 id="4.9">HIVE SDK v4.9</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.9.4"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.9.4.zip">HIVE_SDK_Unity_v4.9.4.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.9.4.zip">HIVE_SDK_Unreal_v4.9.4.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.9.4_Sample.zip">HIVE_SDK_Cocos_v4.9.4.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.9.4.zip">HIVE_SDK_Android_v4.9.4.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.9.4.zip">HIVE_SDK_iOS_v4.9.4.zip</a></td>
+</tr>
+</tbody>
+</table>
+[markdown]
+### Release Notes
+
+* Version: v4.9.4
+* Date: 2019-Mar-08
+
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* Updated the version of Facebook SDK in use.
+   * Used version: [Android/iOS] v4.38.0
+   * Updated version: [Android] v4.39.0, [iOS] v4.39.1 [/markdown]</li>
+</ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* [Unity/Plugin] Fixed the exceptional case occurred on Unity in case event handler is not unregistered. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* [Provisioning] Fixed an error that when the rest time on maintenance popup is more than 24 days, time format becomes negative number and popup closes in a second.
+* [Push] Fixed not to crash on Firebase console when sending push notifications.
+* [Unity/Plugin/Auth v4] Fixed to close soft keys displayed while signing in Google Play Games Services (PGS).
+* [Auth v4] Fixed an error that soft keys hide the activated text box while signing in HIVE membership. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Provisioning] Fixed to rotate permission notice popup.
+* [CPP/Plugin/Provider/GameCenter] Fixed to progress acheivement after implementing `reportAchievement()` method.
+* [Analytics] Fixed an error that in case `signIn()` method failed to log in, DID in transmitting analytics log is null when `setup()` method of **AuthV4** class is initialized. [/markdown]</li>
+</ul>
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.9.4
+
+* Facebook SDK (Android) <span style="color: blue;">v4.39.0</span>
+* Facebook SDK (iOS) <span style="color: blue;">v4.39.1</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * Android: v4.14.0
+   * iOS: v4.14.1
+* PartyTrack
+   * Android: v1.15.2
+   * iOS: v1.88
+* Singluar
+   * Android: v7.4.0
+   * iOS: v8.3.4
+[/markdown]
+&nbsp;
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.9.3"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.9.3.zip">HIVE_SDK_Unity_v4.9.3.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.9.3.zip">HIVE_SDK_Unreal_v4.9.3.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.9.3_Sample.zip">HIVE_SDK_Cocos_v4.9.3.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.9.3.zip">HIVE_SDK_Android_v4.9.3.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.9.3.zip">HIVE_SDK_iOS_v4.9.3.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.9.3
+- Date: 2018-Nov-20
+
+##### New Features
+
+- None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+- [Auth v4] Supported Google Sign-In. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+- [Analytics] Fixed to comply with the identifier policy of HIVE Locale when the client sends language values.
+- [Analytics] Fixed to use Gregorian calender when the client sends date values.
+- [Plugin/C++] Fixed the build errors not to crash at the first use of 64-bit integer values such as PlayerID.  [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+- [Auth v4/Helper] Fixed to comply with the guidelines to sign in apps through Google Play Games.
+- Fixed an error due to random crashes on the Android P (9.0) or later device. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+- Fixed not to occur a display error on gallery from new iOS-base devices such as iPhone Xs, iPhone Xs Max and iPhone XR. 
+- [Auth v4/Provision] Fixed an error to save Time zone information to deliver it to the following logic. Related error was occurred because the required Time zone data was sent but unsaved while implementing Provisioning.
+   - Changed to collect push tokens normally.
+- [IAP v4] Changed to check the transmission status of the currently-purchased item.
+   - Before change: Transaction status of all items are checked whether available to restore or not.
+- Fixed to follow the settings on **hive_config.xml** file in case user access the game app through a notice message. [/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.9.3
+
+- Facebook SDK (Android/iOS) v4.38.0
+- Firebase Library (Android) v15.0.1+
+- GooglePlay Services Game, Auth (Android) v15.0.1+
+- Google Sign-In SDK (iOS) v4.1.2
+- Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+- QQ (Android) v2.0.2 (r5961)
+- QQ (iOS) v1.0.0
+- VK (Android) v1.6.9
+- VK (iOS) v1.4.6
+- WeChat (Android) v1.4.0
+- WeChat (iOS) v1.7
+
+**IAP**
+
+- ONE Store (Android) v17.02.00
+- ONE Store (Android) v16.05.00
+- WeChat (Android) v1.4.0
+
+**Push**
+
+- Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+   - Adjust
+      - Android: v4.14.0
+      - iOS: v4.14.1
+   - PartyTrack
+      - Android: v1.15.2
+      - iOS: v1.88
+   - Singluar
+      - Android: v7.4.0
+      - iOS: v8.3.4 
+[/markdown]
+&nbsp;
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.9.2"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.9.2.zip">HIVE_SDK_Unity_v4.9.2.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.9.2.zip">HIVE_SDK_Unreal_v4.9.2.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.9.2_Sample.zip">HIVE_SDK_Cocos_v4.9.2.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.9.2.zip">HIVE_SDK_Android_v4.9.2.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.9.2.zip">HIVE_SDK_iOS_v4.9.2.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.9.2
+- Date: 2018-Sep-14
+
+##### New Features
+
+- None
+
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Promotion] Updated the way of loading promotions.
+  * Provided a progress bar on the Notice/News/Offerwall page to check the loading status.
+  * Removed the timeout feature setting on webview and changed to use system timeout (60 seconds).
+* [Analytics] Updated the PartyTrack library in use to the latest version.
+* [Analytics] Updated the Singular library in use to the latest version.
+
+
+| Library | Platform | Version in use | Latest version |
+| ------------- | ----------- | --------- | --------- |
+| PartyTrack | Android | 1.15.0 | 1.15.1 |
+| PartyTrack | iOS | 1.82 | 1.88 |
+| Singular | Android | 7.3.3 | 7.4.0 |
+| Singular | iOS | 8.3.0 | 8.3.4 |
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] Changed GCM to be expired to FCM.
+   * Updated the related libraries as well for better use. 
+* [Auth v4/IAP] Updated the utility class of WeChat Pay to respond to XXE(XML External Entity) attack. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v1/Auth v4] Fixed to renew the remaining time on the server maintenance popup when the game is in the background. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Promotion] Fixed to use Intents type on Chrome browser version 25 and later, which are not supported coupon deep link.
+* [Auth v4] Fixed not to display toast popups called by QQ SDK when the value of QQ AppID in hive_config.xml file is null. 
+* [Auth v4] Fixed not to crash in Android P (API Level 28) and later version due to wrong values in QQ settings on Unity builds which use QQ features. 
+* [Auth v4] Fixed not to crash due to the logout function when WeChat SDK is not in use.
+* [Push] Fixed to notify pushes on time without skips if an Android O (API Level 26) and later device entered Doze mode after local push is registered.
+* [Push] Fixed an error occurred in the settings to display push notification or not while running game apps. 
+* [Common] Added a new exceptional case of network errors. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v4] Fixed an error that is unavailable to sign in Game Center if Game Center login with a new account is crashed. 
+- [Auth v4/Helper] Fixed not to occur a crash due to account conflicts while PlayerId is added to the item display lists. [/markdown]</li></ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.9.1"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.9.1.zip">HIVE_SDK_Unity_v4.9.1.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.9.1.zip">HIVE_SDK_Unreal_v4.9.1.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.9.1_Sample.zip">HIVE_SDK_Cocos_v4.9.1.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.9.1.zip">HIVE_SDK_Android_v4.9.1.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.9.1.zip">HIVE_SDK_iOS_v4.9.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.9.1
+- Date: 2018-Jul-13
+
+##### New Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Analytics] Added a feature that supports fraud detection by using the latest version of Adjust SDK. [/markdown]</li></ul>
+[markdown]
+##### Changed Features
+
+- None
+
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+[markdown]
+- [Auth v4] Fixed an error that is not displayed **X (close)** button on the agreement popup on GDPR when connecting with HIVE Membership.[/markdown]</li>
+</ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.9.0"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.9.0.zip">HIVE_SDK_Unity_v4.9.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.9.0.zip">HIVE_SDK_Unreal_v4.9.0.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.9.0_Sample.zip">HIVE_SDK_Cocos_v4.9.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.9.0.zip">HIVE_SDK_Android_v4.9.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.9.0.zip">HIVE_SDK_iOS_v4.9.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+### Release Notes
+
+- Version: v4.9.0
+- Date: 2018-Jul-05
+
+##### New Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Push] Added a feature which configures whether to display push mesasages (local push or remote push) or not while playing a game. <span style="font-size: 8pt;"><a href="../../develop/notification/#push-display-settings">See more</a></span>
+- [Provisioning] Added numerous function buttons on a notice popup.
+- [Analytics] Added a unique value (analytics_id) to identify values while analyzing data.
+- [Auth v4] Added a popup feature which requests an agreement on collecting personal data as a response to the GDPR.
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Analytics] Stopped supporting TUNE, a marketing attribution tool and relevant libraries.
+- [Auth v1/Auth v4] Added the latest version of Facebook SDK and specified the feature handling expiry state of authentication tokens in accordance with changes in Facebook user access tokens policy. 
+- [Auth v4] Changed to request essential permissions needed for Facebook Login and support extra setting values in the case additional permissions are required. <span style="font-size: 8pt;"><a href="../../develop/porting-building-hive/configuration/#config">See more</a></span>
+- [Auth v4] Changed not to request the agreement on receiving SMS again without sign-in.
+- Stopped supporting Malay and relevant features.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Provisioning] Changed the way to close your app. If your app is required to close due to a maintenance popup or restriction popup, HIVE SDK used to terminate the application; however, app is closed by sending end event with HIVE SDK v4.9.0. <span style="font-size: 8pt;"><a href="../../develop/authv4/advanced/#app-termination">See more</a></span>
+- [Auth v1/Auth v4] Changed to sign in Facebook via Facebook app if the app is installed.
+[/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- Fixed to deliver the country information of each device in the case of using country key for connecting with HIVE server.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Analytics] Fixed not to miss the userId setting on Singular when signing in with Auth v1 or Auth v4.
+- [Auth v1] Fixed not to initialize push settings after SDK initialization.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v4] Fixed not to simultaneously display a maintenance popup and an access permission notice popup, which is shown up when user plays your game for the first time after installation. 
+- [Auth v1/Auth v4] Fixed the veiled part of access permission notice popup.
+[/markdown]</li></ul>
+[/av_toggle]
+[/av_toggle_container]
+
+&nbsp;
+
+
+<h2 id="4.8">HIVE SDK v4.8</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.8.6"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.8.6.zip">HIVE_SDK_Unity_v4.8.6.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.8.6.zip">HIVE_SDK_Unreal_v4.8.6.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.8.6_Sample.zip">HIVE_SDK_Cocos_v4.8.6.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.8.6.zip">HIVE_SDK_Android_v4.8.6.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.8.6.zip">HIVE_SDK_iOS_v4.8.6.zip</a></td>
+</tr>
+</tbody>
+</table>
+[markdown]
+### Release Notes
+
+* Version: v4.8.6
+* Date: 2019-Mar-08
+
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* Updated the version of Facebook SDK in use.
+   * Used version: [Android/iOS] v4.38.0
+   * Updated version: [Android] v4.39.0, [iOS] v4.39.1 [/markdown]</li>
+</ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* [Unity/Plugin] Fixed the exceptional case occurred on Unity in case event handler is not unregistered. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* [Provisioning] Fixed an error that when the rest time on maintenance popup is more than 24 days, time format becomes negative number and popup closes in a second.
+* [Push] Fixed not to crash on Firebase console when sending push notifications.
+* [Unity/Plugin/Auth v4] Fixed to close soft keys displayed while signing in Google Play Games Services (PGS).
+* [Auth v4] Fixed an error that soft keys hide the activated text box while signing in HIVE membership. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Provisioning] Fixed to rotate permission notice popup.
+* [CPP/Plugin/Provider/GameCenter] Fixed to progress acheivement after implementing `reportAchievement()` method.
+* [Analytics] Fixed an error that in case `signIn()` method failed to log in, DID in transmitting analytics log is null when `setup()` method of **AuthV4** class is initialized. [/markdown]</li>
+</ul>
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.8.6
+
+* Facebook SDK (Android) <span style="color: blue;">v4.39.0</span>
+* Facebook SDK (iOS) <span style="color: blue;">v4.39.1</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * Android: v4.14.0
+   * iOS: v4.14.1
+* PartyTrack
+   * Android: v1.15.2
+   * iOS: v1.88
+* Singluar
+   * Android: v7.4.0
+   * iOS: v8.3.4
+[/markdown]
+&nbsp;
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.8.5"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.8.5.zip">HIVE_SDK_Unity_v4.8.5.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.8.5.zip">HIVE_SDK_Unreal_v4.8.5.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.8.5_Sample.zip">HIVE_SDK_Cocos_v4.8.5.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.8.5.zip">HIVE_SDK_Android_v4.8.5.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.8.5.zip">HIVE_SDK_iOS_v4.8.5.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.8.5
+- Date: 2018-Nov-20
+
+##### New Features
+
+- None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+- [Auth v4] Supported Google Sign-In. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+- [Analytics] Fixed to comply with the identifier policy of HIVE Locale when the client sends language values.
+- [Analytics] Fixed to use Gregorian calender when the client sends date values.
+- [Plugin/C++] Fixed the build errors not to crash at the first use of 64-bit integer values such as PlayerID.  [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+- [Auth v4/Helper] Fixed to comply with the guidelines to sign in apps through Google Play Games.
+- Fixed an error due to random crashes on the Android P (9.0) or later device. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+- Fixed not to occur a display error on gallery from new iOS-base devices such as iPhone Xs, iPhone Xs Max and iPhone XR. 
+- [Auth v4/Provision] Fixed an error to save Time zone information to deliver it to the following logic. Related error was occurred because the required Time zone data was sent but unsaved while implementing Provisioning.
+   - Changed to collect push tokens normally.
+- [IAP v4] Changed to check the transmission status of the currently-purchased item.
+   - Before change: Transaction status of all items are checked whether available to restore or not.
+- Fixed to follow the settings on **hive_config.xml** file in case user access the game app through a notice message. [/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.8.5
+
+- Facebook SDK (Android/iOS) v4.38.0
+- Firebase Library (Android) v15.0.1+
+- GooglePlay Services Game, Auth (Android) v15.0.1+
+- Google Sign-In SDK (iOS) v4.1.2
+- Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+- QQ (Android) v2.0.2 (r5961)
+- QQ (iOS) v1.0.0
+- VK (Android) v1.6.9
+- VK (iOS) v1.4.6
+- WeChat (Android) v1.4.0
+- WeChat (iOS) v1.7
+
+**IAP**
+
+- ONE Store (Android) v17.02.00
+- ONE Store (Android) v16.05.00
+- WeChat (Android) v1.4.0
+
+**Push**
+
+- Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+   - Adjust
+      - Android: v4.14.0
+      - iOS: v4.14.1
+   - PartyTrack
+      - Android: v1.15.2
+      - iOS: v1.88
+   - Singluar
+      - Android: v7.4.0
+      - iOS: v8.3.4 
+[/markdown]
+&nbsp;
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.8.4"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.8.4.zip">HIVE_SDK_Unity_v4.8.4.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.8.4.zip">HIVE_SDK_Unreal_v4.8.4.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.8.4_Sample.zip">HIVE_SDK_Cocos_v4.8.4.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.8.4.zip">HIVE_SDK_Android_v4.8.4.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.8.4.zip">HIVE_SDK_iOS_v4.8.4.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.8.4
+- Date: 2018-Sep-14
+
+##### New Features
+
+- None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Promotion] Updated the way of loading promotions.
+  - Provided a progress bar on the Notice/News/Offerwall page to check the loading status.
+  - Removed the timeout feature setting on webview and changed to use system timeout (60 seconds).
+- [Analytics] Updated the PartyTrack library in use to the latest version.
+- [Analytics] Updated the Singular library in use to the latest version.
+
+| Library | Platform | Version in use | Latest version |
+| ------------- | ----------- | --------- | --------- |
+| PartyTrack | Android | 1.15.0 | 1.15.1 |
+| PartyTrack | iOS | 1.82 | 1.88 |
+| Singular | Android | 7.3.3 | 7.4.0 |
+| Singular | iOS | 8.3.0 | 8.3.4 |
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Push] Changed GCM to be expired to FCM.
+   - Updated the related libraries as well for better use.
+- [Auth v4/IAP] Updated the utility class of WeChat Pay to respond to XXE(XML External Entity) attack. [/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Auth v1/Auth v4] Fixed to renew the remaining time on the server maintenance popup when the game is in the background. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Promotion] Fixed to use Intents type on Chrome browser version 25 and later, which are not supported coupon deep link.
+- [Auth v4] Fixed not to display toast popups called by QQ SDK when the value of QQ AppID in hive_config.xml file is null. 
+- [Auth v4] Fixed not to crash in Android P (API Level 28) and later version due to wrong values in QQ settings on Unity builds which use QQ features. 
+- [Auth v4] Fixed not to crash due to the logout function when WeChat SDK is not in use.
+- [Push] Fixed to notify pushes on time without skips if an Android O (API Level 26) and later device entered Doze mode after local push is registered.
+- [Common] Added a new exceptional case of network errors.
+- [Auth v1] Fixed not to initialize push settings after SDK initialization. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v4] Fixed an error that is unavailable to sign in Game Center if Game Center login with a new account is crashed. 
+- [Auth v4/Helper] Fixed not to occur a crash due to account conflicts while PlayerId is added to the item display lists. [/markdown]</li></ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.8.3"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.8.3.zip">HIVE_SDK_Unity_v4.8.3.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.8.3.zip">HIVE_SDK_Unreal_v4.8.3.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.8.3_Sample.zip">HIVE_SDK_Cocos_v4.8.3.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.8.3.zip">HIVE_SDK_Android_v4.8.3.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.8.3.zip">HIVE_SDK_iOS_v4.8.3.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.8.3
+- Date: 2018-Jul-13
+
+##### New Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Analytics] Added a feature that supports fraud detection by using the latest version of Adjust SDK. [/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Auth v1/Auth v4] Added the latest version of Facebook SDK and specified the feature handling expiry state of authentication tokens in accordance with changes in Facebook user access tokens policy. [/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+[markdown]
+- [Auth v4] Fixed an error that is not displayed **X (close)** button on the agreement popup on GDPR when connecting with HIVE Membership.[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>
+[markdown]
+- [Auth v1/Auth v4] Fixed the veiled part of access permission notice popup. [/markdown]</li></ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.8.2"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.8.2.zip">HIVE_SDK_Unity_v4.8.2.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.8.2.zip">HIVE_SDK_Unreal_v4.8.2.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.8.2_Sample.zip">HIVE_SDK_Cocos_v4.8.2.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.8.2.zip">HIVE_SDK_Android_v4.8.2.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.8.2.zip">HIVE_SDK_iOS_v4.8.2.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+### Release Notes
+
+- Version: v4.8.2
+- Date: 2018-Jun-21
+
+##### New Features
+
+- None
+
+##### Changed Features
+
+- None
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [AuthV4] Deleted the feature that changed not to request the agreement on receiving SMS again without sign-in. HIVE SDK v4.8.0 involved this feature.
+- [AuthV4] Fixed an error that changes the ON/OFF setting of Advertising Push to the previous value whenever game starts.
+[/markdown]</li></ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.8.1"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.8.1.zip">HIVE_SDK_Unity_v4.8.1.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.8.1.zip">HIVE_SDK_Unreal_v4.8.1.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.8.1_Sample.zip">HIVE_SDK_Cocos_v4.8.1.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.8.1.zip">HIVE_SDK_Android_v4.8.1.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.8.1.zip">HIVE_SDK_iOS_v4.8.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+### Release Notes
+
+- Version: v4.8.1
+- Date: 2018-Jun-19
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Analytics] Added a unique value (analytics_id) to identify values while analyzing data.
+- [Auth v4] Added a popup feature which requests an agreement on collecting personal data as a response to the GDPR.
+[/markdown]</li>
+</ul>
+[markdown]
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Analytics] Stopped supporting TUNE, a marketing attribution tool and relevant libraries.
+- [Auth v4] Changed to request essential permissions needed for Facebook Login and support extra setting values in the case additional permissions are required. 
+- Stopped supporting Malay and relevant features.
+[/markdown]
+</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>
+[markdown]
+- [Auth v1/Auth v4] Changed to sign in Facebook via Facebook app if the app is installed.
+[/markdown]
+</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- Fixed to deliver the country information of each device in the case of using country key for connecting with HIVE server.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>
+[markdown]
+- [Analytics] Fixed not to miss the userId setting on Singular when signing in with Auth v1 or Auth v4.
+[/markdown]
+</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>
+[markdown]
+- [Auth v4] Fixed not to simultaneously display a maintenance popup and an access permission notice popup, which is shown up when user plays your game for the first time after installation. 
+[/markdown]</li>
+</ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.8.0"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.8.0.zip">HIVE_SDK_Unity_v4.8.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.8.0.zip">HIVE_SDK_Unreal_v4.8.0.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.8.0_Sample.zip">HIVE_SDK_Cocos_v4.8.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.8.0.zip">HIVE_SDK_Android_v4.8.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.8.0.zip">HIVE_SDK_iOS_v4.8.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+### Release Notes
+
+- Version: v4.8.0
+- Date: 2018-May-11
+
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+- [Promotion] Added new type of custom view which includes navigation controller. <span style="font-size: 8pt;"><a href="../../operation/promotion/app_settings/#list05">See more</a></span>
+   - Navigation controller supports back/forward/refresh/close (the window) function.
+   - Colors of the navigation controller is available to change on HIVE Console.
+- [Analytics] Added Singular, a new marketing analysis platform.
+  [/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+- [Povisioning] Unified the DID updating conditions and delivery data for Auth v1 and Auth v4.
+- [AuthV4] Changed not to request the agreement on receiving SMS again without sign-in.
+- [Promotion] Added the achievement data which informs achievement state by level if `UserAcquisition` from `AppInvitationCampaign` Class is in use. 
+[/markdown]</li>
+</ul>
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+- [Provisioning] Fixed not to close a maintenance popup when user touches out of the popup.
+- [Auth v4] Fixed not to display a toast popup when QQ settings is omitted on the QQ library-added build.
+- [Promotion] Resolved the softkey display error occurred by conflicts of a banner display and an external softkey logic.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+- [Auth v1/Auth v4] Fixed the crash on earlier than iOS 10 when taking a profile picture on the landscape mode-only app built with Unity 2017.3.0 and later. 
+- [Analytics/IAP v4] Fixed to send transactionID when using marketing analysis tool.
+- [Analytics/IAP v2] Fixed the error which sends HIVE-IAP transactionID rather than transactionID when using marketing analysis tool.
+- [Auth v4] Fixed the error which sends wrong key for playerID when displaying customer service. 
+[/markdown]</li></ul>
+[/av_toggle]
+[/av_toggle_container]
+
+&nbsp;
+
+
+<h2 id="4.7">HIVE SDK v4.7</h2>
+
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.7.5"]
+<h4 >SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.7.5.zip">HIVE_SDK_Unity_v4.7.5.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.7.5.zip">HIVE_SDK_Unreal_v4.7.5.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.7.5_Sample.zip">HIVE_SDK_Cocos_v4.7.5.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.7.5.zip">HIVE_SDK_Android_v4.7.5.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.7.5.zip">HIVE_SDK_iOS_v4.7.5.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.7.5
+- Date: 2018-Nov-20
+
+##### New Features
+
+- None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+- [Auth v4] Supported Google Sign-In. [/markdown]</li></ul>
+
+##### Bug Fixes
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+- [Analytics] Fixed to comply with the identifier policy of HIVE Locale when the client sends language values.
+- [Analytics] Fixed to use Gregorian calender when the client sends date values.
+- [Plugin/C++] Fixed the build errors not to crash at the first use of 64-bit integer values such as PlayerID.  [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+- [Auth v4/Helper] Fixed to comply with the guidelines to sign in apps through Google Play Games.
+- Fixed an error due to random crashes on the Android P (9.0) or later device. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+- Fixed not to occur a display error on gallery from new iOS-base devices such as iPhone Xs, iPhone Xs Max and iPhone XR. 
+- [Auth v4/Provision] Fixed an error to save Time zone information to deliver it to the following logic. Related error was occurred because the required Time zone data was sent but unsaved while implementing Provisioning.
+   - Changed to collect push tokens normally.
+- [IAP v4] Changed to check the transmission status of the currently-purchased item.
+   - Before change: Transaction status of all items are checked whether available to restore or not.
+- Fixed to follow the settings on **hive_config.xml** file in case user access the game app through a notice message.
+- [IAP v4] Fixed to send the completion log after purchase. [/markdown]</li></ul>
+
+&nbsp;
+<hr class="guide_line_1" />
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.7.5
+
+- Facebook SDK (Android/iOS) v4.38.0
+- Firebase Library (Android) v15.0.1+
+- GooglePlay Services Game, Auth (Android) v15.0.1+
+- Google Sign-In SDK (iOS) v4.1.2
+- Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+- QQ (Android) v2.0.2 (r5961)
+- QQ (iOS) v1.0.0
+- VK (Android) v1.6.9
+- VK (iOS) v1.4.6
+- WeChat (Android) v1.4.0
+- WeChat (iOS) v1.7
+
+**IAP**
+
+- ONE Store (Android) v17.02.00
+- ONE Store (Android) v16.05.00
+- WeChat (Android) v1.4.0
+
+**Push**
+
+- Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+   - Adjust
+      - Android: v4.14.0
+      - iOS: v4.14.1
+   - PartyTrack
+      - Android: v1.15.2
+      - iOS: v1.88
+   - Singluar
+      - Android: v7.4.0
+      - iOS: v8.3.4 
+[/markdown]
+&nbsp;
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.7.4"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.7.4.zip">HIVE_SDK_Unity_v4.7.4.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.7.4.zip">HIVE_SDK_Unreal_v4.7.4.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.7.4_Sample.zip">HIVE_SDK_Cocos_v4.7.4.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.7.4.zip">HIVE_SDK_Android_v4.7.4.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.7.4.zip">HIVE_SDK_iOS_v4.7.4.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.7.4
+- Date: 2018-Sep-14
+
+##### New Features
+
+- None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Promotion] Updated the way of loading promotions.
+  - Provided a progress bar on the Notice/News/Offerwall page to check the loading status.
+  - Removed the timeout feature setting on webview and changed to use system timeout (60 seconds).
+- [Analytics] Updated the PartyTrack library in use to the latest version.
+- [Analytics] Updated the Singular library in use to the latest version.
+
+| Library | Platform | Version in use | Latest version |
+| ------------- | ----------- | --------- | --------- |
+| PartyTrack | Android | 1.15.0 | 1.15.1 |
+| PartyTrack | iOS | 1.82 | 1.88 |
+| Singular | Android | 7.3.3 | 7.4.0 |
+| Singular | iOS | 8.3.0 | 8.3.4 |
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Push] Changed GCM to be expired to FCM.
+   - Updated the related libraries as well for better use.
+- [Auth v4/IAP] Updated the utility class of WeChat Pay to respond to XXE(XML External Entity) attack. [/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Auth v1/Auth v4] Fixed to renew the remaining time on the server maintenance popup when the game is in the background. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Promotion] Fixed to use Intents type on Chrome browser version 25 and later, which are not supported coupon deep link.
+- [Auth v4] Fixed not to display toast popups called by QQ SDK when the value of QQ AppID in hive_config.xml file is null. 
+- [Auth v4] Fixed not to crash in Android P (API Level 28) and later version due to wrong values in QQ settings on Unity builds which use QQ features. 
+- [Auth v4] Fixed not to crash due to the logout function when WeChat SDK is not in use.
+- [Push] Fixed to notify pushes on time without skips if an Android O (API Level 26) and later device entered Doze mode after local push is registered.
+- [Common] Added a new exceptional case of network errors. 
+- [Auth v1] Fixed not to initialize push settings after SDK initialization.[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v4] Fixed an error that is unavailable to sign in Game Center if Game Center login with a new account is crashed. 
+- [Auth v4/Helper] Fixed not to occur a crash due to account conflicts while PlayerId is added to the item display lists. [/markdown]</li></ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.7.3"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.7.3.zip">HIVE_SDK_Unity_v4.7.3.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.7.3.zip">HIVE_SDK_Unreal_v4.7.3.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.7.3_Sample.zip">HIVE_SDK_Cocos_v4.7.3.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.7.3.zip">HIVE_SDK_Android_v4.7.3.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.7.3.zip">HIVE_SDK_iOS_v4.7.3.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.7.3
+- Date: 2018-Jul-13
+
+##### New Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Analytics] Added a feature that supports fraud detection by using the latest version of Adjust SDK. [/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Auth v1/Auth v4] Added the latest version of Facebook SDK and specified the feature handling expiry state of authentication tokens in accordance with changes in Facebook user access tokens policy. [/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>
+[markdown]
+- [Auth v4] Fixed an error that is not displayed X (close) button on the agreement popup on GDPR when connecting with HIVE Membership.</span>
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>
+[markdown]
+- [Auth v1/Auth v4] Fixed the veiled part of access permission notice popup. [/markdown]</li></ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.7.2"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.7.2.zip">HIVE_SDK_Unity_v4.7.2.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.7.2.zip">HIVE_SDK_Unreal_v4.7.2.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.7.2_Sample.zip">HIVE_SDK_Cocos_v4.7.2.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.7.2.zip">HIVE_SDK_Android_v4.7.2.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.7.2.zip">HIVE_SDK_iOS_v4.7.2.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+### Release Notes
+
+- Version: v4.7.2
+- Date: 2018-Jun-19
+
+##### New Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Analytics] Added a unique value (analytics_id) to identify values while analyzing data.
+- [Auth v4] Added a popup feature which requests an agreement on collecting personal data as a response to the GDPR.
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Analytics] Stopped supporting TUNE, a marketing attribution tool and relevant libraries.
+- [Auth v4] Changed to request essential permissions needed for Facebook Login and support extra setting values in the case additional permissions are required. 
+- Stopped supporting Malay and relevant features.
+[/markdown]
+</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>
+[markdown]
+- [Auth v1/Auth v4] Changed to sign in Facebook via Facebook app if the app is installed.
+[/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- Fixed to deliver the country information of each device in the case of using country key for connecting with HIVE server.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>
+[markdown]
+- [Analytics] Fixed not to miss the userId setting on Singular when signing in with Auth v1 or Auth v4.
+[/markdown]
+</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>
+[markdown]
+- [Auth v4] Fixed not to simultaneously display a maintenance popup and an access permission notice popup, which is shown up when user plays your game for the first time after installation. 
+[/markdown]</li>
+</ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.7.1"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.7.1.zip">HIVE_SDK_Unity_v4.7.1.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.7.1.zip">HIVE_SDK_Unreal_v4.7.1.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.7.1_Sample.zip">HIVE_SDK_Cocos_v4.7.1.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.7.1.zip">HIVE_SDK_Android_v4.7.1.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.7.1.zip">HIVE_SDK_iOS_v4.7.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+### Release Notes
+
+- Version: v4.7.1
+- Date: 2018-Apr-25
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Analytics] Added Singular, a new marketing analysis platform.
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+
+- None
+
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Provisioning] Fixed not to close a maintenance popup when user touches out of the popup.
+- [Auth v4] Fixed not to display a toast popup when QQ settings is omitted on the QQ library-added build.
+- [Promotion] Resolved the softkey display error occurred by conflicts of a banner display and an external softkey logic.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v1/Auth v4] Fixed the crash on earlier than iOS 10 when taking a profile picture on the landscape mode-only app built with Unity 2017.3.0 and later. 
+- [Analytics/IAP v4] Fixed to send transactionID when using marketing analysis tool.
+- [Analytics/IAP v2] Fixed the error which sends HIVE-IAP transactionID rather than transactionID when using marketing analysis tool. 
+[/markdown]</li></ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.7.0"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.7.0.zip">HIVE_SDK_Unity_v4.7.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.7.0.zip">HIVE_SDK_Unreal_v4.7.0.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.7.0_Sample.zip">HIVE_SDK_Cocos_v4.7.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.7.0.zip">HIVE_SDK_Android_v4.7.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.7.0.zip">HIVE_SDK_iOS_v4.7.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+### Release Notes
+
+- Version: v4.7.0
+- Date: 2018-Apr-03
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+[markdown]
+- [Auth v4] Added AuthV4.Helper Class for easy use of Authentication API. <span style="font-size: 8pt;"><a href="../../develop/authv4/#v4-helper">See more</a></span>
+  - Simplified the required parts for functioning authentication by implementing signIn() method from AuthV4.Helper Class as mentioned in the relevant guidelines. <span style="font-size: 8pt;"><a href="../../develop/authv4/login-helper/">See more</a></span>
+  - Simplified the required parts for troubleshooting conflicts by implementing connect() method from AuthV4.Helper Class. <span style="font-size: 8pt;"><a href="../../develop/authv4/idp-connect-helper/#idp-connect">See more</a></span>
+      - Resolve the conflicts by implementing showConflict(), switchAccount() and resolveConflict() method from AuthV4.Helper Class. <span style="font-size: 8pt;"><a href="../../develop/authv4/idp-connect-helper/#conflict">See more</a></span>
+  - Simplified the required parts for troubleshooting conflicts in the case as follows: 
+      - In the case of using achievements and leaderboard from ProviderGoogle Class, using the method relevant to achievements and leaderboard from ProviderApple Class are replaced by implementing showLeaderboard() and showAchievements() method from AuthV4.Helper Class. <span style="font-size: 8pt;">See more <a href="../../develop/membership-social/google-play-games/">for Android</a></span>, <span style="font-size: 8pt;"><a href="../../develop/membership-social/apple-game-center/">for iOS</a></span>
+      - In the case of account change, it is replaced by implementing showLeaderboard() and showAchievements() method from AuthV4.Helper Class.
+  - Simplified the required parts by implementing syncAccount() method from AuthV4.Helper Class when changing application state from background to foreground or confirming GooglePlay or GameCenter account.
+- [Promotion] Added a new function to play video clips from Youtube. <span style="font-size: 8pt;"><a href="../../develop/promotion/advanced/#video-clips">See more</a></span>
+[/markdown]
+</li>
+</ul>
+<ul class="clList labelList">
+		<li><span class="targetLabel android">Android</span>
+[markdown]
+- [IAP v2/IAP v4] Added WeChat Pay, a new charging means of Lebi.
+[/markdown]
+</li>
+</ul>
+[markdown]
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- Updated the third-party libraries in use to the latest version.
+
+| Library | Platform | Version in Use | Latest Version |
+| ------------------------------- | ----------- | -------------- | -------------- |
+| Facebook SDK | All | 4.18.0 | 4.31.0 |
+| GooglePlay Services-Games, Auth | Android | 10.3.1 | 11.8.0 |
+| Google Sign-in SDK | iOS | 4.0.0 | 4.1.2 |
+| Adjust | All | 4.11.4 | 4.12.1 |
+| PartyTrack | Android | 1.12.0 | 1.15.0 |
+| PartyTrack | iOS | 1.66 | 1.82 |
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>
+[markdown]
+- Excluded all properties saved on Client from the target of iCloud backup.
+[/markdown]</li>
+</ul>
+[markdown]
+#####Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>
+[markdown]
+- [Auth v1] Fixed to display a popup to opt in receiving SMS when game needs to request the agreement on receiving SMS to users again.
+- [Push] Fixed to register local push when setting color values manually.
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>
+[markdown]
+- [Auth v1/Auth v4] Fixed to process logout for guest users.
+  - Matched the API functions to those for Android.
+- [Auth v4] Fixed to send cancellation callback, CANCELED, through tapping close button when implementing showSignIn() method from AuthV4 Class.
+- [Auth v4] Fixed to send error callback, INVALID_SESSION, when one of of methods from AuthV4 Class is implemented without using SignIn() method from AuthV4 Class.
+- [Push] Fixed not to crash when initializing the game. Changing the format of NotificationCompat.Builder constructor from Android Support v4 library with API 26 and later causes the crash.
+[/markdown]</li>
+</ul>
+[/av_toggle]
+[/av_toggle_container]
+&nbsp;
+
+<h2 id="4.6">HIVE SDK v4.6</h2>
+
+<p>[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.6.4" tag='v4.6.4']
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.6.4.zip">HIVE_SDK_Unity_v4.6.4.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.6.4.zip">HIVE_SDK_Unreal_v4.6.4.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.6.4_Sample.zip">HIVE_SDK_Cocos_v4.6.4.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.6.4.zip">HIVE_SDK_Android_v4.6.4.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.6.4.zip">HIVE_SDK_iOS_v4.6.4.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.6.4
+- Date: 2018-Jul-13
+
+##### New Features
+
+- None
+
+##### Changed Features
+
+- None
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Auth v4] Fixed an error that is not displayed X (close) button on the agreement popup on GDPR when connecting with HIVE Membership.</span>
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v1/Auth v4] Fixed the veiled part of access permission notice popup. [/markdown]</li></ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.6.3"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.6.3.zip">HIVE_SDK_Unity_v4.6.3.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.6.3.zip">HIVE_SDK_Unreal_v4.6.3.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.6.3_Sample.zip">HIVE_SDK_Cocos_v4.6.3.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.6.3.zip">HIVE_SDK_Android_v4.6.3.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.6.3.zip">HIVE_SDK_iOS_v4.6.3.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+### Release Notes
+
+- Version: v4.6.3
+- Date: 2018-Jun-19
+
+##### New Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Analytics] Added a unique value (analytics_id) to identify values while analyzing data.
+- [Auth v4] Added a popup feature which requests an agreement on collecting personal data as a response to the GDPR.
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Analytics] Stopped supporting TUNE, a marketing attribution tool and relevant libraries.
+- [Auth v4] Changed to request essential permissions needed for Facebook Login and support extra setting values in the case additional permissions are required. 
+- Stopped supporting Malay and relevant features.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Auth v1/Auth v4] Changed to sign in Facebook via Facebook app if the app is installed.
+[/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- Fixed to deliver the country information of each device in the case of using country key for connecting with HIVE server.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Analytics] Fixed not to miss the userId setting on Singular when signing in with Auth v1 or Auth v4.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v4] Fixed not to simultaneously display a maintenance popup and an access permission notice popup, which is shown up when user plays your game for the first time after installation. 
+[/markdown]</li></ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.6.2"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.6.2.zip">HIVE_SDK_Unity_v4.6.2.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.6.2.zip">HIVE_SDK_Unreal_v4.6.2.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.6.2_Sample.zip">HIVE_SDK_Cocos_v4.6.2.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.6.2.zip">HIVE_SDK_Android_v4.6.2.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.6.2.zip">HIVE_SDK_iOS_v4.6.2.zip</a></td>
+</tr>
+</tbody>
+</table>
+### Release Notes
+
+- Version: v4.6.2
+- Date: 2018-Apr-25
+
+##### New Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Analytics] Added Singular, a new marketing analysis platform.
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+
+- None
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+   <li><span class="targetLabel android">Android</span>[markdown]
+- [Provisioning] Fixed not to close a maintenance popup when user touches out of the popup.
+- [Auth v4] Fixed not to display a toast popup when QQ settings is omitted on the QQ library-added build.
+- [Promotion] Resolved the softkey display error occurred by conflicts of a banner display and an external softkey logic.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+   <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v1/Auth v4] Fixed the crash on earlier than iOS 10 when taking a profile picture on the landscape mode-only app built with Unity 2017.3.0 and later. 
+- [Analytics/IAP v4] Fixed to send transactionID when using marketing analysis tool.
+- [Analytics/IAP v2] Fixed the error which sends HIVE-IAP transactionID rather than transactionID when using marketing analysis tool. 
+[/markdown]</li></ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.6.1"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.6.1.zip">HIVE_SDK_Unity_v4.6.1.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.6.1.zip">HIVE_SDK_Unreal_v4.6.1.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.6.1_Sample.zip">HIVE_SDK_Cocos_v4.6.1.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.6.1.zip">HIVE_SDK_Android_v4.6.1.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.6.1.zip">HIVE_SDK_iOS_v4.6.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+### Release Notes
+
+- Version: v4.6.1
+- Date: 2018-Mar-06
+
+##### New Features
+
+- None
+
+##### Changed Features
+
+- None
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]
+- [Auth v1] Fixed to display a popup to opt in receiving SMS when game needs to request the agreement on receiving SMS to users again.
+- [Push] Fixed to register local push when setting color values manually.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v4] Fixed not to delay when processing logout.
+[/markdown]</li></ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.6.0"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.6.0.zip">HIVE_SDK_Unity_v4.6.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.6.0.zip">HIVE_SDK_Unreal_v4.6.0.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.6.0_Sample.zip">HIVE_SDK_Cocos_v4.6.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.6.0.zip">HIVE_SDK_Android_v4.6.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.6.0.zip">HIVE_SDK_iOS_v4.6.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Release Notes</h3>
+
+<ul>
+    <li><strong>Version</strong>: v4.6.0</li>
+    <li><strong>Date</strong>: 2018-Feb-05</li>
+</ul>
+
+<h5>New Features</h5>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel common">All</span>
+<ul>
+    <li>[Auth v4] Added VK and WeChat to IdP (Identity Provider) lists</li>
+    <li>[Auth v1/Auth v4] Added the feature for restricted users to move to 1:1 Inquiry page through provided URL</li>
+    <li>[Analytics] Added an option that controls the function of TUNE; sending Facebook Event always</li>
+</ul>
+</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel common">All</span>
+<ul>
+    <li>[ResultAPI] Added detailed error codes because the existing codes were not easy to distinguish the situations of errors occurred <span style="font-size: 8pt;"><a href="../../api/hive-api/result-api/">See more</a></span></li>
+    <li>[IAP v4] The receipt was sent with the existing callback when implementing Purchase(), Restore() method from IAPV4 Class, however, HIVE SDK itself collects and provides the parameters needed for server receipt verification API, so it is changed for each studio to use the API easily <span style="font-size: 8pt;"><a href="../../api/hive-server-api/billing/verify-receipt/">See more</a></span></li>
+    <li>[Promotion] Changed to send advertising identifiers such as DID, IDFA (iOS) and Advertising ID (Android) to utilize as matching keys as well as UID-based matching to expand the target of CPA (to HIVE membership users, IdP-synced users and guest users) <span style="font-size: 8pt;"><a href="../../dev4/promotion/userengagement/#scheme-common/">See more</a></span></li>
+</ul>
+</li>
+</ul>
+
+<h5>Bug Fixes</h5>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>
+<ul>
+    <li>[Auth v4] Fixed not to send error callback twice in case of implementing connect method from AuthV4 Class on the devices for Android M(6.0) and later when network disconnected</li>
+    <li>[Promotion] Fixed not to display portrait banners on some tablet or emulator based on the landscape mode</li>
+    <li>[IAP v4] Fixed to call callback method when implementing marketConnect() method from IAPV4 Class</li>
+    <li>[IAP v2/IAP v4] Fixed an error that disappears payment popup and makes the game stay in the status of purchase in progress when playing the game after running in background with the exposure of the payment popup</li>
+</ul>
+</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>
+<ul>
+    <li>[Provisioning] Fixed not to use DID from the backed-up device when restoring a device by iCloud Backup function</li>
+    <li>[Auth v1/Auth v4] Fixed not to scroll down popups when Client exposes the mass of contents in the popup</li>
+    <li>[Auth v4] Fixed an error unavailable to sync with QQ Login</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+[/av_toggle_container]
+&nbsp;
+
+<h2 id="4.5">HIVE SDK v4.5</h2>
+
+<p>[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.5.5"]
+<h4 >SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.5.5.zip">HIVE_SDK_Unity_v4.5.5.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.5.5_Sample.zip">HIVE_SDK_Cocos_v4.5.5.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.5.5.zip">HIVE_SDK_Android_v4.5.5.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.5.5.zip">HIVE_SDK_iOS_v4.5.5.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+### Release Notes
+
+- Version: v4.5.5
+- Date: 2018-Jul-13
+
+##### New Features
+
+- None
+
+##### Changed Features
+
+- None
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>
+[markdown]
+- [Auth v4] Fixed an error that is not displayed X (close) button on the agreement popup on GDPR when connecting with HIVE Membership.</span>
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>
+[markdown]
+- [Auth v1/Auth v4] Fixed the veiled part of access permission notice popup. [/markdown]</li></ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.5.4"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.5.4.zip">HIVE_SDK_Unity_v4.5.4.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.5.4_Sample.zip">HIVE_SDK_Cocos_v4.5.4.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.5.4.zip">HIVE_SDK_Android_v4.5.4.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.5.4.zip">HIVE_SDK_iOS_v4.5.4.zip</a></td>
+</tr>
+</tbody>
+</table>
+### Release Notes
+
+- Version: v4.5.4
+- Date: 2018-Jun-19
+
+##### New Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+- [Analytics] Added a unique value (analytics_id) to identify values while analyzing data.
+- [Auth v4] Added a popup feature which requests an agreement on collecting personal data as a response to the GDPR.
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- [Analytics] Stopped supporting TUNE, a marketing attribution tool and relevant libraries.
+- [Auth v4] Changed to request essential permissions needed for Facebook Login and support extra setting values in the case additional permissions are required. 
+- Stopped supporting Malay and relevant features.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Auth v1/Auth v4] Changed to sign in Facebook via Facebook app if the app is installed.
+[/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+- Fixed to deliver the country information of each device in the case of using country key for connecting with HIVE server.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Analytics] Fixed not to miss the userId setting on Singular when signing in with Auth v1 or Auth v4.
+[/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v4] Fixed not to simultaneously display a maintenance popup and an access permission notice popup, which is shown up when user plays your game for the first time after installation. 
+[/markdown]</li></ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.5.3"]
+[markdown]
+#### SDK Downloads
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.5.3.zip">HIVE_SDK_Unity_v4.5.3.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.5.3_Sample.zip">HIVE_SDK_Cocos_v4.5.3.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.5.3.zip">HIVE_SDK_Android_v4.5.3.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.5.3.zip">HIVE_SDK_iOS_v4.5.3.zip</a></td>
+</tr>
+</tbody>
+</table>
+### Release Notes
+
+- Version: v4.5.3
+- Date: 2018-Apr-25
+
+##### New Features
+[/markdown]<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+- [Analytics] Added Singular, a new marketing analysis platform.
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+
+- None
+
+##### Bug Fixes
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+- [Provisioning] Fixed not to close a maintenance popup when user touches out of the popup.
+- [Auth v4] Fixed not to display a toast popup when QQ settings is omitted on the QQ library-added build.
+- [Promotion] Resolved the softkey display error occurred by conflicts of a banner display and an external softkey logic
+  [/markdown]</li></ul>
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+- [Auth v1/Auth v4] Fixed the crash on earlier than iOS 10 when taking a profile picture on the landscape mode-only app built with Unity 2017.3.0 and later. 
+- [Analytics/IAP v4] Fixed to send transactionID when using marketing analysis tool.
+- [Analytics/IAP v2] Fixed the error which sends HIVE-IAP transactionID rather than transactionID when using marketing analysis tool. 
+[/markdown]</li></ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.5.2"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.5.2.zip">HIVE_SDK_Unity_v4.5.2.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.5.2.zip">HIVE_SDK_Unreal_v4.5.2.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.5.2_Sample.zip">HIVE_SDK_Cocos_v4.5.2.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.5.2.zip">HIVE_SDK_Android_v4.5.2.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.5.2.zip">HIVE_SDK_iOS_v4.5.2.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Release Notes</h3>
+
+<ul>
+    <li><strong>Version</strong>: v4.5.2</li>
+    <li><strong>Date</strong>: 2018-Mar-06</li>
+</ul>
+
+<h5>New Features</h5>
+    <li>None</li>
+
+<h5>Changed Features</h5>
+    <li>None</li>
+
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>
+<ul>
+    <li>[Auth v4] Fixed not to send error callback twice in case of implementing connect method from AuthV4 Class on the devices for Android M (6.0) and later when network disconnected.</li>
+    <li>[Promotion] Fixed not to display portrait banners on some tablet or emulator based on the landscape mode.</li>
+    <li>[IAP v4] Fixed to call callback method when implementing marketConnect() method from IAPV4 Class.</li>
+    <li>[Auth v1] Fixed to display a popup to opt in receiving SMS when game needs to request the agreement on receiving SMS to users again.</li>
+    <li>[Push] Fixed to register local push when setting color values manually.</li>
+</ul>
+</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>
+<ul>
+    <li>[Provisioning] Fixed not to use DID from the backed-up device when restoring a device by iCloud Backup function.</li>
+    <li>[Auth v1/Auth v4] Fixed not to scroll down popups when Client exposes the mass of contents in the popup.</li>
+    <li>[Auth v4] Fixed an error unavailable to sync with QQ Login.</li>
+    <li>[Auth v4] Fixed not to delay when processing logout.</li>
+</ul>
+</li>
+</ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.5.1"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.5.1.zip">HIVE_SDK_Unity_v4.5.1.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.5.1.zip">HIVE_SDK_Unreal_v4.5.1.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.5.1_Sample.zip">HIVE_SDK_Cocos_v4.5.1.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.5.1.zip">HIVE_SDK_Android_v4.5.1.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.5.1.zip">HIVE_SDK_iOS_v4.5.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3>QQ Android Library</h3>
+
+In the case of using QQ Login for Android among games with Authentication v4, download the following file and install upon consideration of the execution environments.
+
+<ul>
+    <li><a href="http://developers.withhive.com/wp-content/uploads/2017/12/QQ_Android_Libaray_2.0.zip">Download QQ Android Library</a></li>
+    <li>Installation path
+<ul>
+    <li>Android: (Installed Project)/libs/</li>
+    <li>Unity (Android): (Unity Project)/Assets/Hive_SDK_v4/Plugins/Android/libs/</li>
+</ul>
+</li>
+</ul>
+
+<h3>Release Notes</h3>
+
+<ul>
+    <li><strong>Version</strong>: v4.5.1</li>
+    <li><strong>Date</strong>: 2017-Dec-18</li>
+</ul>
+
+<h5>New Features</h5>
+    <li>None</li>
+
+<h5>Changed Features</h5>
+    <li>None</li>
+
+<h5>Bug Fixes</h5>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel common">All</span>
+<ul>
+    <li>[Promotion] Corrected an error that the information could not be transmitted normally due to a wrong key value when implementing Promotion.AdditionalInfo() API.</li>
+</ul>
+</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>
+<ul>
+    <li>[Auth v4] Fixed an error that caused a crash when invoking logout which is attempting to logout to all IdPs include QQ from a build that excluded the QQ library.</li>
+</ul>
+</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>
+<ul>
+    <li>[IAP v2] Fixed an error that this data could not be transferred because the stored AdditionalInfo was not loaded normally when calling Restore feature.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.5.0"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.5.0.zip">HIVE_SDK_Unity_v4.5.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.5.0.zip">HIVE_SDK_Android_v4.5.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.5.0.zip">HIVE_SDK_iOS_v4.5.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+<h3>QQ Android Library</h3>
+In the case of using QQ Login for Android among games with Authentication v4, download the following file and install upon consideration of the execution environments..
+<ul>
+ 	<li><a href="http://developers.withhive.com/wp-content/uploads/2017/12/QQ_Android_Libaray_2.0.zip">Download QQ Android Library</a></li>
+ 	<li>Installation Path
+<ul>
+ 	<li>Android: (Installed Project)/libs/</li>
+ 	<li>Unity (Android): (Unity Project)/Assets/Hive_SDK_v4/Plugins/Android/libs/</li>
+</ul>
+</li>
+</ul>
+<h3>Release Notes</h3>
+<ul>
+ 	<li><strong>Version</strong>: v4.5.0</li>
+ 	<li><strong>Date</strong>: 2017-Dec-5</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[Auth v4] Added QQ to IdP lists available to sync with.</li>
+ 	<li>[Auth v1, v4] Supported login features on Unity simulator. <span style="font-size: 8pt;"><a href="../../dev4/porting-building-hive/unity/#unity-simulator">See more</a></span></li>
+ 	<li>[UserEngagement] Added scheme to support in-app purchases through Interwork. <span style="font-size: 8pt;"><a href="../../dev4/promotion/userengagement/#scheme-common">See more</a></span>
+<ul>
+ 	<li>scheme: interwork, deeplink, push</li>
+ 	<li>Pre-order feature (In case of delivering the pre-ordered item): [scheme]://hive/iappromote?marketpid=[marketpid]</li>
+ 	<li>Purchase feature (In case of exposing the item purchase popup): [scheme]://hive/iappurchase?marketpid=[marketpid]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[UserEngagement] Features enhanse. <span style="font-size: 8pt;"><a href="../../dev4/promotion/userengagement/#dev">See more</a></span>
+<ul>
+ 	<li>Added the Event type to see the status of UserEngagement currently operated.</li>
+ 	<li>Integrated the UserEngagement features to Promotion Class.</li>
+ 	<li>Deleted initialize (AuthInitializeListener, EngagementListener) API from Auth Class marked as deprecated.</li>
+ 	<li>Deleted UserEngagement Class added in HIVE SDK v4.3.0.</li>
+ 	<li>Use setEngagementListener (EngagementListener) API of Promotion Class</li>
+ 	<li>Changed the content of EngagementEventType and added EngagementEventState.
+<ul>
+ 	<li>EngagementEventType[Type or state] -&gt; EngagementEventType[Type], EngagementEventState</li>
+</ul>
+</li>
+</ul>
+</li>
+ 	<li>[Promotion] Improved loading speed by changing full banner loading sequence. - If loading of current banner is completed or closed, then request loading of next banner.</li>
+ 	<li>[Auth v1, v4] Changed how to apply Access Permission Notice for HIVE App as well as its design format so that game development company can customize it. <span style="font-size: 8pt;"><a href="../../dev4/authv4/initializing-hive/#permission-customizing">See more</a></span></li>
+ 	<li>[Social-HIVE] Changed to send both PlayerID (Auth v4) and VID (Auth v1) of logged in users when calling showInquiry() API from AuthV4 Class.</li>
+ 	<li>[SocialFacebook] Diminished Share API features:
+<ul>
+ 	<li>Changed to use ContentsURL only for interface and restriction of use in accordance with the feature changes in Share API for Facebook.</li>
+ 	<li>Deprecated API: postFacebook (SocialFacebookPostContents, PostFacebookListener) API from SocialFacebook Class, SocialFacebookPostContents data from SocialFacebook Class.</li>
+ 	<li>Added postFacebookWithContentURL (String, PostFacebookListener) API.</li>
+</ul>
+</li>
+ 	<li>[Auth v1] Added country code to  the exposure conditions on Terms.
+<ul>
+ 	<li>AS-IS: If a user has agreed on the latest version of Terms in country A, game does not display the Terms again even when user accesses from country B, using earlier version.</li>
+ 	<li>TO-BE: Changed to check the agreement status and the version of Terms by country regularly to determine the exposure of Terms.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>Improved to use HTTPS protocol for all features.</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>Stopped supporting iOS 7.x considering fewer users due to iOS 11 release.</li>
+ 	<li>[UA] Deleted the feature of sending cookies since cookie sharing from safari is unavailable on iOS 11.</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel unity">Unity</span>
+<ul>
+ 	<li>Upgrade HIVE Config Inspector. <span style="font-size: 8pt;"><a href="../../dev4/porting-building-hive/unity/#hive-settings">See more</a></span>
+<ul>
+ 	<li>Changed the operation method to prevent damage to HiveConfig.asset file</li>
+ 	<li>Changed the route of elements saving HiveAppID, FacebookAppID and GooglePlayAppID from HiveConfig.asset file to hive_config.xml file (deleted the previous settings).</li>
+ 	<li>[Auth v1] Improved to enter and configure the Google Reversed Client ID required to sign in Google+ on iOS.</li>
+ 	<li>[Auth v4] Improved to enter and configure the Google Server Client ID required to sign in Google Play Games on Android.</li>
+ 	<li>Added features to configure AppID of additional IdP, QQ.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[Auth v1/Auth v4] Fixed not to display agreement screen on Terms when restarting the game after logout.</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>[Promotion] Fixed errors that were exposed as toast pop-up warning messages on screen duplicate calls and changed to notify by error code.</li>
+ 	<li>Fixed the mismatching status of finished activity and alive app due to app restart right after termination.</li>
+ 	<li>[Auth v1] Fixed an error that prevented the game from proceeding after authentication because of duplicate problem with cookie system of HIVE SDK as a result of fixing known issue 832192  in Unity 2017.1.1 and higher.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+[/av_toggle_container]
+&nbsp;
+
+<h2 id="4.4">HIVE SDK v4.4</h2>
+
+<p>[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.4.4"]
+<h4 >SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.4.4.zip">HIVE_SDK_Unity_v4.4.4.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.4.4_Sample.zip">HIVE_SDK_Cocos_v4.4.4.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.4.4.zip">HIVE_SDK_Android_v4.4.4.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.4.4.zip">HIVE_SDK_iOS_v4.4.4.zip</a></td>
+</tr>
+</tbody>
+</table>
+[markdown
+### Release Notes
+
+- Version: v4.4.4
+- Date: 2018-Apr-25
+
+##### New Features
+
+[/markdown]<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+[markdown]
+
+- [Analytics] Added Singular, a new marketing analysis platform.
+[/markdown]</li>
+</ul>
+[markdown]
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+    <li>None</li>
+</ul>
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+[markdown]
+
+- [Provisioning] Fixed not to close a maintenance popup when user touches out of the popup.
+- [Promotion] Resolved the softkey display error occurred by conflicts of a banner display and an external softkey logic.
+  [/markdown]</li>
+  </ul>
+  <ul class="clList labelList">
+  	<li><span class="targetLabel iOS">iOS</span>
+  [markdown]
+- [Auth v1/Auth v4] Fixed the crash on earlier than iOS 10 when taking a profile picture on the landscape mode-only app built with Unity 2017.3.0 and later. 
+- [Analytics/IAP v4] Fixed to send transactionID when using marketing analysis tool.
+- [Analytics/IAP v2] Fixed the error which sends HIVE-IAP transactionID rather than transactionID when using marketing analysis tool. 
+  [/markdown]</li>
+  </ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.4.3"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.4.3.zip">HIVE_SDK_Unity_v4.4.3.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.4.3.zip">HIVE_SDK_Unreal_v4.4.3.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.4.3_Sample.zip">HIVE_SDK_Cocos_v4.4.3.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.4.3.zip">HIVE_SDK_Android_v4.4.3.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.4.3.zip">HIVE_SDK_iOS_v4.4.3.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Release Notes</h3>
+
+<ul>
+    <li><strong>Version</strong>: v4.4.3</li>
+    <li><strong>Date</strong>: 2018-Mar-06</li>
+</ul>
+<h5>New Features</h5>
+
+<ul class="clList labelList">
+    <li>None</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul class="clList labelList">
+    <li>None</li>
+</ul>
+<h5>Bug Fixes</h5>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel common">All</span>
+<ul>
+    <li>[Auth v1/Auth v4] Fixed not to display agreement screen on Terms when restarting the game after logout.</li>
+    <li>[Promotion] Fixed an error that the information could not be transmitted normally due to a wrong key value when implementing Promotion.AdditionalInfo() API.</li>
+</ul>
+</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>
+<ul>
+    <li>[Promotion] Fixed errors that were exposed as toast pop-up warning messages on screen duplicate calls and changed to notify by error code.</li>
+    <li>Fixed the mismatching status of finished activity and alive app due to app restart right after termination.</li>
+    <li>[Auth v1] Fixed an error that prevented the game from proceeding after authentication because of duplicate problem with cookie system of HIVE SDK as a result of fixing known <a href="https://issuetracker.unity3d.com/issues/unitywebrequest-does-not-send-set-cookies-on-redirect">issue 832192</a> in <a href="https://unity3d.com/unity/whats-new/unity-2017.1.1">Unity 2017.1.1 and higher</a>.</li>
+    <li>[Auth v4] Fixed not to send error callback twice in case of implementing connect method from AuthV4 Class on the devices for Android M(6.0) and later when network disconnected.</li>
+    <li>[Promotion] Fixed not to display portrait banners on some tablet or emulator based on the landscape mode.</li>
+    <li>[IAP v4] Fixed to call callback method when implementing marketConnect() method from IAPV4 Class.</li>
+    <li>[Push] Fixed to register local push when setting color values manually.</li>
+</ul>
+</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>
+<ul>
+    <li>[IAP v2] Fixed an error that this data could not be transferred because the stored AdditionalInfo was not loaded normally when calling Restore feature.</li>
+    <li>[Provisioning] Fixed not to use DID from the backed-up device when restoring a device by iCloud Backup function.</li>
+    <li>[Auth v1/Auth v4] Fixed not to scroll down popups when Client exposes the mass of contents in the popup.</li>
+</ul>
+</li>
+</ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.4.2"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.4.2.zip">HIVE_SDK_Unity_v4.4.2.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>Not supported</td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.4.2.zip">HIVE_SDK_Android_v4.4.2.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.4.2.zip">HIVE_SDK_iOS_v4.4.2.zip</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Release Notes</h3>
+<ul>
+ 	<li><strong>Version</strong>: v4.4.2</li>
+ 	<li><strong>Date</strong>: 2017-Oct-30</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>Added to send string to HIVE Provisioning server at the time of initializing HIVE SDK by distinguishing types if the game is played on emulator:
+<ul>
+ 	<li>Emulator Type: NoxEmulator, AndyEmulator, Genymotion, BlueStacks, MEmu, KoPlayer, DefaultAndroidEmulator, UnknownEmulator.</li>
+ 	<li>UnknownEmulator: It seems an emulator, but unable to distinguish its type.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>Updated HIVE UI for Authentication, Promotion, Social Media, Terms of Service and other products to comply with the UI guidelines for iPhone X.
+<ul>
+ 	<li>HIVE Social Media: Social Media, Cafe, 1:1 Inquiry.</li>
+ 	<li>HIVE Promotion: Full Banner, Notice, Spot Banner, Direct WebView, Custom WebView, Custom Board, Review Popup.</li>
+ 	<li>HIVE Authentication: Agreement on Terms Screen, Terms of Service Screen, Maintenance/Notice Popup, Update Popup, Account Selecting Screen, Adult Authentication Popup.</li>
+</ul>
+</li>
+</ul>
+<ul>
+ 	<li>Upgraded the development environment as Xcode 9 and later to support iOS 11.
+<ul>
+ 	<li>To develop games with Xcode 8, see the <a href="../../dev4/porting-building-hive/ios-xcode/#underxcode9">Guideline to Set Building Environment with less than Xcode 9</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>[Auth v4] Fixed not to fail the initialization with Setup API even URL-encoded strings such as % are included.</li>
+ 	<li>[Promotion] Fixed to apply updated language by using HIVE SDK API when displaying review popup on iPad.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.4.1"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.4.1.zip">HIVE_SDK_Unity_v4.4.1.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.4.1.zip">HIVE_SDK_Unreal_v4.4.1.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.4.1_Sample.zip">HIVE_SDK_Cocos_v4.4.1.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.4.1.zip">HIVE_SDK_Android_v4.4.1.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.4.1.zip">HIVE_SDK_iOS_v4.4.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Release Notes</h3>
+<ul>
+ 	<li><strong>Version</strong>: v4.4.1</li>
+ 	<li><strong>Date</strong>: 2017-Sep-25</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>[IAP] Supported the feature of  'In-app purchase in App Store' for iOS 11 and later.
+<ul>
+ 	<li>It notifies as UserEngagement event with IapUpdated type.</li>
+ 	<li>In the case of IAP v2, use IAP.checkPromotePurchase API to check the game PID of the product which got a request for purchase via App Store.</li>
+ 	<li>In the case of IAP v4, use IAPV4.checkPromotePurchase API to check the game PID of the product which got a request for purchase via App Store.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[Auth v4] Changed to sign out the IdP account attempted to sign in if the user taps cancellation when account conflicts occur.
+<ul>
+ 	<li>HIVE SDK attempts to sign out conflicted IdP (except Apple Game Center) if user taps cancellation (X) button on the provided UI when using AuthV4.showConflictSelection API.</li>
+ 	<li>HIVE SDK attempts to sign out conflicted IdP (except Apple Game Center) on customized UI when using AuthV4.resolveConflict API.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel unity">Unity®</span>
+<ul>
+ 	<li>Improved to be compatible with Unity 2017.1.
+<ul>
+ 	<li>'Activity' of HIVE SDK Unity Plugin inherits 'UnityPlayerActivity', so that it works even if the Unity class file is changed.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>[Promotion] Fixed UI display error with multi view on Android N (API 24) and later version:
+<ul>
+ 	<li>Wrong size, cropped image wrong format for transverse mode or longitudinal mode.</li>
+</ul>
+</li>
+ 	<li>[Social] Fixed HIVE UI display error with multi window on Android N (API 24) and later version.
+<ul>
+ 	<li><strong>Back to game</strong> button on WebView is hidden:</li>
+</ul>
+</li>
+ 	<li>[Social] Fixed the wrong settings for <strong>Back to game</strong> button on WebView which should be displayed in Traditional Chinese.</li>
+ 	<li>[Promotion] Fixed the descender on full banners such as <strong>Don’t show this again today</strong> which seemed to be cropped.</li>
+ 	<li>[Auth v1] Fixed no response error on the HIVE login screen when user cancelled to sign in Google+ account.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+
+[av_toggle title="HIVE SDK v4.4.0"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.4.0.zip">HIVE_SDK_Unity_v4.4.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.4.0.zip">HIVE_SDK_Android_v4.4.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.4.0.zip">HIVE_SDK_iOS_v4.4.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+<h3>Release Notes</h3>
+<ul>
+ 	<li><strong>Version</strong>: v4.4.0</li>
+ 	<li><strong>Date</strong>: 2017-Sep-1</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[IAP v4] Added new HIVE IAP v4 API:
+<ul>
+ 	<li>Guaranteed payment transaction for purchase.</li>
+ 	<li>Provided visual support about real-time payment state.</li>
+ 	<li>Collected logs from all payment history through receipt verification.</li>
+ 	<li>Supported Google Play Store, Apple App Store, One Store, and Lebi.</li>
+</ul>
+</li>
+ 	<li>[Auth v4] Added an API to search Facebook friends who play the same game with user when the user synced with Facebook.</li>
+ 	<li>[Analytics v2] Added to send logs about changes in game server ID if user selects the server after login.</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>[Push] Notification Extension Support:
+<ul>
+ 	<li>Supported to send general image (jpg, png), GIF image, and media URL such as mp3, mp4 in HIVE Console &gt; Notification &gt; Push menu (on the device installed iOS 10.2 and later version).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[UA] <strong>Changed to set the point at which data can be transferred to be essential in the game. </strong>
+<ul>
+ 	<li>AS-IS: HIVE SDK sends UserAcquisition data to UA server at the receiving time.</li>
+ 	<li>TO-BE: After HIVE SDK recieves UserAcquistion data, it is sent to UA server when game call UserEngagement.setEngagementReady API (e.g., Implement API after generating data in the game server).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>[Promotion] Changed to update the result which notifies whether or not the Offerwall is available by using Promotion.getOfferwallState API at the same point of offerwall for Android:
+<ul>
+ 	<li>AS-IS: When succeeded to sign in.</li>
+ 	<li>TO-BE: When initializing HIVE module, or exposing offerwall pages.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>[Push] Fixed the crashes when devices with Android N (7.0) and later receive push notifications after Background Service Policy updated:
+<ul>
+ 	<li>Occurrence depends on the device type in the case Android BuildTarget is 24 and later.</li>
+</ul>
+</li>
+ 	<li>Fixed the crashes from displaying UI generated by HIVE SDK and executing games through push notifications in the case HIVE SDK v4.2.6 or v4.3.0 and later version is installed.</li>
+ 	<li>Fixed the crashes at the time of initializing push notification service in HIVE SDK since network environment or Google Play Services issues occur with earlier than HIVE SDK v4.3.0.</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>[UA] Fixed to collect cookies from safari on the devices with iOS 10 and later.</li>
+ 	<li>[Push] Fixed to expose the Title value input by using Local Push.
+<ul>
+ 	<li>The feature of Title exposure is available for iOS 8.2 and later.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+[/av_toggle_container]
+&nbsp;
+
+<h2 id="4.3">HIVE SDK v4.3</h2>
+
+<p>[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.3.1"]
+<h4 >SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.3.1.zip">HIVE_SDK_Unity_v4.3.1.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.3.1.zip">HIVE_SDK_Unreal_v4.3.1.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos_v4.3.1.zip">HIVE_SDK_Cocos_v4.3.1.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.3.1.zip">HIVE_SDK_Android_v4.3.1.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.3.1.zip">HIVE_SDK_iOS_v4.3.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h3>Release Notes</h3>
+<ul>
+ 	<li><strong>Version</strong>: v4.3.1</li>
+ 	<li><strong>Date</strong>: 2017-Aug-11</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[IAP] Added additionalInfo data API for purchase.</li>
+ 	<li>[UserEngagement] Unified callback structure of Android/iOS.</li>
+ 	<li>Added API to get country code.</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[Coupon] Improved SetReady API from UserEngagement Class to send the AdditionalInfo data from Promotion Class when using coupons.</li>
+</ul>
+</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>Fixed image display method on the HIVE Promotion Full Banner UI.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.3.0"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<td><strong>Unity®</strong></td>
+<td><a class="" href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.3.0.zip">HIVE_SDK_Unity_v4.3.0.zip</a></td>
+</tr>
+<tr>
+<td><strong>Unreal</strong></td>
+<td>Not Supported</td>
+</tr>
+<tr>
+<td><strong>Cocos2D-X</strong></td>
+<td>Not Supported</td>
+</tr>
+<tr>
+<td><strong>Android</strong></td>
+<td><a class="" href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.3.0.zip">HIVE_SDK_Android_v4.3.0.zip</a></td>
+</tr>
+<tr>
+<td><strong>iOS</strong></td>
+<td><a class="" href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.3.0.zip">HIVE_SDK_iOS_v4.3.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="release-notes">Release Notes</h3>
+<ul>
+ 	<li><strong>Version</strong>: 4.3.0</li>
+ 	<li><strong>Date</strong>: 2017-Jun-29</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[AuthV4] New Authentication System API:
+<ul>
+ 	<li>Integrated API system is now available to authenticate through diverse Identity Providers.</li>
+ 	<li>Added new feature to support authentication available even when error occurs.</li>
+</ul>
+</li>
+ 	<li>[UserEngagement] Improved as an independent system.</li>
+ 	<li>Applied common identifier.</li>
+ 	<li>Updated multi-language.</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>Third-party Marketing Tracking Analytics Library Update:
+<ul>
+ 	<li>Tune (Android) 4.10.1, Tune (iOS) 4.12.4.</li>
+ 	<li>Adjust (Android, iOS) 4.11.0.</li>
+</ul>
+</li>
+ 	<li>[IAP] Improved to cache Shop data by LocationCode.</li>
+</ul>
+</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>Fixed not to send the Referrer value, delivered by the first execution after installation, to Sandbox server.</li>
+ 	<li>Fixed to move to the market when HiveSocial opens other apps not installed.</li>
+ 	<li>[Analytics] Improved to deliver user ID (vid) when sending general events as well as Tune sale data.</li>
+ 	<li>Fixed to unlock the status of contacts for sync.</li>
+ 	<li>[Promotion] Fixed the layout of full banner.</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>[IAP] Fixed to send the completion data to Analytics after purchase success.</li>
+ 	<li>[URLConnection] Fixed not to send wrong values to User-Agent.</li>
+ 	<li>[Auth] Fixed to close local terms stored in the client after display.</li>
+ 	<li>[Promotion] Fixed not to send the failure callback after displaying Review popup successfully.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+[/av_toggle_container]
+&nbsp;
+
+<h2 id="4.2">HIVE SDK v4.2</h2>
+
+<p>[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.2.6"]
+<h4 >SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a class="" href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.2.6.zip">HIVE_SDK_Unity_v4.2.6.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a class="" href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.2.6.zip">HIVE_SDK_Android_v4.2.6.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a class="" href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.2.6.zip">HIVE_SDK_iOS_v4.2.6.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="release-notes">Release Notes</h3>
+
+<ul>
+    <li><strong>Version</strong>: v4.2.6</li>
+    <li><strong>Date</strong>: 2017-Jul-20</li>
+</ul>
+
+<h5>New Features</h5>
+
+<ul class="clList labelList">
+    <li>None</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>
+<ul>
+    <li>[Promotion] Added Google Advertising ID and IMEI as the identifier.</li>
+</ul>
+</li>
+</ul>
+
+<h5>Bug Fixes</h5>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>
+<ul>
+    <li>Fixed not to send the Referrer value, delivered by the first execution after installation, to Sandbox server.</li>
+    <li>Fixed to move to the market when HiveSocial opens other apps not installed.</li>
+    <li>[Analytics] Improved to deliver user ID (vid) when sending general events as well as Tune sale data.</li>
+    <li>Fixed to unlock the status of contacts for sync.</li>
+</ul>
+</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>
+<ul>
+    <li>[IAP] Fixed to send the purchase data to Marketing Attribution Tool after purchase success.</li>
+    <li>Fixed the feature of profile image update on iPad with iOS 7.</li>
+</ul>
+</li>
+</ul>
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.2.5"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.2.5.zip">HIVE_SDK_Unity_v4.2.5.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Android</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>iOS</th>
+<td>Not Supported</td>
+</tr>
+</tbody>
+</table>
+<h4></h4>
+<h4>Release Notes</h4>
+<ul>
+ 	<li><strong>Version</strong>: v4.2.5</li>
+ 	<li><strong>Date</strong>: 2017-Jun-20</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>[Analytics] Updated Adjust Library from 4.1.2 to 4.11.4 to send the orderId.
+<ul>
+ 	<li>Exception handling when Adjust 4.11 is not updated.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS </span>
+<ul>
+ 	<li>[IAP] Added the error code for the case in-app purchase restriction is activated (NOT_SUPPORTED).</li>
+ 	<li>[IAP] Improved the purchase restoring process.
+<ul>
+ 	<li>Added to send additional errors if in-app purchase is restricted.</li>
+ 	<li>Removed permanence product recovery logic, which was used when recovering an existing purchase, so that popups are exposed when installation and purchasing accounts do not match.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>[Analytics] Fixed to indicate the amount of sales with correct currency unit by locale.</li>
+ 	<li>[Social] Fixed to display message dialog, not the list when user checks 1:1 message.</li>
+</ul>
+</li>
+ 	<li><span class="targetLabel iOS">iOS </span>
+<ul>
+ 	<li>[IAP] Fixed the decimal point in the wrong place of item price.</li>
+ 	<li>[Promotion] Deleted the logic which automatically closed the Promotion view due to memory shortage.</li>
+</ul>
+</li>
+ 	<li><span class="targetLabel unity">Unity®</span>
+<ul>
+ 	<li>[IAP] Fixed to receive product data in iOS:
+<ul>
+ 	<li>Symptoms of not getting product information from iOS: An error occurred because the product information is transmitted to description parameter on Android and to productDescription parameter on iOS. Modified to pass it to productDescription parameter on both Android and iOS.</li>
+ 	<li>Changed IAP.description for Android as IAP.productDescription to match with that for iOS.</li>
+</ul>
+</li>
+ 	<li>Fixed the error from the feature of hiding Soft key with earlier version of KitKat (4.3).</li>
+ 	<li>Fixed crash on first install on Android device.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.2.4"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.2.4.zip">HIVE_SDK_Unity_v4.2.4.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.2.4.zip">HIVE_SDK_Android_v4.2.4.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.2.4.zip">HIVE_SDK_iOS_v4.2.4.zip</a></td>
+</tr>
+</tbody>
+</table>
+<h4></h4>
+<h4>Release Notes</h4>
+<ul>
+ 	<li><strong>Version</strong>: v4.2.4</li>
+ 	<li><strong>Date</strong>: 2017-May-22</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>Added Google Sign In feature.</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li>None</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>[HIVE Dialog] Fixed not to crash when the permission to access user contacts is already permitted for the retrial of contacts sync.</li>
+ 	<li>[Promotion] Fixed not to display transparent background on full banner.</li>
+ 	<li>[Promotion] Changed the text color of ‘Don’t show this again today’ on full banner (ARGB: FF666666).</li>
+ 	<li>[Promotion] Fixed not to display scroll bar on the full banners.</li>
+ 	<li>[Auth] Changed the background color of agreement screen on HIVE Terms to black.</li>
+</ul>
+</li>
+ 	<li><span class="targetLabel iOS">iOS </span>
+<ul>
+ 	<li>[IAP] Fixed to restore when server response error occurs.</li>
+ 	<li>[HIVE Dialog] Fixed not to crash after the access permission to contracts is permitted. (earlier than iOS 9.0)</li>
+ 	<li>[HIVE Dialog] Fixed the failure of sync with contract. (earlier than iOS 9.0)</li>
+ 	<li>[HIVE Dialog] Fixed to display preview when gallery image is selected. (earlier than iOS 8.0)</li>
+ 	<li>[Promotion] Fixed the display issue with full banner in iOS 7.</li>
+ 	<li>[Promotion] Fixed the display issue with landscape mode of full banner on iPad and iPad mini.</li>
+ 	<li>[Promotion] Fixed the crash with full banner close while landscape mode app runs on iPhone 5 with iOS 8.1 or 8.2.</li>
+ 	<li>[Promotion] Fixed the banner disposition with an access to the app again after exposing promotion and executing lock function simultaneously while landscape mode app runs.</li>
+ 	<li>[Promotion] Fixed the crash due to data shortage when using getAppInvitationData API.</li>
+ 	<li>[HIVE-Social] Fixed the sync failure with contracts in case of email or phone number with blank.</li>
+ 	<li>[AUTH] Fixed not to display "(null)" on the devices with the earlier version of iOS 8 when using chekMaintenance API.</li>
+</ul>
+</li>
+ 	<li><span class="targetLabel unity">Unity®</span>
+<ul>
+ 	<li>[Promotion] Fixed the callback sending data error of getAppInvitationData.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+
+[av_toggle title="HIVE SDK v4.2.3"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.2.3.zip">HIVE_SDK_Unity_v4.2.3.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Android</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>iOS</th>
+<td>Not Supported</td>
+</tr>
+</tbody>
+</table>
+<h4></h4>
+<h4>Release Notes</h4>
+<ul>
+ 	<li><strong>Version</strong>: v4.2.3</li>
+ 	<li><strong>Date</strong>: 2017-???-??</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li>None</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li>None</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>[HIVE Dialog] Fixed the unavailable MessageUI.</li>
+ 	<li>Fixed duplicate login with Facebook account.</li>
+ 	<li>Fixed the login error with Facebook account and the javascript feature on the client of HiveDialog for Android 4.2.x to 4.4.x (API Level 17 to 19).</li>
+</ul>
+</li>
+ 	<li><span class="targetLabel iOS">iOS </span>
+<ul>
+ 	<li>[Analytics] Fixed to restore when server response error occurs.</li>
+ 	<li>[IAP] Fixed the crash when restoring with the earlier version of iOS 8.0.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+
+[av_toggle title="HIVE SDK v4.2.2"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.2.2.zip">HIVE_SDK_Unity_v4.2.2.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.2.2.zip">HIVE_SDK_Android_v4.2.2.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.2.2.zip">HIVE_SDK_iOS_v4.2.2.zip</a></td>
+</tr>
+</tbody>
+</table>
+<h4></h4>
+<h4>Release Notes</h4>
+<ul>
+ 	<li><strong>Version</strong>: v4.2.2</li>
+ 	<li><strong>Date</strong>: 2017-???-??</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li>None</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li>None</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>Fixed the delivery logic of Third-party Market Tracking purchase history.</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+
+[av_toggle title="HIVE SDK v4.2.1"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.2.1.zip">HIVE_SDK_Unity_v4.2.1.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.2.1.zip">HIVE_SDK_Android_v4.2.1.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.2.1.zip">HIVE_SDK_iOS_v4.2.1.zip</a></td>
+</tr>
+</tbody>
+</table>
+<h4></h4>
+<h4>Release Notes</h4>
+<ul>
+ 	<li><strong>Version</strong>: v4.2.1</li>
+ 	<li><strong>Date</strong>: 2017-Apr-05</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>Updated Facebook SDK from v4.13.1 to v4.18.0.</li>
+ 	<li>Updated Google Play Services Games from v9.2.1 to v10.0.1+.</li>
+ 	<li>Added the API to share text or media with other apps.
+<ul>
+ 	<li>Use this feature to send recommendation messages for the game in HIVE User Acquisition program and other use.</li>
+ 	<li>Text sharing: PlatformHelper.shareText()</li>
+ 	<li>Media sharing: PlatformHelper.shareMedia()</li>
+</ul>
+</li>
+</ul>
+<ul>
+ 	<li>Added the API to return HIVE Profile as vid lists.
+<ul>
+ 	<li>SociHive.getProfiles(vidList[], Callback)</li>
+</ul>
+</li>
+</ul>
+<ul>
+ 	<li>Added the API to return login status with Facebook account.
+<ul>
+ 	<li>Distinguished the login status by the existence of Facebook AccessToken.</li>
+ 	<li>boolean SocialFacebook.isLogin()</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>Added the data of products in a series in the product information of HIVE IAP v2.</li>
+ 	<li>Added the device model field in the payment log of HIVE IAP v2.</li>
+ 	<li>Updated result callback of purchase, re-payment in HIVE IAP v2:
+<ul>
+ 	<li>Return the purchase and transaction ID of the successful purchase.
+onIAPPurchase(ResultAPI result, Product product, String iapTransactionId)</li>
+ 	<li>Return the purchase and transaction ID of the successful re-payment.
+onIAPRestore(ResultAPI result, Product[] product, String[] iapTransactionId)</li>
+</ul>
+</li>
+ 	<li>Changed the actions of User Engagement-related features:
+<ul>
+ 	<li>Changed to configure the starting time of Engagement Event feature by API.
+boolean Auth.setEngagementReady(boolean isReady)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>Fixed to display Facebook login button on the login screen.</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>
+<ul>
+ 	<li>Fixed the network errors for using deep link coupons.</li>
+ 	<li>Fixed to read the correct settings for display in Chinese not in English.</li>
+ 	<li>Fixed to display Back button on Notice Popup, Promotion Banner and End/Review Popup.</li>
+ 	<li>Fixed to display the invisible part of the screen which describes access authority to user device.</li>
+ 	<li>Fixed to make new lines in the message of popups such as Maintenance Popup, Restriction Popup.</li>
+ 	<li>Fixed not to retry login after sign-up. (4.2.0)</li>
+ 	<li>Fixed the crash when using camera with Android 7.0 and later. (4.2.0)</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>
+<ul>
+ 	<li>Fixed the freezing purchase status when IAP server failed to respond in the middle of purchase process with HIVE IAP v2.</li>
+ 	<li>Fixed the error with re-payment logic when forced termination or other features run in the middle of purchase.</li>
+ 	<li>Fixed the crash when using the gallery feature on iPad.</li>
+ 	<li>Fixed the crash after request from HIVE to access the camera function.</li>
+ 	<li>Added Back to Game button on Data Select UI for a member user converted from a guest.</li>
+ 	<li>Fixed the criterion for the screen type determination logic of promotion banners from device-base to game-base.</li>
+ 	<li>Fixed the resource error when processing build</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+
+[av_toggle title="HIVE SDK v4.2.0"]
+<h4>SDK Downloads</h4>
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.2.0.zip">HIVE_SDK_Unity_v4.2.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>Not Supported</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos_v4.2.0.zip">HIVE_SDK_Cocos_v4.2.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.2.0.zip">HIVE_SDK_Android_v4.2.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.2.0.zip">HIVE_SDK_iOS_v4.2.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+<h4></h4>
+<h4>Release Notes</h4>
+<ul>
+ 	<li style="list-style-type: none;">
+<ul>
+ 	<li style="list-style-type: none;">
+<ul>
+ 	<li><strong>Version</strong>: v4.2.0</li>
+ 	<li><strong>Date</strong>: 2017-Mar-30</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>New Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>Supported products in a series with HIVE IAP v2.</li>
+ 	<li>Improved implementation method of Auth (Engagement).</li>
+ 	<li>Added API:
+<ul>
+ 	<li>Added the feature of PlatformHelper.
+<ul>
+ 	<li>Supported the general use of UA Share feature.</li>
+ 	<li>PlatformHelper.shareText(…)</li>
+ 	<li>PlatformHelper.shareMedia(…)</li>
+</ul>
+</li>
+ 	<li>Added SocialHive - getProfiles() API.
+<ul>
+ 	<li>Obtained the HIVE user lists through vid lists of each user.</li>
+ 	<li>SociHive.getProfiles(vidList[] , Callback)</li>
+</ul>
+</li>
+ 	<li>Added SocialFacebook - isLogin() API.
+<ul>
+ 	<li>Returned the login status by checking whether the current value of Facebook AccessToken exists.</li>
+ 	<li>boolean SocialFacebook.isLogin()</li>
+</ul>
+</li>
+ 	<li>Added Auth - setEngagementReady() API (Modifying significant operation).
+<ul>
+ 	<li>Processed EngagementEvent which immediately runs through login after sending Ready signal from Application.</li>
+ 	<li>boolean Auth.setEngagementReady(boolean isReady)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Changed Features</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>[IAP] Changed the result callback of Purchase and Restore.
+<ul>
+ 	<li>AS-IS
+1) onIAPPurchase(ResultAPI result)
+2) onIAPRestore(ResultAPI result)</li>
+ 	<li>TO-BE
+1) onIAPPurchase(ResultAPI result, Product product, String iapTransactionId)
+2) onIAPRestore(ResultAPI result, Product[] product, String[] iapTransactionId)</li>
+ 	<li>Remarks
+1) Send the payment ID as well as product information after purchase success.
+2) Send the payment ID as well as product information in an array after restoring the purchase list.</li>
+</ul>
+</li>
+ 	<li>[IAP] Changes in product model:
+<ul>
+ 	<li>Added product data in a series.
+[Field Added]
+salesStartUTC (long): The time product is valid. Unlimited if it is -1.
+salesExpireUTC (long): The time product is expired. Unlimited if it is -1.
+productType (string): The type of product: general (General product), series (Series product)
+SeriesInfo (inner class): Series product data, The field does not exist unless series product.
+seriesSeq (int): The order of product in a series.
+seriesTotalCount (int): The number of product in a series.
+seriesPurchaseStatus (int): 1: Before purchase, 2: Purchase complete.
+request_type (int): 1: Purchase, 2: Restore.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5>Bug Fixes</h5>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+<ul>
+ 	<li>Fixed to display Facebook login button when executing HiveLogin.</li>
+</ul>
+</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android </span>
+<ul>
+ 	<li>[Engagement] Fixed the network error for using coupons.</li>
+ 	<li>Fixed to read the correct settings for display in Chinese (Simplified, Traditional) from the default value (English).</li>
+ 	<li>Fixed to display Back button on Notice Popup, Promotion Banner and End/Review Popup. (HotFix 4.1.2)</li>
+ 	<li>Fixed the crash with API Level 25 (7.1). (HotFix 4.1.1)</li>
+</ul>
+</li>
+ 	<li><span class="targetLabel iOS">iOS </span>
+<ul>
+ 	<li>[IAP] Fixed the freezing purchase status when IAP server failed to respond in the middle of purchase process with HIVE IAP.</li>
+ 	<li>[SocialHive] Fixed the crash when using the gallery feature on iPad. (HotFix 4.1.3)</li>
+ 	<li>[SocialHive] Fixed the crash after user denies or accepts the request from HIVE to access the camera function. (HotFix 4.1.3)</li>
+ 	<li>[Auth] Added GNB (Back to Game) button on the Select UI. (HotFix 4.1.3)</li>
+ 	<li>[IAP] Fixed the errors with purchase restoring logic when forced termination or other features run in the middle of purchase process. (HotFix 4.1.3)</li>
+ 	<li>[Promotion] Fixed the BannerType Orientation determination logic. (HotFix 4.1.3)</li>
+ 	<li>Fixed the wrong part of HIVE_SDK_Resource.bundle as the state of common build. (HotFix 4.1.3)</li>
+</ul>
+</li>
+</ul>
+[/av_toggle]
+[/av_toggle_container]
