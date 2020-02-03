@@ -5274,17 +5274,477 @@ HIVE SDK v4.x 최초 배포입니다.
 
 &nbsp;
 
+<h2 id="1.17">HIVE SDK v1.17</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v1.17.2"]
+#### V1.17.2.0 (Oct 08, 2019)
+
+##### New Features
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics] 퍼널 로그 전송 기능 추가
+* [ActiveUser] 권한 고지 팝업 노출 여부를 제어하는 기능 추가
+* [Promotion] 네트워크가 느린 지역에서도 프로모션 배너를 볼 수 있도록 HIVE Promotion 성능 개선
+* 모든 웹뷰에서 더이상 쿠키를 사용하지 않도록 신규 로직 생성
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [ActiveUser] 원하는 시점에 권한을 요청하는 기능 추가
+* [IAP v1] 신규 마켓 Samsung Galaxy Store 지원
+   * Samsung Galaxy Store IAP SDK v5.1.0 적용
+ [/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [TrackingModule] Singular를 이용해 더 많은 매출 정보를 전송하도록 개선하고, 매출 지표의 유니크 식별자 역할을 하는 해시값을 전달하도록 변경
+* [Peppermint] 사용 중인 Facebook SDK 버전을 변경
+   * 변경 전: [Android] v4.39.0, [iOS] v4.39.1
+   * 변경 후: [Android] v5.4.0, [iOS] v5.4.1 
+* [TrackingModule] 사용 중인 Adjust 라이브러리 버전을 변경
+   * 변경 전: [Android] v4.17.0, [iOS] v4.17.2
+   * 변경 후: [Android] v4.18.1, [iOS] v4.18.2 
+* [TrackingModule] 사용 중인 Singular 라이브러리 버전을 변경
+   * 변경 전: [Android] v7.4.2, [iOS] v8.4.2
+   * 변경 후: [Android] v9.2.5, [iOS] v9.2.1
+* [Push] Push 신규 API 적용 및 내부 로직 개선
+   * 푸시 공지 및 야간 공지 값 반영의 정확도 개선
+   * 푸시 토큰 기반의 정보 반영
+* [Peppermint] Facebook 데이터를 약관 동의 이후에 통신하도록 로직 개선
+* [Promotion] 프로모션 서버로 CPI 다운로드 로그를 추가 전송하도록 변경
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [ModuleManager] 에뮬레이터 탐지 정확도 개선
+* [Push] Google API 키를 암호화하여 사용하도록 개선
+* Android 10을 대상으로 한 앱에서 정상적인 동작 보장
+* [Peppermint] QQ 앱이 설치되지 않아도 QQ 로그인 정상 작동 확인 및 반영
+* [ActiveUser] 약관 상세보기 페이지 이동 후 Back 키 동작 시 약관 종료가 아닌 뒤로가기를 실행하도록 변경
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* iOS 13을 대상으로 한 앱에서 정상적인 동작 보장
+* 클라이언트에 저장되는 모든 속성을 iCloud 백업 대상에서 제외하도록 변경
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [InApp] 원스토어 IAP v5에서 마켓 구매 복구 상황 시 간헐적으로 아이템 소모를 즉시 처리하지 않는 오류 수정
+* 단말 언어가 zh로 전달되는 단말에 한해 zh-hans/zh-hant로 변환 후 전달하도록 수정
+* [ActiveUser] 앱 설치 후 권한 고지 정보 보기를 요청하고 초기화하면 권한 고지 페이지가 노출되는 오류 수정
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Promotion] 프로모션 배너의 배경(background)이 검게 나타나는 오류 수정
+* [Promotion] 프로모션 배너에서 전체 화면(Full screen)으로 전환된 후 webview delegate 속성이 누락되는 오류 수정
+* 디버그 빌드에서 리모트 푸시를 탭하면 앱으로 이동 후 크래시가 발생하는 오류 수정
+* [ActiveUser] 약관 로그 전송 시 간헐적으로 DID가 전송되지 않는 오류 수정
+
+[/markdown]</li></ul>
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v1.17.2.0 기준)
+* <span style="color: blue;">Facebook SDK (Android) v5.4.0</span>
+* <span style="color: blue;">Facebook SDK (iOS) v5.4.1</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.4.0
+* Android Support Library (Android) v27.1.0+
+* QQ Open SDK (Android, iOS) v3.3.3
+
+**IAP**
+
+* <span style="color: blue;">Galaxy Store (Android) v5.1.0</span>
+* ONE store (Android) IAP v4 (세부 버전 v16.05.00)
+* ONE store (Android) IAP v5 (세부 버전 v17.02.00)
+* WeChat (Android) v5.0.8
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * <span style="color: blue;">Android: v4.18.1</span>
+   * <span style="color: blue;">iOS: v4.18.2</span>
+* Singluar
+   * <span style="color: blue;">Android: v9.2.5</span>
+   * <span style="color: blue;">iOS: v9.2.1</span>
+[/markdown]
+&nbsp;
+[/av_toggle]
+[av_toggle title="HIVE SDK v1.17.1"]
+<h4>V1.17.1.1 (Aug 26, 2019)</h4>
+
+<h5>New Features</h5>
+
+<ul>
+<li>없음</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul>
+<li>없음</li>
+</ul>
+
+<h5>Bug Fixes</h5>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* HIVE SDK v1.17.1에서 제거한 AppInfo 라이브러리를 SDK에 다시 추가
+   * Unity AppInfoBridge.cs 파일에서 iOS 관련 기능을 복구
+[/markdown]</li></ul>
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v1.17.1.1 기준)
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* <span style="color: blue;">Firebase Library (Android) v15.0.1+</span>
+* <span style="color: blue;">GooglePlay Services Game, Auth (Android) v15.0.1+</span>
+* <span style="color: blue;">Google Sign-In SDK (iOS) v4.4.0</span>
+* <span style="color: blue;">Android Support Library (Android) v27.1.0+</span>
+* QQ Open SDK (Android, iOS) v3.3.3
+
+**IAP**
+
+* ONE store (Android) IAP v4 (세부 버전 v16.05.00)
+* ONE store (Android) IAP v5 (세부 버전 v17.02.00)
+* WeChat (Android) v5.0.8
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * <span style="color: blue;">Android: v4.17.0</span>
+   * <span style="color: blue;">iOS: v4.17.2</span>
+* <span style="color: blue;"><del>PartyTrack</del></span>
+   * <span style="color: blue;"><del>Android: v1.17.1</del></span>
+   * <span style="color: blue;"><del>iOS: v1.88</del></span>
+* Singluar
+   * <span style="color: blue;">Android: v7.4.2</span>
+   * <span style="color: blue;">iOS: v8.4.2</span>
+
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V1.17.1.0 (Jun 07, 2019)
+##### New Features
+
+* 없음
+
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* iOS 13에서 프로모션 페이지가 간헐적으로 크래시 발생하는 현상 수정
+* iOS 13에서 HIVE 웹뷰가 항상 전체화면으로 노출되도록 수정 [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* 초기화(`C2SModuleSocial.Initialize`) 시 appid를 설정하지 않으면 HIVE 샘플앱 appid가 설정되는 현상 수정
+   * SDK v1.17.0에서 발생
+[/markdown]</li>
+</ul>
+
+&nbsp;
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v1.17.1 기준)
+
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* Firebase Library (Android) <span style="color: blue;">v15.0.1+</span>
+* GooglePlay Services Game, Auth (Android) <span style="color: blue;">v15.0.1+</span>
+* Google Sign-In SDK (iOS) <span style="color: blue;">v4.4.0</span>
+* Android Support Library (Android) <span style="color: blue;">v27.1.0+</span>
+* QQ Open SDK (Android, iOS) v3.3.3
+
+**IAP**
+
+* ONE store (Android) IAP v4 (세부 버전 v16.05.00)
+* ONE store (Android) IAP v5 (세부 버전 v17.02.00)
+* WeChat (Android) v5.0.8
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * Android: <span style="color: blue;">v4.17.0</span>
+   * iOS: <span style="color: blue;">v4.17.2</span>
+* <span style="color: blue;"><del>PartyTrack</del></span>
+   * <span style="color: blue;"><del>Android: v1.17.1</del></span>
+   * <span style="color: blue;"><del>iOS: v1.88</del></span>
+* Singluar
+   * Android: <span style="color: blue;">v7.4.2</span>
+   * iOS: <span style="color: blue;">v8.4.2</span>
+[/markdown]
+&nbsp;
+[/av_toggle]
+[av_toggle title="HIVE SDK v1.17.0"]
+<h4>V1.17.0.0 (Jun 07, 2019)</h4>
+
+<h5>New Features</h5>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]
+
+* 라이브러리 배포로 Android Studio 환경을 지원 [/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel common">All</span>[markdown]
+
+* HIVE UI가 다양한 해상도에 대응하도록 벡터 드로잉 리소스를 적용
+   * [ActiveUser] 권한 고지
+   * [Promotion] 전면 배너, 커스텀 뷰
+* [ActiveUser] HIVE 권한 고지 UI를 커스터마이징할 수 있도록 변경
+   * HIVE 권한 고지 정보를 반환하는 기능 추가
+* [ActiveUser] 앱 접근 권한에 동의하지 않아도 서비스 이용에 영향이 없다는 내용을 권한 고지 문구에 추가
+* [Promotion] 프로모션 팝업에서 YouTube 영상 옵션을 설정할 수 있도록 변경
+* [UserEngagement] Engagement 기능의 필수 파라미터 외에 추가 파라미터도 전달할 수 있도록 변경
+* [TrackingModule] 사용 중인 Adjust 라이브러리를 최신 버전으로 변경
+* [TrackingModule] 사용 중인 Singular 라이브러리를 최신 버전으로 변경
+
+
+| 라이브러리 이름 | 대상 플랫폼 | 이전 버전 | 변경 버전 |
+| ------------- | ----------- | --------- | --------- |
+| Adjust | Android | 4.14.0 | 4.17.0 |
+| Adjust | iOS | 4.14.0 | 4.17.2 |
+| Singular | Android | 7.4.0 | 7.4.2 |
+| Singular | iOS | 8.3.4 | 8.4.2 |
+
+* [TrackingModule] 서비스가 종료된 PartyTrack을 Attribution Tool 목록에서 제거 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]
+
+* 컷아웃 디자인 형태의 Android 기기 해상도에 대응하도록 지원
+* GooglePlay Services 라이브러리 버전을 변경
+   * 변경 전: v11.2.0
+   * 변경 후: v15.0.1+
+* Eclipse 환경 지원 종료 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Push] iOS 12 이상 기기에서 Provisional Authorization를 사용
+* Google Sign-In SDK 라이브러리를 최신 버전으로 변경
+   * 변경 전: v4.1.2
+   * 변경 후: v4.4.0 [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Promotion] 잠금 화면을 설정하지 않은 기기 디스플레이가 대기 상태일 때, 웹뷰의 미디어가 일시 정지하지 않고 계속 재생되는 오류 수정
+* [ActiverUser] 고지할 권한이 없을 때는 권한 고지 UI가 노출되지 않도록 오류 수정
+* [InApp] 원스토어 IAP v5에서 아이템 정보를 받아오는 도중 실패했을 때 일부 예외 상황에 대한 콜백을 추가
+* [InApp] 원스토어 IAP v5에서 Restore API 호출로 원스토어 서버에 복구를 요청할 때 크래시가 발생하는 오류 수정
+* [ActiveUser] 리퍼러 정보를 반복 수신하여 앱을 실행할 때마다 약관이 노출되는 오류 수정 
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Peppermint] 웹뷰 상단 버튼의 크기를 네비게이션 바 높이와 동일한 비율로 늘어나도록 수정
+* [Push] 식별자 정보를 전달하는 데이터 타입 변경
+* [Push] 신규 설치 유저에게 최초 약관 정보를 전달할 때 야간 알림(night_push) 기본 설정이 수신하지 않음(No)으로 전달되는 오류 수정 
+[/markdown]</li></ul>
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v1.17.0 기준)
+
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* <span style="color: blue;">Firebase Library (Android) v15.0.1+</span>
+* <span style="color: blue;">GooglePlay Services Game, Auth (Android) v15.0.1+</span>
+* <span style="color: blue;">Google Sign-In SDK (iOS) v4.4.0</span>
+* <span style="color: blue;">Android Support Library (Android) v27.1.0+</span>
+* QQ Open SDK (Android, iOS) v3.3.3
+
+**IAP**
+
+* ONE store (Android) IAP v4 (세부 버전 v16.05.00)
+* ONE store (Android) IAP v5 (세부 버전 v17.02.00)
+* WeChat (Android) v5.0.8
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * <span style="color: blue;">Android: v4.17.0</span>
+   * <span style="color: blue;">iOS: v4.17.2</span>
+* <span style="color: blue;"><del>PartyTrack</del></span>
+   * <span style="color: blue;"><del>Android: v1.17.1</del></span>
+   * <span style="color: blue;"><del>iOS: v1.88</del></span>
+* Singluar
+   * <span style="color: blue;">Android: v7.4.2</span>
+   * <span style="color: blue;">iOS: v8.4.2</span>
+
+[/markdown]
+&nbsp;
+[/av_toggle]
+[/av_toggle_container]
+
+&nbsp;
+
 <h2 id="1.16">HIVE SDK v1.16</h2>
 [av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v1.16.4"]
+<h4>V1.16.4.0 (Mar 13, 2019)</h4>
 
+<h5>New Features</h5>
 
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
 
+* 푸시 v4 API 적용 [/markdown]
 
+<aside class="important"><p class="">
+<strong>싱글 푸시 v1을 사용하는 게임에서 HIVE SDK를 v1.16.4 이후 버전으로 업그레이드하려면 싱글 푸시 v4의 서버 API를 함께 적용하세요.</strong>
+</p></aside>
+</li></ul>
 
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
 
+* Android Studio용 라이브러리 배포 [/markdown]</li></ul>
 
-[av_toggle_container mode='toggle' initial='0']
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* HIVE UI가 다양한 해상도에 대응하도록 벡터 드로잉 리소스를 적용
+   * [ActiveUser] 약관 동의 페이지, 약관 다시보기, 점검/공지/업데이트 팝업
+   * [Peppermint] HIVE 웹뷰
+   * [HIVE SDK] 유저 전환 페이지, 제재 팝업
+* 패드 해상도에 맞춰 UI 디자인 개선
+   * [ActiveUser] 점검/공지/업데이트 팝업
+   * [HIVE SDK] 제재 팝업
+* 사용 중인 Facebook SDK 버전을 변경
+   * 변경 전: [Android/iOS] v4.38.0
+   * 변경 후: [Android] v4.39.0, [iOS] v4.39.1 [/markdown]
+&nbsp;
+<aside class="important"><p class="">
+<strong>하위 버전 SDK에서 업데이트 시 주의사항</strong>
+<ul>
+<li><strong>Android: 패키지 내 리소스로 교체 후 빌드합니다.</strong></li>
+<li><strong>iOS: 번들 리소스를 삭제한 후 다시 업로드합니다.</strong></li>
+</ul></p></aside>
+</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Peppermint] Google+ 서비스가 종료됨에 따라 Google 포스팅 기능을 제거
+* Google Inapp 구매 시 환불 어뷰징 방지를 위한 Account Id를 구매 정보에 추가할 수 있도록 Social Initialize에 Inapp 옵션으로 추가 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* 로컬 푸시에서 title 값이 노출되도록 변경 [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* QQ 라이브러리를 포함하지 않아도 Facebook과 Google에 로그인할 수 있도록 수정 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* 권한 고지 팝업이 게임 화면 방향과 동일하게 노출되지 않는 오류 수정 
+[/markdown]</li></ul>
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v1.16.4 기준)
+
+* <span style="color: blue;">Facebook SDK (Android) v4.39.0</span>
+* <span style="color: blue;">Facebook SDK (iOS) v4.39.1</span>
+* Firebase Library (Android) v11.2.0
+* GooglePlay Services Game, Auth (Android) v11.2.0
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.1.0
+* QQ Open SDK (Android, iOS) v3.3.3
+
+**IAP**
+
+* ONE store (Android) IAP v4 (세부 버전 v16.05.00)
+* ONE store (Android) IAP v5 (세부 버전 v17.02.00)
+* WeChat (Android) v5.0.8
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+   * Adjust
+      * Android: v4.14.0
+      * iOS: v4.14.0
+   * PartyTrack
+      * Android: v1.16.1
+      * iOS: v1.88
+   * Singluar
+      * Android: v7.4.0
+      * iOS: v8.3.4
+[/markdown]
+&nbsp;
+
+[/av_toggle]
 [av_toggle title="HIVE SDK v1.16.3"]
 <h4>SDK 다운로드하기</h4>
 <table>
@@ -5651,7 +6111,7 @@ HIVE SDK v4.x 최초 배포입니다.
   <li><span class="targetLabel iOS">iOS</span>
 [markdown]
 
-*  [Peppermint] Unity 기반 게임을 iOS 12에서 실행 도중 카메라를 사용했을 때 게임 화면과 카메라 UI가 겹치는 현상 수정
+* [Peppermint] Unity 기반 게임을 iOS 12에서 실행 도중 카메라를 사용했을 때 게임 화면과 카메라 UI가 겹치는 현상 수정
 * [HIVEPromotion] 커스텀 뷰가 아닌 프로모션 페이지에서 동영상을 재생할 때 동영상 실행/정지(open/close) 콜백이 충돌하는 현상 수정 [/markdown]</li></ul>
 [/av_toggle]
 [/av_toggle_container]
