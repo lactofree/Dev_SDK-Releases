@@ -10,79 +10,6 @@ The old version of HIVE SDK is available to download in this page. See and check
 </ul>
 -->
 
-<h2 id="4.12">HIVE SDK v4.12</h2>
-[av_toggle_container mode='toggle' initial='0']
-[av_toggle title="HIVE SDK v4.12.0"]
-[markdown]
-
-* Released: 2019-Sep-04
-
-##### New Features
-
-* None
-
-##### Changed Features
-[/markdown]
-
-<ul class="clList labelList">
-  <li><span class="targetLabel android">Android</span>[markdown]
-
-* [IAP v4] Supported to use the Google Play Billing Library 2.0. 
-   * Available to show discount prices.
-      * Available to show original prices by using displayOriginalPrice and originalPrice field of IAPV4Product.
-      * Available to check image URL by using iconURL field of IAPV4Product after setting icon image of each item.
-   * Automatically refunded if the result of implementing `TransactionFinish()` method in the **IAPV4** class is not success within three days.
-   * Added pending state to the result of implementing `purchase()` method in the **IAPV4** class.[/markdown]</li></ul>
-
-[markdown]
-##### Bug Fixes
-
-* None [/markdown]
-&nbsp;
-<hr class="guide_line_1" />
-[markdown]
-##### Version of third-party Libraries for HIVE SDK v4.12.0
-
-* Facebook SDK (Android) v4.39.0
-* Facebook SDK (iOS) v4.39.1
-* Firebase Library (Android) v15.0.1+
-* GooglePlay Services Game, Auth (Android) v15.0.1+
-* Google Sign-In SDK (iOS) v4.1.2
-* <span style="color: blue;">Google Play Billing (Android) v2.0.0</span>
-* Android Support Library (Android) v27.0.1+
-
-**IDP**
-
-* QQ (Android) v2.0.2 (r5961)
-* QQ (iOS) v1.0.0
-* VK (Android) v1.6.9
-* VK (iOS) v1.4.6
-* WeChat (Android) v1.4.0
-* WeChat (iOS) v1.7
-
-**IAP**
-
-* ONE Store (Android) v17.02.00
-* ONE Store (Android) v16.05.00
-* WeChat (Android) v1.4.0
-
-**Push**
-
-* Jpush (Android) v1.7.2
-
-**Marketing Tracking Analytics**
-
-* Adjust (Android) v4.14.0
-* Adjust (iOS) v4.14.1
-* Singular (Android) v7.4.2
-* Singular (iOS) v8.4.2
-[/markdown]
-[/av_toggle]
-[/av_toggle_container]
-
-&nbsp;
-
-
 <h2 id="4.11">HIVE SDK v4.11</h2>
 [av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.7"]
@@ -518,6 +445,7 @@ The old version of HIVE SDK is available to download in this page. See and check
 [/markdown]
 [/av_toggle]
 [av_toggle title="HIVE SDK v4.11.5"]
+[markdown]
 #### V4.11.5.2 (May 30, 2019)
 
 ##### New Features
@@ -525,7 +453,7 @@ The old version of HIVE SDK is available to download in this page. See and check
 * None
 
 ##### Changed Features
-
+[/markdown]
 <ul class="clList labelList">
   <li><span class="targetLabel android">Android</span>[markdown]
 
