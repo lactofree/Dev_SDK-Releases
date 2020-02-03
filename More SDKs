@@ -276,7 +276,7 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 * [Auth v4] 권한 고지 항목 기본값에서 주소록 권한 노출을 제외 [/markdown]</li></ul>
 
 &nbsp;
-
+x
 
 
 
@@ -1217,6 +1217,9 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 [/av_toggle]
 [/av_toggle_container]
 
+&nbsp;
+
+
 <h2 id="4.10">HIVE SDK v4.10</h2>
 
 [av_toggle_container mode='toggle' initial='0']
@@ -1246,7 +1249,6 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 </tr>
 </tbody>
 </table>
-[markdown]
 ### Release Notes
 
 * 버전: v4.10.4
