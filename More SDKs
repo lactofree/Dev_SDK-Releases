@@ -19,13 +19,576 @@
 -->
 
 <h2 id="4.11">HIVE SDK v4.11</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.11.7"]
+[markdown]
+#### V4.11.7.3 (Oct 04, 2019)
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>
+[markdown]
+* [Auth v1] 서버 통신 오류로 로그인이 어려울 경우, 일부 기능을 제한하고 기존 로그인 계정을 사용할 수 있는 기능 제공
+   * **Auth** 클래스의 `setEmergencyMode()` 메서드를 사용해 활성화되면 `true`를 응답으로 반환
+   * **Auth** 클래스의 `getAccount()` 메서드로 기존 로그인 계정의 정보 획득
+   * 사용 불가 기능: Auth v1, Social, UE, UA, NU
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4/ProviderApple] iOS 13 버전부터 사용 가능한 Apple Sign-In 인증 추가 <span style="font-size: 8pt;"><a href="../../../../dev4/porting-building-hive/ios-xcode/#idp-apple">자세히</a></span>
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics] 사용 중인 Adjust 라이브러리를 변경
+   * 변경 전: [Android] v4.14.0, [iOS] v4.14.1
+   * 변경 후: [Android] v4.18.1, [iOS] v4.18.1
+* [Analytics] 사용 중인 Singular 라이브러리를 변경
+   * 변경 전: [Android] v7.4.2, [iOS] v8.4.2
+   * 변경 후: [Android] v9.2.5, [iOS] v9.2.1
+* [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] 사용 중인 Facebook SDK 버전을 변경 
+   * 변경 전: [Android] v5.0.0, [iOS] 5.0.1
+   * 변경 후: [Android] v5.5.1, [iOS] v5.6.0
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] 듀얼스크린 기기에서 발생하는 이상 동작 수정
+* [Auth v4/ProviderGoogle] Google Provider로 로그인했을 때 Google Play Games의 PlayerID와 ServerAuthCode를 확인할 수 있는 API를 추가
+   * **ProviderGoogle** 클래스의 `getGooglePlayerId()` 메서드를 사용
+* [Auth v1] 약관 팝업의 상세보기 화면에서 돌아가기(Back) 키를 탭했을 때 이전 화면으로 정상 이동하도록 변경
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] iOS 13 버전부터 사용 가능한 다크모드 지원
+* [Auth v4/ProviderApple] iOS 13 기기에서 Game Center 실행 취소를 두 번 이상 탭하더라도 취소 응답을 정상 처리하도록 변경
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* 없음
+
+
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v4.11.7.3 기준)
+
+* <span style="color: blue;">Facebook SDK (Android) v5.5.1</span>
+* <span style="color: blue;">Facebook SDK (iOS) v5.6.0</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Google Play Billing (Android) v1.2.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE store (Android) v17.02.00
+* ONE store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* <span style="color: blue;">Adjust (Android) v4.18.1</span>
+* <span style="color: blue;">Adjust (iOS) v4.18.1</span>
+* <span style="color: blue;">Singular (Android) v9.2.5</span>
+* <span style="color: blue;">Singular (iOS) v9.2.1</span>
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.11.7.2 (Aug 27, 2019)
+##### New Features
+
+* 없음
+
+
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v1/Auth v4/SocialFacebook] Facebook의 개인정보 보호 권고사항에 따라 사용 중인 Facebook SDK 버전을 변경
+   * 변경 전: [Android] v4.39.0, [iOS] v4.39.1
+   * 변경 후: [Android] v5.0.1, [iOS] v5.0.1
+* [Analytics] 리모트 로깅에 사용하는 카테고리 이름 변경 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] Android Q 단말에서 권한 고지를 정상 노출하도록 변경 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] iOS 13 이상에서 HIVE 다이얼로그 창이 페이지(Page sheet) 형태가 아닌 전체 화면(Full screen)으로 노출되도록 변경 [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] 로컬 푸시 사용 시 Inbox 또는 BigText 스타일로 지정하더라도 Normal 스타일로 노출되는 오류 수정
+   * HIVE SDK v4.0.0 이상 모든 버전에서 발생
+* [Push] 푸시 토큰 생성을 목적으로 사용하는 Google API Key 값을 노출하지 않도록 수정 
+   * HIVE SDK v4.8.3 이상 버전 중 FCM으로 변경한 SDK에서 발생
+* [Promotion] COPPA를 적용했을 때 종료 팝업에 빈 버튼이 노출되는 오류 수정 
+   * HIVE SDK v4.11.7 이상에서 발생
+* [Promotion] 동영상 재생 시작 시 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.11.7 이상에서 발생
+* [Auth v1/Auth v4/Plugin] requestPermissionViewData API의 결과 값에서 공통 항목을 Permission에 포함해 전달하는 오류 수정
+   * HIVE SDK v4.11.7 이상에서 발생 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [IAP v4] restore API를 호출하면 현재 HIVE IAP 서버에서 관리 중인 상품의 영수증만 전달하도록 변경
+   * HIVE SDK v4.11.6 이상에서 발생
+* [IAP v4] 구매 로그 전송 시 간헐적으로 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.5.0 이상 모든 버전에서 발생 
+* [Auth v1] Google 로그인 시 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.11.7 이상에서 발생 
+[/markdown]</li></ul>
+
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.11.7.1 (Jun 24, 2019)
+##### New Features
+
+* 없음
+
+##### Changed Features
+
+* 없음
+
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* 웹뷰 로딩이 완료되기 전에 다이얼로그 창을 닫을 경우 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.11.7에서 발생
+* [Auth v4] `showSignIn()` 메서드를 이용해 Facebook이나 Google Play Games 로그인을 시도했을 때 정상 동작하지 않는 오류 수정
+   * HIVE SDK v4.11.7에서 발생
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Plugin/Unity/Auth v4/Auth v4 Helper] `showGameCenterLoginCancelDialog()` 메서드의 결과 콜백이 전달되지 않는 오류 수정
+   * HIVE SDK v4.7.0 이상 모든 버전에서 발생
+* [Auth v4] `showSignIn()` 메서드를 이용해 Game Center 로그인을 시도했을 때 실패하거나 취소되는 경우에는 GameCenterLoginCancelDialog를 더이상 자동 노출하지 않도록 수정
+   * HIVE SDK v4.7.0 이상 모든 버전에서 발생 
+* [Auth v4/Auth v1] 점검 팝업이 노출된 상태에서 **닫기** 버튼을 선택하면 결과 값을 전달하지 않는 오류 수정
+   * HIVE SDK v4.11.7에서 발생 
+[/markdown]</li></ul>
+
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.11.7.0 (Jun 14, 2019)
+##### New Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Promotion] 유저 애퀴지션(UA) 실행에 필요한 공유하기 기능을 맞춤형으로 제공 <span style="font-size: 8pt;"><a href="../../../dev4/promotion/useracquisition/#ua-share">자세히</a></span> 
+   * 지원하는 SNS: Kakao Talk, LINE, Facebook, WhatsApp, WeChat
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* HIVE UI 개편
+* [Promotion] 유저 인게이지먼트(UE)를 사용할 때 모든 파라미터를 전달할 수 있도록 변경
+* [Analytics] 서비스가 종료된 PartyTrack을 어트리뷰션 툴 목록에서 제거 <span style="font-size: 8pt;"><a href="../../../dev4/marketing-attribution">자세히</a></span> 
+* [Analytics] Singular를 이용해 구매 로그 전송 시 추가 파라미터를 함께 전송할 수 있도록 변경
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* 컷아웃 디자인 형태의 Android P 기기 해상도에 대응하도록 지원
+* 멀티 윈도우 스플릿 스크린 형태의 Android Q 폴더블 기기 해상도에 대응하도록 지원
+* [Auth v1/Auth v4/Promotion] 웹뷰를 사용하는 모든 UI가 하드웨어 가속을 받을 수 있도록 분리된 Activity를 제공
+* [AuthV4Helper/ProviderGoogle] Google Play Games Services의 업적과 리더보드 서비스 사용 결과 값을 전달할 수 있도록 변경 <span style="font-size: 8pt;"><a href="../../../dev4/membership-social/google-play-game-service/">자세히</a></span> 
+[/markdown]
+
+<aside class="note"><p class="">
+Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 추가해야 합니다. packageName이 <code>com.gamevil.mygame</code>일 때 <code>-keep class com.gamevil.mygame.R* { *; }</code>를 추가합니다. 추가하지 않고 Proguard를 적용할 경우(minifyEnabled=true) 개편한 HIVE UI를 호출하며 크래시가 발생 할 수 있습니다.
+</p></aside>
+</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Promotion] 유저가 기기의 뒤로가기(Back) 키를 터치했을 때 반응하도록 UX 개선
+   * 웹뷰에서 뒤로가기 지원
+   * 더이상 뒤로갈 수 없을 때는 다이얼로그 창 닫기
+* [Auth v1/Auth v4] 권한 고지 팝업을 커스터마이징할 때 사용하는 `requestPermissionViewData()` 메서드의 응답에서 공통 항목이 누락되는 오류 수정
+* Android 5.0 미만 버전인 기기에 Google Play가 설치되지 않은 경우 **TLSOnlySocketFactory** 클래스에서 StackOverflowError 오류를 발생하지 않도록 수정
+   * HIVE SDK v4.11.2 이상 버전에서 발생 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] 최초로 로그인하는 유저가 프로필 이미지를 업로드했을 때 완료 결과를 수신한 후 프로필 정보를 전달하도록 수정
+* [Plugin/Unity] Unity 2018.3 이상 버전에서 Facebook 로그인할 수 없는 오류 수정
+* [Auth v4] 권한 고지 항목 기본값에서 주소록 권한 노출을 제외 [/markdown]</li></ul>
+
+&nbsp;
+
+
+
+
+[/av_toggle]
+[/av_toggle_container]
+
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.11.6"]
+<h4>V4.11.6.3 (Aug 19, 2019)</h4>
+
+<h5>New Features</h5>
+
+<ul>
+<li>없음</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics] Singular를 이용해 구매 로그 전송 시 추가 파라미터를 함께 전송할 수 있도록 변경
+* [Analytics] 서비스가 종료된 PartyTrack을 어트리뷰션 툴 목록에서 제거
+* [Auth v1/Auth v4/SocialFacebook] Facebook의 개인정보 보호 권고사항에 따라 사용 중인 Facebook SDK 버전을 변경
+   * 변경 전: [Android] v4.39.0, [iOS] v4.39.1
+   * 변경 후: [Android] v5.0.1, [iOS] v5.0.1
+* [Analytics] 리모트 로깅에 사용하는 카테고리 이름 변경 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] Android Q 단말에서 권한 고지를 정상 노출하도록 변경
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] iOS 13 이상에서 HIVE 다이얼로그 창이 페이지(Page sheet) 형태가 아닌 전체 화면(Full screen)으로 노출되도록 변경 [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Promotion] 유저가 기기의 뒤로가기(Back) 키를 터치했을 때 반응하도록 UX 개선
+   * 웹뷰에서 뒤로가기 지원
+   * 더이상 뒤로갈 수 없을 때는 다이얼로그 창 닫기
+* [Auth v1/Auth v4] 권한 고지 팝업을 커스터마이징할 때 사용하는 `requestPermissionViewData()` 메서드의 응답에서 공통 항목이 누락되는 오류 수정
+* Android 5.0 미만 버전인 기기에 Google Play가 설치되지 않은 경우 **TLSOnlySocketFactory** 클래스에서 StackOverflowError 오류를 발생하지 않도록 수정
+    * HIVE SDK v4.11.2 이상 버전에서 발생
+* [Push] 로컬 푸시 사용 시 Inbox 또는 BigText 스타일로 지정하더라도 Normal 스타일로 노출되는 오류 수정
+   * HIVE SDK v4.0.0 이상 모든 버전에서 발생
+* [Push] 푸시 토큰 생성을 목적으로 사용하는 Google API Key 값을 노출하지 않도록 수정 
+   * HIVE SDK v4.8.3 이상 버전 중 FCM으로 변경한 SDK에서 발생
+* [Auth v4/ProviderFacebook] Facebook 로그인을 취소할 때 세부 에러코드 값이 **SocialFacebook** 클래스 값을 전달하는 오류 수정 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] 최초로 로그인하는 유저가 프로필 이미지를 업로드했을 때 완료 결과를 수신한 후 프로필 정보를 전달하도록 수정
+* [Auth v4] `showSignIn()` 메서드를 이용해 Game Center 로그인을 시도했을 때 실패하거나 취소되는 경우에는 GameCenterLoginCancelDialog를 더이상 자동 노출하지 않도록 수정
+   * HIVE SDK v4.7.0 이상 모든 버전에서 발생
+* [IAP v4] 구매 로그 전송 시 간헐적으로 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.5.0 이상 모든 버전에서 발생 [/markdown]</li></ul>
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v4.11.6.3 기준)
+* <span style="color: blue;">Facebook SDK (Android) v5.0.1</span>
+* <span style="color: blue;">Facebook SDK (iOS) v5.0.1</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* <span style="color: blue;">Google Play Billing (Android) v1.2.2</span>
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* PartyTrack (Android) v1.15.2
+* PartyTrack (iOS) v1.88
+* Singular (Android) v7.4.2
+* Singular (iOS) v8.4.2
+
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.6.2 (Jul 26, 2019)
+##### New Features
+
+* 없음
+
+
+##### Changed Features
+
+* 없음
+
+
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Plugin/Unity] Unity 2018.3 이상 버전에서 Facebook 로그인할 수 없는 오류 수정
+* [Plugin/Unity] **IAPV4** 클래스의 `restore()` 메서드를 사용할 때 응답 값에 불필요한 정보가 포함되는 오류 수정 
+[/markdown]</li></ul>
+
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.6.1 (Jun 17, 2019)
+##### New Features
+
+* 없음
+
+##### Changed Features
+
+* 없음
+
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* SDK에서 사용하지 않는 icon 리소스가 추가되어 빌드에 영향을 주는 오류 수정
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [IAP v4] 구독형 상품을 구독하지 않는 상태에서 `restoreSubscription()` 메서드를 사용하는 경우 응답이 없는 오류 수정
+[/markdown]</li></ul>
+
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.6.0 (May 08, 2019)
+##### New Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [IAP v4] 구독형 인앱 구매 지원 <span style="font-size: 8pt;"><a href="../../../dev4/billing/subscriptions">자세히</a></span> 
+   * **IAPV4** 클래스의 `getSubscriptionProductInfo()` 메서드로 구독형 상품 조회 가능
+   * **IAPV4** 클래스의 `purchaseSubscriptionUpdate()` 메서드로 구독형 상품 구매 또는 업그레이드/다운그레이드 가능
+   * **IAPV4** 클래스의 `restoreSubscription()` 메서드로 구독형 상품 복구 가능 [/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v4] Google Play Billing 라이브러리 결제 지원 [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* 없음 [/markdown]
+&nbsp;
+[/av_toggle]
+[/av_toggle_container]
 
 [av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.5"]
+<h4>V4.11.5.2 (May 30, 2019)</h4>
 
+<h5>New Features</h5>
 
+<ul>
+<li>없음</li>
+</ul>
 
+<h5>Changed Features</h5>
 
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v4] GoogleProvider로 로그인했을 때 Google Play Games의 PlayerID와 ServerAuthCode를 확인할 수 있는 API를 추가
+   * **ProviderGoogle** 클래스의 `getGooglePlayerId()` 메서드를 사용
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* 없음
+[/markdown]
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v4.11.5.2 기준)
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* PartyTrack (Android) v1.15.2
+* PartyTrack (iOS) v1.88
+* Singular (Android) v7.4.2
+* Singular (iOS) v8.4.2
+
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.5.1 (May 17, 2019)
+##### New Features
+
+* 없음
+
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v4] GoogleProvider로 로그인했을 때 Google Play Games의 PlayerID를 확인할 수 있는 API를 추가
+   * **ProviderGoogle** 클래스의 `getGooglePlayerId()` 메서드를 사용
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* 없음
+[/markdown]
+
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.5.0 (Apr 23, 2019)
+##### New Features
+
+* 없음
+
+##### Changed Features
+
+* 없음
+
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Provisioning] 활성화하지 않아도 리모트 로깅이 동작하는 오류 수정 
+[/markdown]</li></ul>
+
+&nbsp;
+[/av_toggle]
+[/av_toggle_container]
+
+[av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.4"]
 
 [markdown]
