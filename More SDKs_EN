@@ -85,6 +85,547 @@ The old version of HIVE SDK is available to download in this page. See and check
 
 <h2 id="4.11">HIVE SDK v4.11</h2>
 [av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.11.7"]
+[markdown]
+#### V4.11.7.3 (Sep 30, 2019)
+
+##### New features
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>
+[markdown]
+
+* [Auth v1] Provided a limited function to sign in with the used account in case user can't sign in due to server communication error.
+   * Implement `setEmergencyMode()` method in the **Auth** class and if activated, it returns `true` as a response.
+   * Implement `getAccount()` method in the **Auth** class to obtain the details of the used sign-in account.
+   * Unavailable features: Auth v1, Social, UE, UA, NU
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4/ProviderApple] Added a new authentication, Apple Sign-In, which is available on iOS 13. <span style="font-size: 8pt;"><a href="../../../develop/porting-building-hive/ios-xcode/#idp-apple">See more</a></span>
+[/markdown]</li>
+</ul>
+[markdown]
+##### Changed features
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics] Updated the version of Adjust library in use.
+   * Used version: [Android] v4.14.0, [iOS] v4.14.1
+   * Updated version: [Android] v4.18.1, [iOS] v4.18.1
+* [Analytics] Updated the version of Singular library in use.
+   * Used version: [Android] v7.4.2, [iOS] v8.4.2
+   * Updated version: [Android] v9.2.5, [iOS] v9.2.1
+* [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] Updated the version of Facebook SDK in use.
+   * Used version: [Android] v5.0.0, [iOS] 5.0.1
+   * Updated version: [Android] v5.5.1, [iOS] v5.6.0
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] Fixed the problems occurred on dual screen devices.
+* [Auth v4/ProviderGoogle] Added an API to check the PlayerID and ServerAuthCode of Google Play Games when user signs in with Google Provider.
+   * Implement `getGooglePlayerId()` method in the **ProviderGoogle** class.
+* [Auth v1] Fixed to go to the previous page on the detailed Terms popup when user taps **Back** key on user device.
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] Supported Dark Mode option available with iOS 13.
+* [Auth v4/ProviderApple] Fixed to process cancellation response even when user taps cancel button more than twice not to run the Game Center on the device with iOS 13.
+[/markdown]</li>
+</ul>
+[markdown]
+##### Bug Fixes
+
+* None
+
+##### Version of third-party libraries for HIVE SDK v4.11.7.3
+
+* <span style="color: blue;">Facebook SDK (Android) v5.5.1</span>
+* <span style="color: blue;">Facebook SDK (iOS) v5.6.0</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Google Play Billing (Android) v1.2.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE store (Android) v17.02.00
+* ONE store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* <span style="color: blue;">Adjust (Android) v4.18.1</span>
+* <span style="color: blue;">Adjust (iOS) v4.18.1</span>
+* <span style="color: blue;">Singular (Android) v9.2.5</span>
+* <span style="color: blue;">Singular (iOS) v9.2.1</span>
+[/markdown]
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.11.7.2 (Aug 27, 2019)
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* [AuthV1/AuthV4/SocialFacebook] Updated the version of Facebook SDK in use in accordance with the Facebook Privacy policy.
+   * Used version: [Android] v4.39.0, [iOS] v4.39.1
+   * Updated version: [Android] v5.0.1, [iOS] v5.0.1
+* [Analytics] Changed the category name used for remote logging. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] Changed to display permission notice on Android Q devices. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+ 	
+* [Common] Changed to expose HIVE dialog as full screen on iOS 13.
+[/markdown]</li>
+</ul>
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] Fixed an error that exposes Normal style even Inbox or BigText is set when sending local pushes.
+   * Occurred with HIVE SDK v4.0.0 and later.
+* [Push] Fixed not to expose the key value of Google API used for generating push token.
+   * Occurred with HIVE SDK v4.8.3 and later which changed to FCM.
+* [Promotion] Fixed not to display empty button on exit popup when COPPA is activated.
+   * Occurred with HIVE SDK v4.11.7 and later.
+* [Promotion] Fixed not to crash when user starts to play a video clip on promotion page.
+   * Occurred with HIVE SDK v4.11.7 and later.
+* [Auth v1/Auth v4/Plugin] Fixed permissions not to include common items from the result of requestPremissionVeiwData API.
+   * Occurred with HIVE SDK v4.11.7 and later. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [IAP v4] Changed to send the receipts of items which is currently managed by HIVE IAP server when calling restore API.
+   * Occurred with HIVE SDK v4.11.6 and later.
+* [IAP v4] Fixed not to crash irregularly when sending purchase logs.
+   * Occurred with HIVE SDK v4.5.0 and later.
+* [Auth v1] Fixed not to crash when user signs in with Google.
+   * Occurred with HIVE SDK v4.11.7 and later. [/markdown]</li>
+</ul>
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.11.7.1 (Jun 24, 2019)
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* Fixed not to crash when user closes a dialog box before webview on it is completed to load.
+   * Occurred with HIVE SDK v4.11.7.
+* [Auth v4] Fixed an error to sign in with Facebook or Google Play Games by implementing `showSignIn()` method.
+   * Occurred with HIVE SDK v4.11.7.
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Plugin/Unity/Auth v4/Auth v4 Helper] Fixed an error to transmit the result callback of `showGameCenterLoginCancelDialog()` method.
+   * Occurred with HIVE SDK v4.7.0 and later.
+* [Auth v4] Fixed not to show GameCenterLoginCancelDialog again if Game Center login with `showSignIn()` method is failed or cancelled.
+   * Occurred with HIVE SDK v4.7.0 and later.
+* [Auth v4/Auth v1] Fixed an error to transmit the result value when user taps **Close** button while a maintenance popup is displayed.
+   * Occurred with HIVE SDK v4.11.7. [/markdown]</li>
+</ul>
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.11.7.0 (Jun 14, 2019)
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* [Promotion] Available to customize the sharing feature which is required for User Acquisition service. <span style="font-size: 8pt;"><a href="../../../develop/promotion/useracquisition/#ua-share">See more</a></span>
+   * Supported SNS: Kakao Talk, LINE, Facebook, WhatsApp, WeChat
+[/markdown]</li>
+</ul>
+[markdown]
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel common">All</span>[markdown]
+
+* Redesigned HIVE UI.
+* [Promotion] Changed to transmit all parameters when using User Engagement service.
+* [Analytics] Deleted PartyTrack from the list of marketing attribution tool due to a shutdown of its service. <span style="font-size: 8pt;"><a href="../../../develop/marketing-attribution">See more</a></span>
+* [Analytics] Changed to transmit additional parameters when sending purchase logs by using Singular.
+[/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* Changed to support the resolution of cut-out design for Android P.
+* Changed to support the resolution of multi window in split screen for Android Q.
+* [Auth v1/Auth v4/Promotion] Supported the separated Activity for hardware acceleration of all UI using webview.
+* [AuthV4Helper/ProviderGoogle] Changed to send the result of achievement and leaderboard usage from Google Play Games Services. <span style="font-size: 8pt;"><a href="../../../develop/membership-social/google-play-games/">See more</a></span>
+[/markdown]
+
+<aside class="note">
+<p class="">Make sure to add <strong>-keep</strong> as one of exceptional case of packageName when using Proguard. When packageName is <code>com.gamevil.mygame</code>, add <code>-keep class com.gamevil.mygame.R* { *; }</code>. if you use Proguard without add this process (minifyEnabled=true), crashes may occur when calling redesigned HIVE UI.</p>
+
+</aside></li>
+</ul>
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* [Promotion] Upgraded UX to respond when user taps **Back** button on the device.
+   * Supported **Go back** feature on webview format window.
+   * Supported to close the dialog box if no more pages exist to go back.
+* [Auth v1/Auth v4] Fixed an error that the response to `requestPermissionVeiwData()` method skips the common contents used for customizing permission notice popup.
+* Fixed not to occur StackOverflowError error from the **TLSOnlySocketFactory** class if Google Play is not installed on Android devices with earlier than 5.0.
+   * Occurred with HIVE SDK v4.11.2 and later. [/markdown]</li>
+</ul>
+<ul class="clList labelList">
+ 	<li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] Fixed to send the profile data after recieving the result of upload completion if user signs in your game for the first time.
+* [Plugin/Unity] Fixed to sign in with Facebook for Unity 2018.3 and later version.
+* [Auth v4] Fixed not to display contacts from the default items of permission notice. [/markdown]</li>
+</ul>
+&nbsp;
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.11.6"]
+<h4>V4.11.6.3 (Aug 19, 2019)</h4>
+
+<h5>New Features</h5>
+
+<ul>
+<li>None</li>
+</ul>
+
+<h5>Changed Features</h5>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel common">All</span>[markdown]
+
+* [Analytics] Changed to transmit additional parameters when sending purchase logs by using Singular.
+* [Analytics] Deleted PartyTrack from the list of marketing attribution tool due to a shutdown of its service.
+* [Auth v1/Auth v4/SocialFacebook] Updated the version of Facebook SDK in use in accordance with the Facebook Privacy policy.
+   * Used version: [Android] v4.39.0, [iOS] v4.39.1
+   * Updated version: [Android] v5.0.1, [iOS] v5.0.1
+* [Analytics] Changed the category name used for remote logging. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] Changed to display permission notice on Android Q devices.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] Changed to expose HIVE dialog as full screen on iOS 13. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Promotion] Upgraded UX to respond when user taps Back button on the device.
+   * Supported **Go back** feature on webview format window.
+   * Supported to close the dialog box if no more pages exist to go back.
+* [Auth v1/Auth v4] Fixed an error that the response to `requestPermissionVeiwData()` method skips the common contents used for customizing permission notice popup.
+* Fixed not to occur StackOverflowError error from the **TLSOnlySocketFactory** class if Google Play is not installed on Android devices with earlier than 5.0.
+   * Occurred with HIVE SDK v4.11.2 and later.
+* [Push] Fixed an error that exposes Normal style even Inbox or BigText is set when sending local pushes.
+   * Occurred with HIVE SDK v4.0.0 and later.
+* [Push] Fixed not to expose the key value of Google API used for generating push token.
+   * Occurred with HIVE SDK v4.8.3 and later which changed to FCM.
+* [Auth v4/ProviderFacebook] Fixed an error that error code of Result API sends the value of **SocialFacebook** class when Facebook login is cancelled. [/markdown]</li></ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] Fixed to send the profile data after recieving the result of upload completion if user signs in your game for the first time.
+* [Auth v4] Fixed not to show GameCenterLoginCancelDialog again if Game Center login with `showSignIn()` method is failed or cancelled.
+   * Occurred with HIVE SDK v4.7.0 and later.
+* [IAP v4] Fixed not to crash irregularly when sending purchase logs.
+   * Occurred with HIVE SDK v4.5.0 and later. [/markdown]</li></ul>
+
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.11.6.3
+
+* <span style="color: blue;">Facebook SDK (Android) v5.0.1</span>
+* <span style="color: blue;">Facebook SDK (iOS) v5.0.1</span>
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* <span style="color: blue;">Google Play Billing (Android) v1.2.2</span>
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* PartyTrack (Android) v1.15.2
+* PartyTrack (iOS) v1.88
+* Singular (Android) v7.4.2
+* Singular (iOS) v8.4.2
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.6.2 (Jul 26, 2019)
+
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>
+[markdown]
+
+* [Plugin/Unity] Fixed to sign in with Facebook for Unity 2018.3 and later version.
+* [Plugin/Unity] Fixed to exclude unnecessary data from the response to `restore()` method in the **IAPV4** class. [/markdown]</li>
+</ul>
+
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.6.1 (Jun 07, 2019)
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]
+
+* Fixed an error caused by the unused icon resource on HIVE SDK not to effect on build.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [IAP v4] Fixed to respond to the use of `restoreSubscription()` method when suscription items are unsubscribed. [/markdown]</li></ul>
+
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.6.0 (May 08, 2019)
+
+##### New Features[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel common">All</span>[markdown]
+
+* [IAP v4] Supported the subscription, one of in-app purchase types. <span style="font-size: 8pt;"><a href="../../../develop/billing/subscriptions">See more</a></span>
+   * Use `getSubscriptionProductInfo()` method of **IAPV4** class to search and perform subscriptions.
+   * Use `purchaseSubscriptionUpdate()` method of **IAPV4** class to purchase, upgrade or downgrade subscriptions.
+   * Use `restoreSubscription()` method of **IAPV4** class to restore subscriptions. [/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v4] Supported to use the Google Play Billing Library. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* None 
+[/markdown]
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.11.5"]
+#### V4.11.5.2 (May 30, 2019)
+
+##### New Features
+
+* None
+
+##### Changed Features
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v4] Added an API which checks the PlayerID and ServerAuthCode of Google Play Games when user signed in your game with GoogleProvider.
+   * Use `getGooglePlayerId()` method in the **ProviderGoogle** class. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* None
+
+##### Version of third-party Libraries for HIVE SDK v4.11.5.2
+
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* PartyTrack (Android) v1.15.2
+* PartyTrack (iOS) v1.88
+* Singular (Android) v7.4.2
+* Singular (iOS) v8.4.2
+
+[/markdown]
+
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.5.1 (May 17, 2019)
+##### New Features
+
+* None
+
+##### Changed Features
+
+[/markdown]<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v4] Added an API which checks the PlayerID of Google Play Games when user signed in your game with GoogleProvider.
+   * Use `getGooglePlayerId()` method in the **ProviderGoogle** class.
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* None
+
+[/markdown]
+
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.11.5.0 (Apr 23, 2019)
+##### New Features
+
+* None
+
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Provisioning] Fixed an error which activates remote logging at all times regardless of user agreement on runing the function. [/markdown]</li></ul>
+
+&nbsp;
+[/av_toggle]
 [av_toggle title="HIVE SDK v4.11.4"]
 <h4>SDK Downloads</h4>
 <table>
