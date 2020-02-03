@@ -281,9 +281,6 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 
 
 [/av_toggle]
-[/av_toggle_container]
-
-[av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.6"]
 <h4>V4.11.6.3 (Aug 19, 2019)</h4>
 
@@ -470,9 +467,6 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 * 없음 [/markdown]
 &nbsp;
 [/av_toggle]
-[/av_toggle_container]
-
-[av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.5"]
 <h4>V4.11.5.2 (May 30, 2019)</h4>
 
@@ -586,9 +580,6 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 
 &nbsp;
 [/av_toggle]
-[/av_toggle_container]
-
-[av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.4"]
 
 [markdown]
@@ -696,9 +687,6 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 &nbsp;
 [/markdown]
 [/av_toggle]
-[/av_toggle_container]
-
-[av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.3"]
 
 [markdown]
@@ -762,9 +750,6 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 &nbsp;
 [/markdown]
 [/av_toggle]
-[/av_toggle_container]
-
-[av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.2"]
 
 [markdown]
@@ -910,9 +895,6 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 &nbsp;
 [/markdown]
 [/av_toggle]
-[/av_toggle_container]
-
-[av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.1"]
 
 [markdown]
@@ -1115,9 +1097,6 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 &nbsp;
 [/markdown]
 [/av_toggle]
-[/av_toggle_container]
-
-[av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.0"]
 
 [markdown]
@@ -5296,6 +5275,14 @@ HIVE SDK v4.x 최초 배포입니다.
 &nbsp;
 
 <h2 id="1.16">HIVE SDK v1.16</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v1.16.4"]
+
+
+
+
+
+
 
 [av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v1.16.3"]
