@@ -39,17 +39,18 @@
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
 * [Auth v1] Added a new authentication, Apple Sign-In, which is available on iOS 13. <span style="font-size: 8pt;"><a href="../../../develop/porting-building-hive/ios-xcode/#idp-apple">See more</a></span>
-
+[/markdown]</li></ul>
+[markdown]
 ##### Changed Features
 
 * None
 
 ##### Bug Fixes
-
+[/markdown]
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Common] WebView 노출 시 iOS 13 iPad가 정상 탐지되지 않는 오류 수정
+* [Common] Fixed an error that iPad with iOS 13 is unvisible for displaying WebView.
 [/markdown]</li></ul>
 
 [markdown]
