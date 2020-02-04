@@ -225,7 +225,7 @@
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Auth v4/ProviderApple] Added a new authentication, Apple Sign-In, which is available on iOS 13. <span style="font-size: 8pt;"><a href="../../../en/develop/porting-building-hive/ios-xcode/#idp-apple">See more</a></span>
+* [Auth v4/ProviderApple] Added a new authentication, Apple Sign-In, which is available on iOS 13. <span style="font-size: 8pt;"><a href="../../../develop/porting-building-hive/ios-xcode/#idp-apple">See more</a></span>
 [/markdown]</li></ul>
 
 [markdown]
