@@ -6,26 +6,27 @@
 <tbody>
 <tr>
 <th>Unity®</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.0.1.zip">HIVE_SDK_Unity_v4.14.0.1.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.1.0.zip">HIVE_SDK_Unity_v4.14.1.0.zip</a></td>
 </tr>
 <tr>
 <th>Unreal</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.0.1.zip">HIVE_SDK_Unreal_v4.14.0.1.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.1.0.zip">HIVE_SDK_Unreal_v4.14.1.0.zip</a></td>
 </tr>
 <tr>
 <th>Cocos2D-X</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.0.1_Sample.zip">HIVE_SDK_Cocos_v4.14.0.1.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.1.0_Sample.zip">HIVE_SDK_Cocos_v4.14.1.0.zip</a></td>
 </tr>
 <tr>
 <th>Android</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.0.1.zip">HIVE_SDK_Android_v4.14.0.1.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.1.0.zip">HIVE_SDK_Android_v4.14.1.0.zip</a></td>
 </tr>
 <tr>
 <th>iOS</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.0.1.zip">HIVE_SDK_iOS_v4.14.0.1.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.1.0.zip">HIVE_SDK_iOS_v4.14.1.0.zip</a></td>
 </tr>
 </tbody>
 </table>
+
 
 [markdown]
 ## Release Notes
@@ -37,7 +38,7 @@
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* 
+* [Auth v1] Added a new authentication, Apple Sign-In, which is available on iOS 13. <span style="font-size: 8pt;"><a href="../../../develop/porting-building-hive/ios-xcode/#idp-apple">See more</a></span>
 
 ##### Changed Features
 
@@ -48,12 +49,11 @@
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Analytics] Fixed an error to run Adjust, Singular, AppsFlyer on 32-bit devices.
-   * Occurred with HIVE SDK v4.14.0.0.
+* [Common] WebView 노출 시 iOS 13 iPad가 정상 탐지되지 않는 오류 수정
 [/markdown]</li></ul>
 
 [markdown]
-##### Version of third-party Libraries for HIVE SDK v4.14.0.1
+##### Version of third-party Libraries for HIVE SDK v4.14.1.0
 
 ###### Common item
 
