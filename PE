@@ -1,0 +1,48 @@
+Planet Explore는 HIVE SDK를 적용한 게임 샘플입니다. HIVE SDK에서 제공하는 인증, 설정, 캠페인, 이벤트, 빌링, 노티피케이션 기능이 적용되었습니다. 아래에서 파일을 다운로드하면 SDK 적용에 참고할 소스 코드를 확인할 수 있습니다. 게임 샘플을 직접 플레이하면서 HIVE 최신 기능을 체험해 보세요.
+
+<table>
+<thead>
+<tr>
+  <th>배포일</th>
+  <th>다운로드</th>
+  <th>게임 엔진</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>2019-11-18</td>
+  <td><a href="https://developers.withhive.com/down.php?SDK=PlanetExplore_HIVE_SDK_v4.13.0.1KS.zip">PlanetExplore_HIVE_SDK_v4.13.0.1KS.zip</a></td>
+  <td>Unity®</td>
+</tr>
+<tr>
+  <td>2019-10-08</td>
+  <td><a href="https://developers.withhive.com/down.php?SDK=PlanetExplore_HIVE_SDK_v4.12.1.zip">PlanetExplore_HIVE_SDK_v4.12.1.zip</a></td>
+  <td>Unity®</td>
+</tr>
+<tr>
+  <td>2019-07-03</td>
+  <td><a href="https://developers.withhive.com/down.php?SDK=PlanetExplore_HIVE_SDK_v4.11.6.zip">PlanetExplore_HIVE_SDK_v4.11.6.zip</a></td>
+  <td>Unity®</td>
+</tr>
+<tr>
+  <td>2019-03-20</td>
+  <td><a href="https://developers.withhive.com/down.php?SDK=PlanetExplore_HIVE_SDK_v4.11.3.zip">PlanetExplore_HIVE_SDK_v4.11.3.zip</a></td>
+  <td>Unity®</td>
+</tr>
+<tr>
+  <td>2018-11-20</td>
+  <td><a href="https://developers.withhive.com/down.php?SDK=PlanetExplore_HIVE_SDK_v4.11.0.zip">PlanetExplore_HIVE_SDK_v4.11.0.zip</a></td>
+  <td>Unity®</td>
+</tr>
+<tr>
+  <td>2018-09-04</td>
+  <td><a href="https://developers.withhive.com/down.php?SDK=PlanetExplore_HIVE_SDK_v4.10.0.zip">PlanetExplore_HIVE_SDK_v4.10.0.zip</a></td>
+  <td>Unity®</td>
+</tr>
+<tr>
+  <td>2018-07-13</td>
+  <td><a href="https://developers.withhive.com/down.php?SDK=PlanetExplore_HIVE_SDK_v4.9.0.zip">PlanetExplore_HIVE_SDK_v4.9.0.zip</a></td>
+  <td>Unity®</td>
+</tr>
+</tbody>
+</table>
