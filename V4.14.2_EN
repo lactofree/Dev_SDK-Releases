@@ -31,7 +31,7 @@
 [markdown]
 ## Release Notes
 
-#### V4.14.1.0 (Feb 07, 2020)
+#### V4.14.2.0 (Feb 14, 2020)
 
 ##### New Features
 
@@ -42,7 +42,7 @@
 <ul class="clList labelList">
   <li><span class="targetLabel android">Android</span>[markdown]
 
-* [IAPv4] 여러 상품을 구독할 수 있도록 변경
+* [IAPv4] Changed for users to purchase several auto-renewable subscriptions.
 [/markdown]</li></ul>
 [markdown]
 ##### Bug Fixes
