@@ -288,8 +288,28 @@
 <ul><ul>
   <li>Circle_iOS_v1.2.0.zip 파일을 다운로드해 압축 해제한 후 gamevilCircle.a 파일만 교체하여 사용</li>
   <li>Live_iOS_v1.1.0_lite.zip 파일을 다운로드해 압축 해제한 후 gamevilLive.a 파일만 교체하여 사용</li>
+  <li>WebKit.framework 추가</li>
 </ul></ul>
 
+<aside class="important"><p class="">
+Cocos2d-x를 사용할 경우, AppController의 window 속성을 모듈에서 사용 가능하도록 수정해야 한다.
+
+<li>AppController.h
+<pre>
+// AdViewControllerDelegate 추가
+@interface AppController : NSObject <UIApplicationDelegate, AdViewControllerDelegate>{
+//UIWindow *window; // 삭제
+RootViewController *viewController;
+}
+@Property (nonatomic, retain) UIWindow *window; // 추가
+</pre></li>
+
+<li>AppController.mm
+<pre>
+@implementation AppController
+@synthesize window; // 추가
+</pre></li>
+</p></aside>
 &nbsp;
 
 <h3>More for iOS</h3>
