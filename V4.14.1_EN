@@ -1,46 +1,41 @@
 ## Downloads
 
-#### V4.14.1.0 (Feb 07, 2020)
+#### V4.14.1.1 (Feb 14, 2020)
 
 <table>
 <tbody>
 <tr>
 <th>Unity®</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.1.zip">HIVE_SDK_Unity_v4.14.1.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.1.1.zip">HIVE_SDK_Unity_v4.14.1.1.zip</a></td>
 </tr>
 <tr>
 <th>Unreal</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.1.zip">HIVE_SDK_Unreal_v4.14.1.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.1.1.zip">HIVE_SDK_Unreal_v4.14.1.1.zip</a></td>
 </tr>
 <tr>
 <th>Cocos2D-X</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.1_Sample.zip">HIVE_SDK_Cocos_v4.14.1.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.1.1_Sample.zip">HIVE_SDK_Cocos_v4.14.1.1.zip</a></td>
 </tr>
 <tr>
 <th>Android</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.1.zip">HIVE_SDK_Android_v4.14.1.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.1.1.zip">HIVE_SDK_Android_v4.14.1.1.zip</a></td>
 </tr>
 <tr>
 <th>iOS</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.1.zip">HIVE_SDK_iOS_v4.14.1.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.1.1.zip">HIVE_SDK_iOS_v4.14.1.1.zip</a></td>
 </tr>
 </tbody>
 </table>
 
-
 [markdown]
 ## Release Notes
 
-#### V4.14.1.0 (Feb 07, 2020)
+#### V4.14.1.1 (Feb 14, 2020)
 
 ##### New Features
-[/markdown]
-<ul class="clList labelList">
-  <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Auth v1] Added a new authentication, Apple Sign-In, which is available on iOS 13. <span style="font-size: 8pt;"><a href="../../../develop/porting-building-hive/ios-xcode/#idp-apple">See more</a></span>
-[/markdown]</li></ul>
-[markdown]
+* None
+
 ##### Changed Features
 
 * None
@@ -50,16 +45,12 @@
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Common] Fixed an error that iPad with iOS 13 is unvisible for displaying WebView.
+* [Auth v4/Provider] Fixed not to crash when implementing `signOut()` method in the **AuthV4** class without using Twitter.
 [/markdown]</li></ul>
-
-<aside class="important"><p class="">
-Make sure to read and follow the <a href="../../../support/faq/#sdk_en">FAQ</a> if your game use this version of HIVE SDK on iOS without using Twitter.
-</p></aside>
 
 
 [markdown]
-##### Version of third-party Libraries for HIVE SDK v4.14.1.0
+##### Version of third-party Libraries for HIVE SDK v4.14.1.1
 
 ###### Common item
 
@@ -110,3 +101,35 @@ Make sure to read and follow the <a href="../../../support/faq/#sdk_en">FAQ</a> 
 &nbsp;
 
 <hr class="guide_line_1" />
+
+[markdown]
+#### V4.14.1.0 (Feb 07, 2020)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v1] Added a new authentication, Apple Sign-In, which is available on iOS 13. <span style="font-size: 8pt;"><a href="../../../develop/porting-building-hive/ios-xcode/#idp-apple">See more</a></span>
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] Fixed an error that iPad with iOS 13 is unvisible for displaying WebView.
+[/markdown]</li></ul>
+
+<aside class="important"><p class="">
+Make sure to upgrade to SDK v4.14.1.1 or, read and follow the <a href="../../../support/faq/#sdk_en">FAQ</a> if your game on iOS doesn't use Twitter.
+</p></aside>
+
+&nbsp;
+
+<hr class="guide_line_1" />
+
