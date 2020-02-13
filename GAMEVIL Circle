@@ -254,6 +254,75 @@
 <tbody>
 <tr>
 <th>Circle</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Circle_iOS_v1.2.1.zip">Circle_iOS_v1.2.1.zip</a></td>
+</tr>
+<tr>
+<th>Live</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=Live_iOS_v1.1.1_lite.zip">Live_iOS_v1.1.1_lite.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4>Release Notes</h4>
+
+<ul>
+    <li><strong>버전</strong>: v1.2.1</li>
+    <li><strong>배포일</strong>: 2020-Feb-13</li>
+</ul>
+
+<h5>Changed Features</h5>
+<ul><ul>
+<li>없음</li>
+</ul></ul>
+
+<h5>Bug Fixes</h5>
+
+<ul><ul>
+  <li>WKWebView에서 사용 중인 delegate `WebView:didFailNavigation:withError`로 인해 네트워크 단절 시 에러를 전달받을 수 없는 오류 수정</li>
+  <ul>
+  <li>누락된 delegate <a href="https://developer.apple.com/documentation/webkit/wknavigationdelegate/1455637-webview?language=objc">WebView:didFailProvisionalNavigation:withError</a>를 추가해 네트워크 단절 상황이라도 로컬 약관을 노출</li>
+  </ul>
+</ul></ul>
+
+<h5>적용 방법</h5>
+
+<ul><ul>
+  <li>Circle_iOS_v1.2.1.zip 파일을 다운로드해 압축 해제한 후 gamevilCircle.a 파일만 교체하여 사용</li>
+  <li>Live_iOS_v1.1.1_lite.zip 파일을 다운로드해 압축 해제한 후 gamevilLive.a 파일만 교체하여 사용</li>
+  <li>WebKit.framework 추가</li>
+</ul></ul>
+
+<aside class="important"><p class="">
+Cocos2d-x를 사용할 경우, AppController의 window 속성을 모듈에서 사용 가능하도록 수정해야 한다.
+
+<li>AppController.h
+<pre>
+// AdViewControllerDelegate 추가
+@interface AppController : NSObject <UIApplicationDelegate, AdViewControllerDelegate>{
+//UIWindow *window; // 삭제
+RootViewController *viewController;
+}
+@Property (nonatomic, retain) UIWindow *window; // 추가
+</pre></li>
+
+<li>AppController.mm
+<pre>
+@implementation AppController
+@synthesize window; // 추가
+</pre></li>
+</p></aside>
+
+&nbsp;
+
+<h3>More for iOS</h3>
+
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="Circle v1.2.0"]
+<h4>Circle 다운로드하기</h4>
+<table>
+<tbody>
+<tr>
+<th>Circle</th>
 <td><a href="https://developers.withhive.com/down.php?SDK=Circle_iOS_v1.2.0.zip">Circle_iOS_v1.2.0.zip</a></td>
 </tr>
 <tr>
@@ -310,11 +379,8 @@ RootViewController *viewController;
 @synthesize window; // 추가
 </pre></li>
 </p></aside>
-&nbsp;
 
-<h3>More for iOS</h3>
-
-[av_toggle_container mode='toggle' initial='0']
+[/av_toggle]
 [av_toggle title="Circle v1.1.9"]
 <h4>Circle 다운로드하기</h4>
 <table>
