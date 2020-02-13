@@ -43,9 +43,17 @@
 ##### Bug Fixes
 
 <ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v4] Fixed to send receipts when purchasing on ONE store.
+* [Auth v4/Provider] Fixed an error that fails sign-in without update popup when user tries to **Sign in with Google Play** through the old version of Google Play Games.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
 * [Auth v4/Provider] Fixed not to crash when implementing `signOut()` method in the **AuthV4** class without using Twitter.
+* [Common] Fixed an error that iPad with iOS 13 is unvisible for displaying WebView.
 [/markdown]</li></ul>
 
 [markdown]
