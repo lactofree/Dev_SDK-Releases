@@ -119,6 +119,14 @@
 [markdown]
 ##### Bug Fixes
 [/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v4] Fixed to send receipts when purchasing on ONE store.
+* [Auth v4/Provider] Fixed an error that fails sign-in without update popup when user tries to **Sign in with Google Play** through the old version of Google Play Games.
+[/markdown]</li></ul>
+
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
