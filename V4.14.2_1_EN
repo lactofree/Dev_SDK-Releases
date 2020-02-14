@@ -31,20 +31,21 @@
 [markdown]
 ## Release Notes
 
-#### V4.14.2.0 (Feb 14, 2020)
+#### V4.14.2.1 (Feb 14, 2020)
 
 ##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+  
+* [Analytics] Added up the number of sign-in users on a regular basis.
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
 
 * None
 
-##### Changed Features
-[/markdown]
-<ul class="clList labelList">
-  <li><span class="targetLabel android">Android</span>[markdown]
-
-* [IAPv4] Changed for users to purchase several auto-renewable subscriptions.
-[/markdown]</li></ul>
-[markdown]
 ##### Bug Fixes
 
 * None
@@ -86,8 +87,8 @@
 
 **IAP**
 
-* ONE Store (Android) v17.02.00
-* ONE Store (Android) v16.05.00
+* ONE store (Android) v17.02.00
+* ONE store (Android) v16.05.00
 * WeChat (Android) v1.4.0
 
 **Marketing Tracking Analytics**
@@ -98,6 +99,31 @@
 * Singular (iOS) v9.2.1
 * AppsFlyer v5.0.0
 [/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.14.2.0 (Feb 14, 2020)
+
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v4] Changed for users to purchase several auto-renewable subscriptions.
+[/markdown]</li></ul>
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4/Provider] Fixed not to crash when implementing `signOut()` method in the **AuthV4** class without using Twitter.
+[/markdown]</li></ul>
 &nbsp;
 
 <hr class="guide_line_1" />
