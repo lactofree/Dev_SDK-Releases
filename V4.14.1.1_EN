@@ -1,6 +1,6 @@
 ## Downloads
 
-#### V4.14.1.1 (Feb 14, 2020)
+#### V4.14.1.1 (Feb 19, 2020)
 
 <table>
 <tbody>
@@ -30,7 +30,7 @@
 [markdown]
 ## Release Notes
 
-#### V4.14.1.1 (Feb 14, 2020)
+#### V4.14.1.1 (Feb 19, 2020)
 
 ##### New Features
 
@@ -43,9 +43,10 @@
 ##### Bug Fixes
 [/markdown]
 <ul class="clList labelList">
-  <li><span class="targetLabel iOS">iOS</span>[markdown]
+  <li><span class="targetLabel common">All</span>[markdown]
 
-* [Auth v4/Provider] Fixed not to crash when implementing `signOut()` method in the **AuthV4** class without using Twitter.
+* [Auth v1/Analytics] Fixed to initialize marketing attribution tools and send data when initializing Authentication v1.
+   * Occurred with HIVE SDK v4.11.0.0 and later.
 [/markdown]</li></ul>
 
 
@@ -104,7 +105,7 @@
 
 [markdown]
 #### V4.14.1.0 (Feb 07, 2020)
-
+(Please contact **Solution Architect** part before upgrading to v4.14.1.0.)
 ##### New Features
 [/markdown]
 <ul class="clList labelList">
