@@ -18,6 +18,212 @@
 </ul>
 -->
 
+<h2 id="4.12">HIVE SDK v4.12</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.12.1"]
+[markdown]
+#### V4.12.1.0 (Aug 21, 2019)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Promotion] 단일 이미지를 노출하는 대배너를 웹 컨텐츠가 아닌 이미지 뷰 형태로 노출 <span style="font-size: 8pt;"><a href="../../../dev4/promotion/fullbanners/#fullbanner-disp">자세히</a></span> 
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v1/Auth v4/SocialFacebook] Facebook의 개인정보 보호 권고사항에 따라 사용 중인 Facebook SDK 버전을 변경
+   * 변경 전: [Android] v4.39.0, [iOS] v4.39.1
+   * 변경 후: [Android] v5.0.1, [iOS] v5.0.1
+* [Promotion] 프로비저닝에 전송하던 다운로드 정보를 프로모션 서버로 직접 전송하도록 변경
+* [Auth v1/Auth v4] 앱접근 권한 고지 활성화/비활성화를 선택할 수 있는 기능 제공
+   * hive_config.xml 파일에 추가된 hivePermissionViewOn 태그 값을 이용해 동작의 기본값을 설정 가능
+   * **Configuration** 클래스의 `setHivePermissionViewOn()` 메서드로 런타임 도중에도 사용 여부 설정을 변경 가능
+* [Common/Plugin/Unity] HIVE Config 설정 파일의 로딩 방식 개선으로 오류 예방
+   * Unity 개발 환경 내 HIVE Config Inspector에서 Auto Validation 기능을 활성화하면 hive_config.xml 파일에 오류 발생 시 경고 메시지 전달
+* [Analytics] 기기에 표시되는 로컬 시각이 아닌 프로비저닝 서버 기준으로 데이터 전송 시각을 측정하도록 변경
+* [Analytics] 리모트 로깅에 사용하는 카테고리 이름 변경
+* [AuthV4Helper] 계정 충돌 팝업 노출 문구 및 버튼 색상 변경
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Common] Android Q 단말에서 권한 고지를 정상 노출하도록 변경
+* [Common] Android 에뮬레이터 탐지 기능 개선
+   * 탐지 요건에 '비정상적인 네트워크 장비' 추가
+   * 탐지되지 않은 Memu, Momo, LDPlayer를 비정상적인 네트워크 장비로 탐지 (IrreguarNetwork) 
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] iOS 13 이상에서 HIVE 다이얼로그 창이 페이지(Page sheet) 형태가 아닌 전체 화면(Full screen)으로 노출되도록 변경 
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] 로컬 푸시 사용 시 Inbox 또는 BigText 스타일로 지정하더라도 Normal 스타일로 노출되는 오류 수정
+   * HIVE SDK v4.0.0 이상 모든 버전에서 발생
+* [Push] 푸시 토큰 생성을 목적으로 사용하는 Google API Key 값을 노출하지 않도록 수정 
+   * HIVE SDK v4.8.3 이상 버전 중 FCM으로 변경한 SDK에서 발생
+* [Promotion] COPPA를 적용했을 때 종료 팝업에 빈 버튼이 노출되는 오류 수정 
+   * HIVE SDK v4.11.7 이상에서 발생
+* [Common] APK 빌드 시 ProGuard로 애플리케이션의 리소스 이름을 변경할 경우 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.11.7 이상에서 발생
+* [Auth v1/Auth v4/Plugin] requestPermissionViewData API의 결과 값에서 공통 항목을 Permission에 포함해 전달하는 오류 수정
+   * HIVE SDK v4.11.7 이상에서 발생
+* [Promotion] 프로모션 동영상 화면 종료 시 간헐적으로 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.7.0 이상에서 발생
+* [Auth v4/ProviderFacebook] Facebook 로그인을 취소할 때 세부 에러코드 값이 **SocialFacebook** 클래스 값을 전달하는 오류 수정 [/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [IAP v4] restore API를 호출하면 현재 HIVE IAP 서버에서 관리 중인 상품의 영수증만 전달하도록 변경
+   * HIVE SDK v4.12.0 이상에서 발생
+* [IAP v4] 구매 로그 전송 시 간헐적으로 크래시가 발생하는 오류 수정
+   * HIVE SDK v4.5.0 이상 모든 버전에서 발생 
+[/markdown]</li></ul>
+
+
+<h5>연동된 서드파티 라이브러리 버전 (HIVE SDK v4.12.1.0 기준)</h5>
+
+<ul>
+<li><span style="color: blue;">Facebook SDK (Android) v5.0.1</span></li>
+<li><span style="color: blue;">Facebook SDK (iOS) v5.0.1</span></li>
+<li>Firebase Library (Android) v15.0.1+</li>
+<li>GooglePlay Services Game, Auth (Android) v15.0.1+</li>
+<li>Google Sign-In SDK (iOS) v4.1.2</li>
+<li><span style="color: blue;">Google Play Billing (Android) v2.0.0</span></li>
+<li>Android Support Library (Android) v27.0.1+</li>
+</ul>
+
+<strong>IDP</strong>
+
+<ul>
+<li>QQ (Android) v2.0.2 (r5961)</li>
+<li>QQ (iOS) v1.0.0</li>
+<li>VK (Android) v1.6.9</li>
+<li>VK (iOS) v1.4.6</li>
+<li>WeChat (Android) v1.4.0</li>
+<li>WeChat (iOS) v1.7</li>
+</ul>
+
+<strong>IAP</strong>
+
+<ul>
+<li>ONE Store (Android) v17.02.00</li>
+<li>ONE Store (Android) v16.05.00</li>
+<li>WeChat (Android) v1.4.0</li>
+</ul>
+
+<strong>Push</strong>
+
+<ul>
+<li>Jpush (Android) v1.7.2</li>
+</ul>
+
+<strong>Marketing Tracking Analytics</strong>
+
+<ul>
+<li>Adjust (Android) v4.14.0</li>
+<li>Adjust (iOS) v4.14.1</li>
+<li>Singular (Android) v7.4.2</li>
+<li>Singular (iOS) v8.4.2</li>
+</ul>
+
+&nbsp;
+
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.12.0"]
+[markdown]
+#### V4.12.0.0 (Sep 04, 2019)
+
+##### New Features
+
+* 없음
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v4] Google Play Billing 라이브러리 2.0 지원 
+   * 할인 가격 표기 가능 <span style="font-size: 8pt;"><a href="../../../dev4/billing/iapv4-purchase/#ftoc-heading-2">자세히</a></span>
+      * 상품 조회에 사용하는 **IAPv4** 클래스의 `getProductInfo()`메서드의 결과로 전달받는 IAPV4Product의 displayOriginalPrice, originalPrice 필드 값을 이용해 할인 전 가격 표시 가능
+   * 상품 아이콘 표기 가능 <span style="font-size: 8pt;"><a href="../../../dev4/billing/iapv4-purchase/#ftoc-heading-2">자세히</a></span>
+      * 상품 아이콘 이미지를 설정한 경우, 해당 이미지 URL은 상품 조회에 사용하는 **IAPv4** 클래스의 `getProductInfo()`메서드의 결과로 전달받는 IAPV4Product iconURL 필드 값을 이용해 확인 가능
+   * 소모되지 않았거나 승인하지 않은 결제 자동 환불 기능 <span style="font-size: 8pt;"><a href="../../../dev4/billing/iapv4-verify-receipt/#finish">자세히</a></span>
+      * 결제는 성공했으나 **IAPV4** 클래스의 `TransactionFinish()` 메서드 호출 결과가 3일 이내 성공하지 못할 경우 자동 환불
+   * 편의점 결제 및 오프라인 결제 지원 <span style="font-size: 8pt;"><a href="../../../dev4/billing/iapv4-purchase/#ftoc-heading-4">자세히</a></span>
+      * **IAPV4** 클래스의 `purchase()` 메서드 호출 결과에 보류(pending) 상태 추가 
+      * 오프라인 결제를 시도할 때 ITEM_PENDING 상태의 결과 값 전달
+      * 오프라인 결제에 성공했을 때 UserEngagement를 통해 IAP_UPDATED 이벤트를 수신하고, **IAPv4** 클래스의 `restore()` 메서드 호출로 결제 완료된 상품의 영수증 정보를 확인 가능
+      * IAP_UPDATED를 사용하지 않더라도 결제 이후에 **IAPv4** 클래스의 `restore()` 메서드를 호출해 결제 완료여부 확인 가능 [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* 없음 
+
+
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v4.12.0.0. 기준)
+
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* <span style="color: blue;">Google Play Billing (Android) v2.0.0</span>
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* Singular (Android) v7.4.2
+* Singular (iOS) v8.4.2
+[/markdown]
+
+&nbsp;
+[/av_toggle]
+[/av_toggle_container]
+
+&nbsp;
+
 <h2 id="4.11">HIVE SDK v4.11</h2>
 [av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.7"]
@@ -276,7 +482,6 @@ Proguard 적용 시 packageName 예외 항목으로 <strong>-keep</strong>을 �
 * [Auth v4] 권한 고지 항목 기본값에서 주소록 권한 노출을 제외 [/markdown]</li></ul>
 
 &nbsp;
-x
 
 
 
