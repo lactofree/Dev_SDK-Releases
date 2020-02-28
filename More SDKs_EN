@@ -10,6 +10,215 @@ The old version of HIVE SDK is available to download in this page. See and check
 </ul>
 -->
 
+<h2 id="4.12">HIVE SDK v4.12</h2>
+[av_toggle_container mode='toggle' initial='0']
+[av_toggle title="HIVE SDK v4.12.1"]
+[markdown]
+#### V4.12.1.0 (Aug 21, 2019)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+    <li><span class="targetLabel common">All</span>[markdown]* [Promotion] Exposed full banner as image view type, not as web view type. <span style="font-size: 8pt;"><a href="../../../develop/promotion/fullbanners/#fullbanner-disp">See more</a></span>
+[/markdown]</li>
+</ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel common">All</span>[markdown]
+
+* [AuthV1/AuthV4/SocialFacebook] Updated the version of Facebook SDK in use in accordance with the Facebook Privacy policy.
+   * Used version: [Android] v4.39.0, [iOS] v4.39.1
+   * Updated version: [Android] v5.0.1, [iOS] v5.0.1
+* [Promotion] Changed to send download data directly to Promotion server.
+* [Auth v1/Auth v4] Supported on/off feature to activate access permission notice.
+   * Set the default by using hivePermissionViewOn tag added to hive_config.xml file.
+   * Available to change the settings in the middle of runtime by using `setHivePermissionViewOn()` method in the **Configuration** class.
+* [Common/Plugin/Unity] Prevented errors by upgrading the way to load HIVE Config file.
+   * If you activate Auto Validation function on HIVE Config Inspector of Unity, alarm notifies when hive_config.xml file has errors.
+* [Analytics] Changed to measure the data-sending time based on the provisioning server, not the local time on devices.
+* [Analytics] Changed the category name used for remote logging.
+* [AuthV4Helper] Changed the button color and messages on account conflicts popup.
+[/markdown]</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]* [Common] Changed to display permission notice on Android Q devices.
+* [Common] Upgraded the function to search Android emulator.
+   * Irregular network is added to search conditions.
+   * The unknown type such as Memu, Momo and LDPlayer are detected as irregular network.
+[/markdown]</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+    
+* [Common] Changed to expose HIVE dialog as full screen on iOS 13.
+[/markdown]</li>
+</ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+    <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Push] Fixed an error that exposes Normal style even Inbox or BigText is set when sending local pushes.
+   * Occurred with HIVE SDK v4.0.0 and later.
+* [Push] Fixed not to expose the key value of Google API used for generating push token.
+   * Occurred with HIVE SDK v4.8.3 and later which changed to FCM.
+* [Promotion] Fixed not to display empty button on exit popup when COPPA is activated.
+   * Occurred with HIVE SDK v4.11.7 and later.
+* [Common] Fixed not to crash when changing resource name of application to ProGuard for buidling APK file.
+   * Occurred with HIVE SDK v4.11.7 and later.
+* [Auth v1/Auth v4/Plugin] Fixed permissions not to include common items from the result of requestPremissionVeiwData API.
+   * Occurred with HIVE SDK v4.11.7 and later.
+* [Promotion] Fixed not to crash irregularly when closing video clips on promotion page.
+   * Occurred with HIVE SDK v4.7.0 and later.
+* [Auth v4/ProviderFacebook] Fixed an error that error code of Result API sends the value of **SocialFacebook** class when Facebook login is cancelled. [/markdown]</li>
+</ul>
+
+<ul class="clList labelList">
+    <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [IAP v4] Changed to send the receipts of items which is currently managed by HIVE IAP server when calling restore API.
+   * Occurred with HIVE SDK v4.11.6 and later.
+* [IAP v4] Fixed not to crash irregularly when sending purchase logs.
+   * Occurred with HIVE SDK v4.5.0 and later.
+[/markdown]</li>
+</ul>
+
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.12.1.0
+[/markdown]
+<ul>
+    <li><span style="color: blue;">Facebook SDK (Android) v5.0.1</span></li>
+    <li><span style="color: blue;">Facebook SDK (iOS) v5.0.1</span></li>
+    <li>Firebase Library (Android) v15.0.1+</li>
+    <li>GooglePlay Services Game, Auth (Android) v15.0.1+</li>
+    <li>Google Sign-In SDK (iOS) v4.1.2</li>
+    <li><span style="color: blue;">Google Play Billing (Android) v2.0.0</span></li>
+    <li>Android Support Library (Android) v27.0.1+</li>
+</ul>
+
+<strong>IDP</strong>
+
+<ul>
+    <li>QQ (Android) v2.0.2 (r5961)</li>
+    <li>QQ (iOS) v1.0.0</li>
+    <li>VK (Android) v1.6.9</li>
+    <li>VK (iOS) v1.4.6</li>
+    <li>WeChat (Android) v1.4.0</li>
+    <li>WeChat (iOS) v1.7</li>
+</ul>
+
+<strong>IAP</strong>
+
+<ul>
+    <li>ONE Store (Android) v17.02.00</li>
+    <li>ONE Store (Android) v16.05.00</li>
+    <li>WeChat (Android) v1.4.0</li>
+</ul>
+
+<strong>Push</strong>
+
+<ul>
+    <li>Jpush (Android) v1.7.2</li>
+</ul>
+
+<strong>Marketing Tracking Analytics</strong>
+
+<ul>
+    <li>Adjust (Android) v4.14.0</li>
+    <li>Adjust (iOS) v4.14.1</li>
+    <li>Singular (Android) v7.4.2</li>
+    <li>Singular (iOS) v8.4.2</li>
+</ul>
+&nbsp;
+
+[/av_toggle]
+[av_toggle title="HIVE SDK v4.12.0"]
+[markdown]
+#### V4.12.0.0 (Sep 04, 2019)
+
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [IAP v4] Supported to use the Google Play Billing Library 2.0. 
+   *  Available to show discount prices. <span style="font-size: 8pt;"><a href="develop/billing/iapv4-purchase/#ftoc-heading-2">See more</a></span>
+      * Available to show original prices by using displayOriginalPrice and originalPrice field of IAPV4Product sent as a result of implementing `getProductInfo()` method in the **IAPV4** class.
+   *  Available to display an item icon. <span style="font-size: 8pt;"><a href="develop/billing/iapv4-purchase/#ftoc-heading-2">See more</a></span>
+      * Available to check image URL by using iconURL field of IAPV4Product ent as a result of implementing `getProductInfo()` method in the **IAPV4** class when you set icon image of each item.
+   * Available to refund the payment unauthorized or unused. <span style="font-size: 8pt;"><a href="develop/billing/iapv4-verify-receipt/#finish">See more</a></span>
+      * Automatically refunded if the result of implementing `TransactionFinish()` method in the **IAPV4** class is not success within three days after payment.
+   * Supported offline payment and payment at CVS. <span style="font-size: 8pt;"><a href="develop/billing/iapv4-purchase/#ftoc-heading-4">See more</a></span>
+      * Added pending state to the result of implementing `purchase()` method in the **IAPV4** class.
+      * Sent the result of ITEM_PENDING when user tries to pay offline.
+      * Available to receive IAP_UPDATED event through the UserEngagement when user succeeded in offline payment, and to check the reciept of payment-completed item by implementing `restore()` method in the **IAPv4** class.
+      * Available to check the completion after payment by implementing `restore()` method in the **IAPV4** class even IAP_UPDATED is not in use. [/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* None 
+
+
+##### Version of third-party Libraries for HIVE SDK v4.12.0.0
+
+* Facebook SDK (Android) v4.39.0
+* Facebook SDK (iOS) v4.39.1
+* Firebase Library (Android) v15.0.1+
+* GooglePlay Services Game, Auth (Android) v15.0.1+
+* Google Sign-In SDK (iOS) v4.1.2
+* <span style="color: blue;">Google Play Billing (Android) v2.0.0</span>
+* Android Support Library (Android) v27.0.1+
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* QQ (iOS) v1.0.0
+* VK (Android) v1.6.9
+* VK (iOS) v1.4.6
+* WeChat (Android) v1.4.0
+* WeChat (iOS) v1.7
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* ONE Store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.14.0
+* Adjust (iOS) v4.14.1
+* Singular (Android) v7.4.2
+* Singular (iOS) v8.4.2
+[/markdown]
+
+&nbsp;
+
+
+[/av_toggle]
+[/av_toggle_container]
+
+&nbsp;
+
+
 <h2 id="4.11">HIVE SDK v4.11</h2>
 [av_toggle_container mode='toggle' initial='0']
 [av_toggle title="HIVE SDK v4.11.7"]
