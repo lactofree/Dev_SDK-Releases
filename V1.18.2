@@ -39,16 +39,19 @@
 <ul class="clList labelList">
   <li><span class="targetLabel common">All</span>[markdown]
 
-* UA 초대링크 전송시 SNS 타입 정보를 수집합니다.
+* 프로모션 UA 초대 링크 전송 시 소셜 미디어 타입 식별 정보를 수집
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
  	<li><span class="targetLabel android">Android</span>[markdown]
 
-* AndroidX 라이브러리를 사용합니다. GCPSDK-28
-* Google Play Services 및 Firebase 라이브러리가 업데이트 되었습니다. GCPSDK-29
-   * Firebase Library (Android) v20.0.0
-   * GooglePlay Services Game, Auth (Android) v17.0.0
+* 최신 Firebase와 호환되도록 라이브러리를 변경
+   *Firebase 라이브러리가 종속성을 갖는 GooglePlay Services Game Auth 라이브러리 업데이트
+      * 변경 전: [Firebase Library] v15.0.1+, [GooglePlay Services Game Auth] v15.0.1+
+      * 변경 후: [Firebase Library] v20.0.0, [GooglePlay Services Game Auth] v17.0.0
+   * GooglePlay Service Games Auth 라이브러리가 종속성을 갖는 Android Support 라이브러리 업데이트
+      * 변경 전: [Android Support Library] v27.0.1+
+      * 변경 후: [AndroidX] v1.0.0+
 [/markdown]</li></ul>
 
 [markdown]
@@ -57,23 +60,23 @@
 <ul class="clList labelList">
   <li><span class="targetLabel common">All</span>[markdown]
 
-* YouTube 동영상 플레이어를 통한 동영상 재생 동작 방식을 개선하였습니다. GCPSDK-27 GCPSDK-82
+* 프로모션 동영상 화면 종료 시 간헐적으로 크래시가 발생하는 오류 수정
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
  	<li><span class="targetLabel android">Android</span>[markdown]
 
-* 러비 충전 페이지의 충전 수단 버튼 이미지가 잘리는 현상이 수정되었습니다. GCPSDK-26
-* 프로모션 CPI 다운로드 로그 전송시 vid_type 값을 추가로 전송하도록 수정되었습니다. GCPSDK-31
-* 일부 Android10 단말에서 권한 고지 팝업의 텍스트가 크게 표시되는 현상이 수정되었습니다. GCPSDK-57
-* Android 네트워크 단절 상태에서 약관 동의가 정상적으로 진행되지 않는 오류를 수정하였습니다. GCPSDK-83
+* 러비 충전 화면에서 충전 수단 버튼 이미지가 잘리는 오류 수정
+* 프로모션 CPI 다운로드 로그 전송 시 VID `type` 값을 추가 전송하도록 변경
+* 일부 Android 10 기기에서 권한 고지 팝업의 글자 크기가 다르게 표시되는 오류 수정
+* Android 기기에서 네트워크 단절 시 약관 동의가 정상적으로 진행되지 않는 오류 수정
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* Webview 노출 중 타임아웃 예외처리 로직을 추가하였습니다. GCPSDK-81 
-* HIVE Promotion 의 forced 값이 동작하지 않는 오류를 수정하였습니다. GCPSDK-80
+* WKWebView 노출 도중 네트워크 단절 시 에러를 전달받을 수 없는 오류 수정
+* `Type.NEWS` 또는 `Type.NOTICE`를 포함한 **HivePromotion** 클래스의 `show()` 메서드를 호출할 때 forced 값이 동작하지 않는 오류 수정
 [/markdown]</li></ul>
 
 [markdown]
@@ -84,7 +87,7 @@
 * <span style="color: blue;">Firebase Library (Android) v20.0.0</span>
 * <span style="color: blue;">GooglePlay Services Game, Auth (Android) v17.0.0</span>
 * Google Sign-In SDK (iOS) v4.4.0
-* Android Support Library (Android) v27.1.0+
+* <span style="color: blue;">AndroidX (Android) v1.0.0+</span>
 * QQ Open SDK (Android) v3.3.7
 * QQ Open SDK (iOS) v3.3.7
 
