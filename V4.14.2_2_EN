@@ -1,28 +1,28 @@
 ## Downloads
 
-#### V4.14.2.0 (Feb 14, 2020)
+#### V4.14.2.2 (Mar 23, 2020)
 
 <table>
 <tbody>
 <tr>
 <th>Unity®</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.2.zip">HIVE_SDK_Unity_v4.14.2.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.2.2.zip">HIVE_SDK_Unity_v4.14.2.2.zip</a></td>
 </tr>
 <tr>
 <th>Unreal</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.2.zip">HIVE_SDK_Unreal_v4.14.2.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.2.2.zip">HIVE_SDK_Unreal_v4.14.2.2.zip</a></td>
 </tr>
 <tr>
 <th>Cocos2D-X</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.2_Sample.zip">HIVE_SDK_Cocos_v4.14.2.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.2.2_Sample.zip">HIVE_SDK_Cocos_v4.14.2.2.zip</a></td>
 </tr>
 <tr>
 <th>Android</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.2.zip">HIVE_SDK_Android_v4.14.2.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.2.2.zip">HIVE_SDK_Android_v4.14.2.2.zip</a></td>
 </tr>
 <tr>
 <th>iOS</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.2.zip">HIVE_SDK_iOS_v4.14.2.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.2.2.zip">HIVE_SDK_iOS_v4.14.2.2.zip</a></td>
 </tr>
 </tbody>
 </table>
@@ -31,27 +31,35 @@
 [markdown]
 ## Release Notes
 
-#### V4.14.2.1 (Feb 14, 2020)
+#### V4.14.2.2 (Mar 23, 2020)
 
 ##### New Features
-[/markdown]
-<ul class="clList labelList">
-  <li><span class="targetLabel common">All</span>[markdown]
-  
-* [Analytics] Added up the number of sign-in users on a regular basis.
-[/markdown]</li></ul>
-
-[markdown]
-##### Changed Features
 
 * None
 
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Provider] Updated or deleted libraries that cause issues while app updates due to UIWebView reference or similar named values with UIWebView.
+
+| Library | Platform | Version in use | Latest version |
+| ------------- | ----------- | --------- | --------- |
+| Google Sign-In SDK | iOS | 4.1.2 | 5.0.2 |
+| WeChat | iOS | 1.8.6.1 | 1.8.6.2 |
+| Twitter | iOS | 3.4.2 | Deleted |
+| Facebook-Bolt | iOS | - | Deleted |
+
+[/markdown]</li></ul>
+
+[markdown]
 ##### Bug Fixes
 
 * None
 
 
-##### Version of third-party Libraries for HIVE SDK v4.14.2.1
+##### Version of third-party Libraries for HIVE SDK v4.14.2.2
 
 ###### Common item
 
@@ -64,7 +72,7 @@
 * Facebook SDK (Android) v5.5.1
 * Facebook SDK (iOS) v5.6.0
 * GooglePlay Services Game, Auth (Android) v17.0.0
-* Google Sign-In SDK (iOS) v4.1.2
+* <span style="color:blue;">Google Sign-In SDK (iOS) v5.0.2</span>
 
 **IAP**
 
@@ -79,11 +87,11 @@
 * VK (Android) v1.6.9
 * VK (iOS) v1.5.1
 * WeChat (Android) v1.4.0
-* WeChat (iOS) v1.8.6.1
+* <span style="color:blue;">WeChat (iOS) v1.8.6.2</span>
 * LINE (Android) v5.3.0
 * LINE (iOS) v5.4.0
 * Twitter (Android) v3.3.0
-* Twitter (iOS) v3.4.2
+* <span style="color:blue;">~~Twitter (iOS) v3.4.2~~ deleted</span>
 
 **IAP**
 
@@ -102,6 +110,31 @@
 &nbsp;
 
 <hr class="guide_line_1" />
+[markdown]
+#### V4.14.2.1 (Feb 14, 2020)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+  
+* [Analytics] Added up the number of sign-in users on a regular basis.
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+
+* None
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
+
+
 [markdown]
 #### V4.14.2.0 (Feb 14, 2020)
 
