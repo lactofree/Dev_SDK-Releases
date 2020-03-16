@@ -1,0 +1,166 @@
+## 최신 다운로드
+
+#### V4.14.1.2 (Mar 23, 2020)
+
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.1.2.zip">HIVE_SDK_Unity_v4.14.1.2.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.1.2.zip">HIVE_SDK_Unreal_v4.14.1.2.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.1.2_Sample.zip">HIVE_SDK_Cocos_v4.14.1.2.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.1.2.zip">HIVE_SDK_Android_v4.14.1.2.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.1.2.zip">HIVE_SDK_iOS_v4.14.1.2.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+[markdown]
+## 릴리즈 노트
+
+#### V4.14.1.2 (Mar 23, 2020)
+
+##### New Features
+
+* 없음
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Provider] UIWebView를 참조하거나 이름이 유사한 값을 포함한 앱 업데이트 시, 문제가 발생하는 라이브러리를 업데이트 또는 제거
+
+| 라이브러리 이름 | 대상 플랫폼 | 이전 버전 | 변경 버전 |
+| ------------- | ----------- | --------- | --------- |
+| Google Sign-In SDK | iOS | 4.1.2 | 5.0.2 |
+| WeChat | iOS | 1.8.6.1 | 1.8.6.2 |
+| QQ | iOS | 3.3.6 | 3.3.7 |
+| Twitter | iOS | 3.4.2 | 제거 |
+| Facebook-Bolt | iOS | - | 제거 |
+
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* 없음
+
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v4.14.1.2 기준)
+
+###### 공통 항목
+
+* AndroidX (Android) v1.0.0+
+* Firebase Library (Android) v20.0.0
+
+**IDP**
+
+* Facebook SDK (Android) v5.5.1
+* Facebook SDK (iOS) v5.6.0
+* GooglePlay Services Game, Auth (Android) v17.0.0
+* <span style="color: blue;">Google Sign-In SDK (iOS) v5.0.2</span>
+
+**IAP**
+
+* Google Play Billing (Android) v2.0.0
+
+###### 선택 항목
+
+**IDP**
+
+* QQ (Android) v2.0.2 (r5961)
+* <span style="color: blue;">QQ (iOS) v3.3.7</span>
+* VK (Android) v1.6.9
+* VK (iOS) v1.5.1
+* WeChat (Android) v1.4.0
+* <span style="color: blue;">WeChat (iOS) v1.8.6.2</span>
+* LINE (Android) v5.3.0
+* LINE (iOS) v5.4.0
+* Twitter (Android) v3.3.0
+* <span style="color: blue;">~~Twitter (iOS) v3.4.2~~ 제거</span>
+
+**IAP**
+
+* ONE store (Android) v17.02.00
+* ONE store (Android) v16.05.00
+* WeChat (Android) v1.4.0
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.18.1
+* Adjust (iOS) v4.18.3
+* Singular (Android) v9.2.5
+* Singular (iOS) v9.2.1
+* AppsFlyer v5.0.0
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
+[markdown]
+#### V4.14.1.1 (Feb 19, 2020)
+
+##### New Features
+
+* 없음
+
+##### Changed Features
+
+* 없음
+
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v1/Analytics] Auth v1으로 초기화할 때 마케팅 어트리뷰션 툴이 초기화되지 않아 정보 전송을 누락하는 오류 수정
+   * HIVE SDK v4.11.0 이상에서 발생
+[/markdown]</li></ul>
+&nbsp;
+
+<hr class="guide_line_1" />
+
+[markdown]
+#### V4.14.1.0 (Feb 07, 2020)
+(해당 버전을 적용하려는 경우, 솔루션아키텍트파트에 문의주세요.)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v1] iOS 13 버전부터 사용 가능한 Apple Sign-In 인증 추가 <span style="font-size: 8pt;"><a href="../../../dev4/porting-building-hive/ios-xcode/#idp-apple">자세히</a></span>
+[/markdown]</li></ul>
+
+
+[markdown]
+##### Changed Features
+
+* 없음
+
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Common] WebView 노출 시 iOS 13 iPad가 정상 탐지되지 않는 오류 수정
+[/markdown]</li></ul>
+
+<aside class="important"><p class="">
+iOS 환경에서 본 버전 적용 후 Twitter를 사용하지 않는다면 SDK v4.14.1.1로 업그레이드하거나 <a href="../../../support/faq/#sdk">FAQ</a>를 반드시 확인해주세요.
+</p></aside>
+
+&nbsp;
+
+<hr class="guide_line_1" />
