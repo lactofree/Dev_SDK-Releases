@@ -113,3 +113,27 @@
 &nbsp;
 
 <hr class="guide_line_1" />
+
+[markdown]
+#### V4.14.2.1 (Feb 14, 2020)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+  
+* [Analytics] Added up the number of sign-in users on a regular basis.
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+
+* None
+
+##### Bug Fixes
+
+* None
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
