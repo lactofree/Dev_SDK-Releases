@@ -22,7 +22,7 @@
   <li><span class="targetLabel common">All</span>[markdown]
 
 * [IAP v2] Kotlin/Swift 개발에서 제외된 IAP v2를 추가
-* [Auth v1/Auth v4] 챗봇 고객센터 바로가기 기능 추가
+* [Auth v1/Auth v4] 챗봇 CS 바로가기 기능 추가
 [/markdown]</li></ul>
 
 [markdown]
@@ -35,6 +35,9 @@
 * [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] 사용 중인 Facebook SDK 버전을 변경
    * 변경 전: [Android] v5.5.1, [iOS] v5.6.0
    * 변경 후: [Android] v6.1.0, [iOS] v6.0.0
+* [Auth v4/Provider] Google Play 정책에 부합하도록 QQ 라이브러리를 업데이트
+   * 변경 전: [Android] v2.0.2(r5961), [iOS] v3.3.6
+   * 변경 후: [Android] v3.3.7(r2973327_lite), [iOS] v3.3.7
 * [Promotion] UA 초대 링크 전송 시 소셜 미디어 타입 식별 정보를 수집하도록 변경 
 [/markdown]</li></ul>
 
@@ -42,45 +45,20 @@
   <li><span class="targetLabel android">Android</span>[markdown]
 
 * [Auth v1/Auth v4] 권한 고지 팝업이 뜬 상태에서 돌아가기(Back) 키를 탭했을 때 종료 토스트 팝업이 나타나지 않도록 변경
-* [Auth v4] Google Play 정책에 부합하도록 QQ 라이브러리를 업데이트
-   * 변경 전: [Android] v2.0.2(r5961), [iOS] v3.3.6
-   * 변경 후: [Android] v3.3.7(r2973327_lite), [iOS] v3.3.7
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Plugin] HIVE Config Inspector 창에 Facebook Permission 설정을 제어할 수 있도록 수정합니다. ---GCPSDK4-24---
-* [Provider] Provider Frameworks가 BitCode를 지원할 수 있도록 변경합니다.
-* [Auth v1][Auth v4] 사용중인 Google Sign-In SDK를 업데이트 합니다. GCPSDK4-92
-기존버전 : 4.1.2(iOS)
-신규버전 : 4.4.0(iOS)
-* [Provider][Auth v4] 사용 중인 Twitter 라이브러리를 변경
-기존버전 : TwitterKit 3.4.2(iOS)
-신규버전 : TwitterKit5 5.1.0(iOS)
-* [Provider][Auth v1][Auth v4] Facebook SDK에서 더 이상 사용이 불필요해진 Bolt.Framework를 제거합니다. GCPSDK4-92
-
-
-
-
-
-[Common/Auth v1] iOS 11 미만에서도 활용할 수 있도록 웹동작 방식을 변경
-   * [Common] 알림 및 확인 팝업 지원
-* [Analytics] 사용 중인 Adjust 라이브러리를 최신 버전으로 변경
-* [Auth v4/Provider] 사용 중인 VK 라이브러리를 최신 버전으로 변경
-   * WKWebView가 적용된 라이브러리로 변경
-* [Auth v4/Provider] 사용 중인 QQ 라이브러리를 최신 버전으로 변경
-   * WKWebView가 적용된 라이브러리로 변경
-* [Auth v4/Provider] 사용 중인 WeChat 라이브러리를 최신 버전으로 변경
-   * WKWebView가 적용된 라이브러리로 변경
-
-| 라이브러리 이름 | 대상 플랫폼 | 이전 버전 | 변경 버전 |
-| ------------- | ----------- | --------- | --------- |
-| Adjust | iOS | 4.18.1 | 4.18.3 |
-| VK | iOS | 1.4.6 | 1.5.1 |
-| QQ | iOS | 1.0.0 | 3.3.6 |
-| WeChat | iOS | 1.7 | 1.8.6.1 |
-
+* [Plugin] HIVE Config Inspector 창에서 Facebook Permission을 설정할 수 있도록 변경
+* [Provider] Provider Frameworks가 BitCode를 지원할 수 있도록 변경
+* [Auth v1/Auth v4/Provider] 사용 중인 Google Sign-In SDK 버전을 변경
+   * 변경 전: 4.1.2
+   * 변경 후: 4.4.0
+* [Auth v4/Provider] 사용 중인 Twitter 라이브러리를 변경
+   * 변경 전: TwitterKit 3.4.2
+   * 변경 후: TwitterKit 5.1.0
+* [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] Facebook SDK에서 더이상 사용하지 않는 Bolt.framework를 제거
 [/markdown]</li></ul>
 
 [markdown]
@@ -90,27 +68,28 @@
 <ul class="clList labelList">
   <li><span class="targetLabel common">All</span>[markdown]
 
-* [Common] hive_config.xml 의 오자 표기된 값을 수정합니다. GCPSDK4-35
-[Auth v1][Analytics] Auth v1으로 초기화 하는 경우 MarketingTracker가 초기화 되지 않아 정보전송을 하지 않는 오류를 수정합니다. ----------------GCPSDK4-69----------------
+* [Common] hive_config.xml 파일 내 오자 수정
+* [Auth v1/Analytics] Auth v1으로 초기화할 때 마케팅 어트리뷰션 툴이 초기화되지 않아 정보 전송을 누락하는 오류 수정
    * HIVE SDK v4.11.0 이상에서 발생
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel android">Android</span>[markdown]
 
-* [Auth] 성인인증 기능 노출시 노치영역이 정상적으로 노출되지 않는 오류를 수정합니다.GCPHQ-154
-* [Push] 그룹화 된 푸시 알림 터치시 알림이 삭제되지 않는 오류를 수정합니다.GCPHQ-162
-* [KS버전만][Provider] Facebook 로그인 취소시 에러코드가 정상적으로 내려가도록 수정합니다. GCPSDK4-76
-SocialFacebookCancelGetProfile -> AuthV4FacebookCancel
-* [Auth] SDK 에서 직접 앱 종료를 하지 않는 경우, 인증쪽 메모리 값이 초기화되지 않던 부분이 수정됩니다. GCPHQ-261
+* [Auth] 노치 디자인 기기에서 성인인증 기능 실행 시 노치 영역까지 정상 노출되지 않는 오류 수정
+* [Push] 그룹화 된 푸시 알림을 터치해 앱을 실행한 후에도 알림이 남아있는 오류 수정
+* [Provider] Facebook으로 로그인을 취소했을 때 에러코드가 정상 반환되도록 수정
+   * 기존: SocialFacebookCancelGetProfile
+   * 변경: AuthV4FacebookCancel
+* [Auth] SDK에서 앱을 직접 종료하지 않고 유저가 돌아가기(Back) 키를 이용하더라도 인증 관련 메모리를 초기화하도록 수정
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Auth v4 Helper] 충돌 팝업 노출시 PlayerId값이 32비트 값으로 노출되는 오류를 수정합니다. ---------------GCPSDK4-28--------------- ---------------GCPSDK4-29---------------
-* [Auth] AuthV1 하이브 로그인 페이지에서 페이스북 로그인 페이지가 정상적으로 노출되지 않는 오류를 수정합니다. -GCPSDK4-78-
-Swift 버전에서만 발생
+* [Auth v4 Helper] 충돌 팝업 노출 시 PlayerId가 32비트 값으로 노출되는 오류 수정
+* [Auth v1] HIVE 로그인 페이지에서 Facebook로 로그인 페이지가 정상 노출되지 않는 오류 수정
+   * Swift 버전에서 발생
 [/markdown]</li></ul>
 
 
@@ -147,7 +126,7 @@ Swift 버전에서만 발생
 * LINE (Android) v5.5.1
 * LINE (iOS) v5.4.0
 * Twitter (Android) v3.3.0
-* Twitter (iOS) v3.4.2
+* <span style="color: blue;">Twitter (iOS) v5.1.0</span>
 
 **IAP**
 
