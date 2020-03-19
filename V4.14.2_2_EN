@@ -51,6 +51,9 @@
 | Twitter | iOS | 3.4.2 | Deleted |
 | Facebook-Bolt | iOS | - | Deleted |
 
+<aside class="important"><p class="">
+Make sure to <strong>delete the Twitter library manually</strong> unless you use HIVE SDK Manager for upgrading HIVE SDK.
+</p></aside>
 [/markdown]</li></ul>
 
 [markdown]
