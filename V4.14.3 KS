@@ -32,18 +32,25 @@
 <ul class="clList labelList">
   <li><span class="targetLabel common">All</span>[markdown]
 
-* [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] 사용 중인 Facebook SDK 버전을 변경
-   * 변경 전: [Android] v5.5.1, [iOS] v5.6.0
-   * 변경 후: [Android] v6.1.0, [iOS] v6.0.0
-* [Auth v4/Provider] Google Play 정책에 부합하도록 QQ 라이브러리를 업데이트
-   * 변경 전: [Android] v2.0.2(r5961), [iOS] v3.3.6
-   * 변경 후: [Android] v3.3.7(r2973327_lite), [iOS] v3.3.7
 * [Promotion] UA 초대 링크 전송 시 소셜 미디어 타입 식별 정보를 수집하도록 변경 
+* [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] 사용 중인 Facebook SDK 버전을 변경
+* [Auth v4/Provider] 사용 중인 WeChat SDK 버전을 변경
+   
+   | SDK 이름 | 대상 플랫폼 | 이전 버전 | 변경 버전 |
+| ------------- | ----------- | --------- | --------- |
+| Facebook | Android | 5.5.1 | 6.1.0 |
+| Facebook | iOS | 5.6.0 | 6.0.0 |
+| WeChat | Android | 1.4.0 | 5.5.8 |
+| WeChat | iOS | 1.8.6.1 | 1.8.6.2 |
+
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel android">Android</span>[markdown]
 
+* [Auth v4/Provider] Google Play 정책에 부합하도록 QQ 라이브러리를 업데이트
+   * 변경 전: v2.0.2(r5961)
+   * 변경 후: v3.3.7(r2973327_lite)
 * [Auth v1/Auth v4] 권한 고지 팝업이 뜬 상태에서 돌아가기(Back) 키를 탭했을 때 종료 토스트 팝업이 나타나지 않도록 변경
 [/markdown]</li></ul>
 
@@ -54,10 +61,8 @@
 * [Provider] Provider Frameworks가 BitCode를 지원할 수 있도록 변경
 * [Auth v1/Auth v4/Provider] 사용 중인 Google Sign-In SDK 버전을 변경
    * 변경 전: 4.1.2
-   * 변경 후: 4.4.0
-* [Auth v4/Provider] 사용 중인 Twitter 라이브러리를 변경
-   * 변경 전: TwitterKit 3.4.2
-   * 변경 후: TwitterKit 5.1.0
+   * 변경 후: 5.0.2
+* [Auth v4/Provider] 사용 중인 Twitter SDK를 제거
 * [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] Facebook SDK에서 더이상 사용하지 않는 Bolt.framework를 제거
 [/markdown]</li></ul>
 
@@ -107,7 +112,7 @@
 * <span style="color: blue;">Facebook SDK (Android) v6.1.0</span>
 * <span style="color: blue;">Facebook SDK (iOS) 6.0.0</span>
 * GooglePlay Services Game, Auth (Android) v17.0.0
-* Google Sign-In SDK (iOS) v4.1.2
+* <span style="color: blue;">Google Sign-In SDK (iOS) v5.0.2</span>
 
 **IAP**
 
@@ -118,20 +123,20 @@
 **IDP**
 
 * <span style="color: blue;">QQ (Android) v3.3.7 (r2973327_lite)</span>
-* <span style="color: blue;">QQ (iOS) v3.3.7</span>
+* QQ (iOS) v3.3.7
 * VK (Android) v1.6.9
 * VK (iOS) v1.5.1
-* WeChat (Android) v1.4.0
-* WeChat (iOS) v1.8.6.1
-* LINE (Android) v5.5.1
+* <span style="color: blue;">WeChat (Android) v5.5.8</span>
+* <span style="color: blue;">WeChat (iOS) v1.8.6.2</span>
+* LINE (Android) v5.3.0
 * LINE (iOS) v5.4.0
 * Twitter (Android) v3.3.0
-* <span style="color: blue;">Twitter (iOS) v5.1.0</span>
+* <span style="color: blue;">~~Twitter (iOS) v3.4.2~~ 제거</span>
 
 **IAP**
 
 * ONE Store (Android) v17.02.00
-* WeChat (Android) v1.4.0
+* <span style="color: blue;">WeChat (Android) v5.5.8</span>
 
 **Marketing Tracking Analytics**
 
