@@ -6,23 +6,7 @@
 <tbody>
 <tr>
 <th>Unity®</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.3.zip">HIVE_SDK_Unity_v4.14.3.0.zip</a></td>
-</tr>
-<tr>
-<th>Unreal</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.3.zip">HIVE_SDK_Unreal_v4.14.3.0.zip</a></td>
-</tr>
-<tr>
-<th>Cocos2D-X</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.3_Sample.zip">HIVE_SDK_Cocos_v4.14.3.0.zip</a></td>
-</tr>
-<tr>
-<th>Android</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.3.zip">HIVE_SDK_Android_v4.14.3.0.zip</a></td>
-</tr>
-<tr>
-<th>iOS</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.3.zip">HIVE_SDK_iOS_v4.14.3.0.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.3_withCore.zip">HIVE_SDK_Unity_v4.14.3.0_withCore.zip</a></td>
 </tr>
 </tbody>
 </table>
@@ -37,6 +21,7 @@
 <ul class="clList labelList">
   <li><span class="targetLabel common">All</span>[markdown]
 
+* [IAP v2] Added IAP v2 which was excluded from the Kotlin/Swift version.
 * [Auth v1/Auth v4] Added a new feature named Chatbot CS.
 [/markdown]</li></ul>
 
@@ -98,13 +83,18 @@
 
 * [Auth] Fixed to expose adult verification feature including the cut-out diaplay part as well on notch device.
 * [Push] Fixed to clear the notifications after user taps push notiications in a group to execute.
+* [Provider] Fixed to return the appropriate error code when sign-in with Facebook is cancelled.
+   * As-is: SocialFacebookCancelGetProfile
+   * To-be: AuthV4FacebookCancel
 * [Auth] Fixed to initialize authenticaiton-related memories even when SDK does not terminate the app due to tapping Back key by user.
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
-* [Auth v4 Helper] Fixed PlayerId not to be exposed as 32-bit value. 
+* [Auth v4 Helper] Fixed PlayerId not to be exposed as 32-bit value.
+* [Auth v1] Fixed to expose sign-in with Facebook page on sign-in with HIVE page.
+   * Occurred with HIVE SDK Swift version only.
 [/markdown]</li></ul>
 
 
