@@ -1,0 +1,161 @@
+## Downloads
+
+#### V4.14.3.0 (Mar 31, 2020)
+
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.3.zip">HIVE_SDK_Unity_v4.14.3.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.3.zip">HIVE_SDK_Unreal_v4.14.3.0.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.3_Sample.zip">HIVE_SDK_Cocos_v4.14.3.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.3.zip">HIVE_SDK_Android_v4.14.3.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.3.zip">HIVE_SDK_iOS_v4.14.3.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+
+## Release Notes
+[markdown]
+#### V4.14.3.0 (Mar 31, 2020)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Auth v1/Auth v4] Added a new feature named Chatbot CS.
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Promotion] Changed to collect type identifiers of social media when sending UA invitation link. 
+* [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] Updated the Facebook SDK to the latest version.
+* [Auth v4/Provider] Updated the WeChat SDK to the latest version.
+   
+   | SDK | Platform | Version in use | Latest version |
+| ------------- | ----------- | --------- | --------- |
+| Facebook | Android | 5.5.1 | 6.1.0 |
+| Facebook | iOS | 5.6.0 | 6.0.0 |
+| WeChat | Android | 1.4.0 | 5.5.8 |
+| WeChat | iOS | 1.8.6.1 | 1.8.6.2 |
+
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v4/Provider] Updated the QQ library to follow the Google Play policy.
+   * Used version: v2.0.2(r5961)
+   * Updated version: v3.3.7(r2973327_lite)
+* [Auth v1/Auth v4] Changed not to display a toast popup for exit when user taps Back key with permission notice popup exposed.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Plugin] Changed to set Facebook Permission on the HIVE Config Inspector window.
+* [Provider] Changed for Provider Frameworks to support BitCode.
+* [Auth v1/Auth v4/Provider] Updated Google Sign-In SDK to the latest version.
+   * Used version: 4.1.2
+   * Updated version: 5.0.2
+* [Auth v4/Provider] Deleted the Twitter SDK.
+* [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] Deleted the Bolt.framwork not used on Facebook SDK anymore.
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Common] Fixed wrong texts in hive_config.xml file.
+* [Auth v1/Analytics] Fixed to initialize marketing attribution tools while initializing Authentication v1 to send data appropriately.
+   * Occurred with HIVE SDK v4.11.0.0 and later.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth] Fixed to expose adult verification feature including the cut-out diaplay part as well on notch device.
+* [Push] Fixed to clear the notifications after user taps push notiications in a group to execute.
+* [Auth] Fixed to initialize authenticaiton-related memories even when SDK does not terminate the app due to tapping Back key by user.
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4 Helper] Fixed PlayerId not to be exposed as 32-bit value. 
+[/markdown]</li></ul>
+
+
+[markdown]
+##### Version of third-party Libraries for HIVE SDK v4.14.3.0
+
+###### Common item
+
+
+* AndroidX (Android) v1.0.0+
+* Firebase Library (Android) v20.0.0
+
+**IDP**
+
+* <span style="color: blue;">Facebook SDK (Android) v6.1.0</span>
+* <span style="color: blue;">Facebook SDK (iOS) 6.0.0</span>
+* GooglePlay Services Game, Auth (Android) v17.0.0
+* <span style="color: blue;">Google Sign-In SDK (iOS) v5.0.2</span>
+
+**IAP**
+
+* Google Play Billing (Android) v2.0.0
+
+###### Optional item
+
+**IDP**
+
+* <span style="color: blue;">QQ (Android) v3.3.7 (r2973327_lite)</span>
+* QQ (iOS) v3.3.7
+* VK (Android) v1.6.9
+* VK (iOS) v1.5.1
+* <span style="color: blue;">WeChat (Android) v5.5.8</span>
+* <span style="color: blue;">WeChat (iOS) v1.8.6.2</span>
+* LINE (Android) v5.3.0
+* LINE (iOS) v5.4.0
+* Twitter (Android) v3.3.0
+* <span style="color: blue;">~~Twitter (iOS) v3.4.2~~ 제거</span>
+
+**IAP**
+
+* ONE Store (Android) v17.02.00
+* <span style="color: blue;">WeChat (Android) v5.5.8</span>
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.18.1
+* Adjust (iOS) v4.18.3
+* Singular (Android) v9.2.5
+* Singular (iOS) v9.2.1
+* AppsFlyer v5.0.0
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
