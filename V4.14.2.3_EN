@@ -1,59 +1,49 @@
 ## Downloads
 
-#### V4.14.2.2 (Mar 23, 2020)
+#### V4.14.2.3 (Mar 27, 2020)
 
 <table>
 <tbody>
 <tr>
 <th>Unity®</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.2.2.zip">HIVE_SDK_Unity_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.2.3.zip">HIVE_SDK_Unity_v4.14.2.3.zip</a></td>
 </tr>
 <tr>
 <th>Unreal</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.2.2.zip">HIVE_SDK_Unreal_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.2.3.zip">HIVE_SDK_Unreal_v4.14.2.3.zip</a></td>
 </tr>
 <tr>
 <th>Cocos2D-X</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.2.2_Sample.zip">HIVE_SDK_Cocos_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.2.3_Sample.zip">HIVE_SDK_Cocos_v4.14.2.3.zip</a></td>
 </tr>
 <tr>
 <th>Android</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.2.2.zip">HIVE_SDK_Android_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.2.3.zip">HIVE_SDK_Android_v4.14.2.3.zip</a></td>
 </tr>
 <tr>
 <th>iOS</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.2.2.zip">HIVE_SDK_iOS_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.2.3.zip">HIVE_SDK_iOS_v4.14.2.3.zip</a></td>
 </tr>
 </tbody>
 </table>
 
 
-[markdown]
 ## Release Notes
 
-#### V4.14.2.2 (Mar 23, 2020)
+#### V4.14.2.3 (Mar 27, 2020)
 
 ##### New Features
 
 * None
 
 ##### Changed Features
-[/markdown]
+
 <ul class="clList labelList">
-  <li><span class="targetLabel iOS">iOS</span>[markdown]
+  <li><span class="targetLabel common">All</span>[markdown]
 
-* [Provider] Updated or deleted libraries that cause issues while app updates due to UIWebView reference or similar named values with UIWebView.
+* [Promotion] Added a string-typed field named `interworkData` to **PromotionBannerInfo** object which is sent for implementing `getBannerInfo()` method in the **Promotion** class.
+   * Available when rolling banner is enabled.
 
-| Library | Platform | Version in use | Latest version |
-| ------------- | ----------- | --------- | --------- |
-| Google Sign-In SDK | iOS | 4.1.2 | 5.0.2 |
-| WeChat | iOS | 1.8.6.1 | 1.8.6.2 |
-| Twitter | iOS | 3.4.2 | Deleted |
-| Facebook-Bolt | iOS | - | Deleted |
-
-<aside class="important"><p class="">
-Make sure to <b>delete the Twitter library manually</b> unless you use HIVE SDK Manager for upgrading HIVE SDK.
-</p></aside>
 [/markdown]</li></ul>
 
 [markdown]
@@ -62,7 +52,7 @@ Make sure to <b>delete the Twitter library manually</b> unless you use HIVE SDK 
 * None
 
 
-##### Version of third-party Libraries for HIVE SDK v4.14.2.2
+##### Version of third-party Libraries for HIVE SDK v4.14.2.3
 
 ###### Common item
 
@@ -114,6 +104,41 @@ Make sure to <b>delete the Twitter library manually</b> unless you use HIVE SDK 
 
 <hr class="guide_line_1" />
 
+#### V4.14.2.2 (Mar 23, 2020)
+
+##### New Features
+
+* None
+
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Provider] Updated or deleted libraries that cause issues while app updates due to UIWebView reference or similar named values with UIWebView.
+
+| Library | Platform | Version in use | Latest version |
+| ------------- | ----------- | --------- | --------- |
+| Google Sign-In SDK | iOS | 4.1.2 | 5.0.2 |
+| WeChat | iOS | 1.8.6.1 | 1.8.6.2 |
+| Twitter | iOS | 3.4.2 | Deleted |
+| Facebook-Bolt | iOS | - | Deleted |
+
+<aside class="important"><p class="">
+Make sure to <b>delete the Twitter library manually</b> unless you use HIVE SDK Manager for upgrading HIVE SDK.
+</p></aside>
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* None
+[/markdown]
+
+
+&nbsp;
+
+<hr class="guide_line_1" />
 
 [markdown]
 #### V4.14.2.0 (Feb 14, 2020)
