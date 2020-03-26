@@ -1,28 +1,28 @@
 ## 최신 다운로드
 
-#### V4.14.2.2 (Mar 23, 2020)
+#### V4.14.2.3 (Mar 27, 2020)
 
 <table>
 <tbody>
 <tr>
 <th>Unity®</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.2.2.zip">HIVE_SDK_Unity_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.2.3.zip">HIVE_SDK_Unity_v4.14.2.3.zip</a></td>
 </tr>
 <tr>
 <th>Unreal</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.2.2.zip">HIVE_SDK_Unreal_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.2.3.zip">HIVE_SDK_Unreal_v4.14.2.3.zip</a></td>
 </tr>
 <tr>
 <th>Cocos2D-X</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.2.2_Sample.zip">HIVE_SDK_Cocos_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.2.3_Sample.zip">HIVE_SDK_Cocos_v4.14.2.3.zip</a></td>
 </tr>
 <tr>
 <th>Android</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.2.2.zip">HIVE_SDK_Android_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.2.3.zip">HIVE_SDK_Android_v4.14.2.3.zip</a></td>
 </tr>
 <tr>
 <th>iOS</th>
-<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.2.2.zip">HIVE_SDK_iOS_v4.14.2.2.zip</a></td>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.2.3.zip">HIVE_SDK_iOS_v4.14.2.3.zip</a></td>
 </tr>
 </tbody>
 </table>
@@ -30,7 +30,7 @@
 
 ## 릴리즈 노트
 
-#### V4.14.2.2 (Mar 23, 2020)
+#### V4.14.2.3 (Mar 27, 2020)
 
 ##### New Features
 
@@ -39,20 +39,11 @@
 ##### Changed Features
 
 <ul class="clList labelList">
-  <li><span class="targetLabel iOS">iOS</span>[markdown]
+  <li><span class="targetLabel common">All</span>[markdown]
 
-* [Provider] UIWebView를 참조하거나 이름이 유사한 값을 포함한 앱 업데이트 시, 문제가 발생하는 라이브러리를 업데이트 또는 제거
+* [Promotion] **Promotion** 클래스의 `getBannerInfo()`메서드 사용 시 전달받는 **PromotionBannerInfo** 오브젝트에 문자열 타입의 `interworkData` 필드 추가
+   * 롤링배너 기능 구현 시 사용 가능
 
-| 라이브러리 이름 | 대상 플랫폼 | 이전 버전 | 변경 버전 |
-| ------------- | ----------- | --------- | --------- |
-| Google Sign-In SDK | iOS | 4.1.2 | 5.0.2 |
-| WeChat | iOS | 1.8.6.1 | 1.8.6.2 |
-| Twitter | iOS | 3.4.2 | 제거 |
-| Facebook-Bolt | iOS | - | 제거 |
-
-<aside class="important"><p class="">
-HIVE SDK를 업그레이드할 때 HIVE SDK 매니저를 이용하지 않는 게임 스튜디오에서는 <b>Twitter 라이브러리를 직접 제거</b>해야 합니다. 
-</p></aside>
 [/markdown]</li></ul>
 
 [markdown]
@@ -61,7 +52,7 @@ HIVE SDK를 업그레이드할 때 HIVE SDK 매니저를 이용하지 않는 게
 * 없음
 
 
-##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v4.14.2.2 기준)
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v4.14.2.3 기준)
 
 ###### 공통 항목
 
@@ -113,6 +104,40 @@ HIVE SDK를 업그레이드할 때 HIVE SDK 매니저를 이용하지 않는 게
 
 <hr class="guide_line_1" />
 
+#### V4.14.2.2 (Mar 23, 2020)
+
+##### New Features
+
+* 없음
+
+##### Changed Features
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Provider] UIWebView를 참조하거나 이름이 유사한 값을 포함한 앱 업데이트 시, 문제가 발생하는 라이브러리를 업데이트 또는 제거
+
+| 라이브러리 이름 | 대상 플랫폼 | 이전 버전 | 변경 버전 |
+| ------------- | ----------- | --------- | --------- |
+| Google Sign-In SDK | iOS | 4.1.2 | 5.0.2 |
+| WeChat | iOS | 1.8.6.1 | 1.8.6.2 |
+| Twitter | iOS | 3.4.2 | 제거 |
+| Facebook-Bolt | iOS | - | 제거 |
+
+<aside class="important"><p class="">
+HIVE SDK를 업그레이드할 때 HIVE SDK 매니저를 이용하지 않는 게임 스튜디오에서는 <b>Twitter 라이브러리를 직접 제거</b>해야 합니다. 
+</p></aside>
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+
+* 없음
+
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
 
 #### V4.14.2.0 (Feb 14, 2020)
 
