@@ -1,6 +1,6 @@
 ## Downloads
 
-#### V4.14.3.0 (Mar 31, 2020)
+#### V4.14.3.0 (Apr 07, 2020)
 
 <table>
 <tbody>
@@ -30,7 +30,7 @@
 
 ## Release Notes
 [markdown]
-#### V4.14.3.0 (Mar 31, 2020)
+#### V4.14.3.0 (Apr 07, 2020)
 
 ##### New Features
 [/markdown]
@@ -48,6 +48,8 @@
   <li><span class="targetLabel common">All</span>[markdown]
 
 * [Promotion] Changed to collect type identifiers of social media when sending UA invitation link. 
+* [Promotion] Added a string-typed field named `interworkData` to **PromotionBannerInfo** object which is sent for implementing `getBannerInfo()` method in the **Promotion** class.
+   * Available when rolling banner is enabled.
 * [Auth v1/Auth v4/SocialFacebook/ProviderFacebook] Updated the Facebook SDK to the latest version.
 * [Auth v4/Provider] Updated the WeChat SDK to the latest version.
    
