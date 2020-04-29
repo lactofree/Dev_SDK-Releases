@@ -34,7 +34,7 @@ HIVE SDK는 종속성있는 외부라이브러리를 포함해 배포합니다. 
 
 
 <h4 id="unity">Unity로 적용하기</h4>
-HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 EDM4U) 패키지를 포함하여 배포합니다. EDM4U는 Unity 빌드 환경에 Google이 배포하는 PlayService 라이브러리를 쉽게 적용하기 위해 개발 
+HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 EDM4U) 패키지를 포함하여 배포합니다. EDM4U는 Unity 빌드 환경에 Google이 배포하는 PlayService 라이브러리를 쉽게 적용하기 위해 개발되었습니다.  
 
 
 
@@ -49,13 +49,14 @@ HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 
 
 
 <h4 id="cocoapods">CocoaPods로 적용하기</h4>
-CocoaPods으로 배포되는 라이브러리의 특징은 다음과 같습니다.
+CocoaPods으로 배포되는 라이브러리의 특징은 다음과 같습니다. 
 
 * 동적 라이브러리 형태로 제공되는 경우가 있습니다.
 * Bitcode 미지원 라이브러리라면 최종 빌드 산출물 역시 Bitcode를 지원하지 않습니다.
 
-CocoaPods를 적용하려면 
+xcconfig 파일로 프로젝트 설정을 구성하는 경우, 빌드 타겟의 xcconfig 파일을 설정 및 지정해 CocoaPods 라이브러리와 연결합니다. 빌드 타겟에 이미 지정된 xcconfig 파일이 있다면 아래와 같은 경고메시지가 나타납니다.
 
+[!] CocoaPods did not set the base configuration of your project because your project already has a custom config set. In order for CocoaPods integration to work at all, please either set the base configurations of the target `HIVE_SDK` to `Target Support Files/Pods-HIVE_SDK/Pods-HIVE_SDK.debug.xcconfig` or include the `Target Support Files/Pods-HIVE_SDK/Pods-HIVE_SDK.debug.xcconfig` in your build configuration
 
 
 
