@@ -1,0 +1,130 @@
+## 최신 다운로드
+
+#### V4.14.4.0 (Jun xx, 2020)
+
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unity_v4.14.4.zip">HIVE_SDK_Unity_v4.14.4.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Unreal_v4.14.4.zip">HIVE_SDK_Unreal_v4.14.4.0.zip</a></td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Cocos2d_v4.14.4_Sample.zip">HIVE_SDK_Cocos_v4.14.4.0.zip</a></td>
+</tr>
+<tr>
+<th>Android</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_Android_v4.14.4.zip">HIVE_SDK_Android_v4.14.4.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=HIVE_SDK_iOS_v4.14.4.zip">HIVE_SDK_iOS_v4.14.4.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+
+
+## 릴리즈 노트
+[markdown]
+#### V4.14.4.0 (Jun xx, 2020)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [IAP v4/Analytics/Tracking] 구매완료 시 사용하는 TransactionFinish 사용 시 영수증 검증 결과에 따라 MarketingTrackingTool에 전송하는 기능을 추가합니다.
+* [Analytics] HIVE Console에서 로그인된 사용자 수를 집계할 수 있는 기능을 추가합니다.
+* [Promotion] Interwork 동작을 위한 스키마 커맨드라인 인터페이스를 제공합니다.
+   * 롤링 배너처럼 **Promotion** 클래스의 `getBannerInfo()` 메서드를 사용해 배너를 구성한 경우 배너액션의 동작으로 사용할 수 있습니다.
+
+[/markdown]</li></ul>
+
+[markdown]
+##### Changed Features
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* [Common] 종속성이 있는 외부 라이브러리 일부를 Gradle과 CocoaPods를 이용해 배포하도록 배포 방식을 변경
+* [Plugin/Unity] Unity 배포 패키지에 포함된 External Library Manger(구. GooglePlayServiceResolver)를 최신 버전으로 변경
+* [Plugin/CPP] Cocos2D-X 샘플에 CocoaPods 설정을 추가
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* [Auth v4] Twitter 인증 라이브러리를 커뮤니티 버전으로 변경
+* [IAP v2/IAP v4] Apple 인앱 결제 부정행위를 방지하기 위해 프로그램에 전송하는 해시 값을 가이드라인에 따라 변경하여 전송합니다.
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+
+<ul class="clList labelList">
+  <li><span class="targetLabel android">Android</span>[markdown]
+
+* [Auth v1/Auth v4/IAP v2/IAP v4/Push v4] 구글 서비스를 이용할 수 없는 상태에서 구글 서비스 사용시 크래시가 발생되지 않도록 구글 서비스 이용을 제한합니다. GCPSDK4-111
+* [Analytics][Tracking] 마케팅 어트리뷰션 툴 라이브러리가 빌드에 포함되지 않은 경우, 포함되지 않은 모듈 뿐만 아니라 다른 모듈도 정상동작하지 않는 오류를 수정합니다. GCPSDK4-122
+* [Common] Samsung Z-Flip 기기에서 나타나는 이상동작을 수정합니다. GCPSDK4-77 GCPHQ-315
+* [IAP v4] transactionFinish 오타 수정
+[/markdown]</li></ul>
+
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v4.14.4.0 기준)
+
+###### 공통 항목
+
+
+* AndroidX (Android) v1.0.0+
+* Firebase Library (Android) v20.0.0
+
+**IDP**
+
+* Facebook SDK (Android) v6.1.0
+* Facebook SDK (iOS) 6.0.0
+* GooglePlay Services Game, Auth (Android) v17.0.0
+* Google Sign-In SDK (iOS) v5.0.2
+
+**IAP**
+
+* Google Play Billing (Android) v2.0.0
+
+###### 선택 항목
+
+**IDP**
+
+* QQ (Android) v3.3.7 (r2973327_lite)
+* QQ (iOS) v3.3.7
+* VK (Android) v1.6.9
+* VK (iOS) v1.5.1
+* WeChat (Android) v5.5.8
+* WeChat (iOS) v1.8.6.2
+* LINE (Android) v5.3.0
+* LINE (iOS) v5.4.0
+* Twitter (Android) v3.3.0
+* <span style="color: blue;">~~Twitter (iOS) v3.4.2~~ 제거</span>
+
+**IAP**
+
+* ONE store (Android) v17.02.00
+* WeChat (Android) v5.5.8
+
+**Marketing Tracking Analytics**
+
+* Adjust (Android) v4.18.1
+* Adjust (iOS) v4.18.3
+* Singular (Android) v9.2.5
+* Singular (iOS) v9.2.1
+* AppsFlyer v5.0.0
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
