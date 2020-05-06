@@ -52,7 +52,7 @@
   <li><span class="targetLabel common">All</span>[markdown]
 
 * [Common] 종속성이 있는 외부 라이브러리 일부를 Gradle과 CocoaPods를 이용해 배포하도록 배포 방식을 변경
-* [Plugin/Unity] Unity 배포 패키지에 포함된 External Library Manger(구. GooglePlayServiceResolver)를 최신 버전으로 변경
+* [Plugin/Unity] Unity 배포 패키지에 포함된 External Library Manager(구. GooglePlayServiceResolver)를 최신 버전으로 변경
 * [Plugin/CPP] Cocos2D-X 샘플에 CocoaPods 설정을 추가
 [/markdown]</li></ul>
 
@@ -60,7 +60,7 @@
   <li><span class="targetLabel iOS">iOS</span>[markdown]
 
 * [Auth v4] Twitter 인증 라이브러리를 커뮤니티 버전으로 변경
-* [IAP v2/IAP v4] Apple 인앱 결제 부정행위를 방지하기 위해 프로그램에 전송하는 해시 값을 가이드라인에 따라 변경하여 전송합니다.
+* [IAP v2/IAP v4] Apple 인앱 결제 부정행위 방지 프로그램에 전송하는 해시 값을 기준에 맞게 변경 후 전송
 [/markdown]</li></ul>
 
 [markdown]
@@ -70,9 +70,9 @@
 <ul class="clList labelList">
   <li><span class="targetLabel android">Android</span>[markdown]
 
-* [Auth v1/Auth v4/IAP v2/IAP v4/Push v4] 구글 서비스를 이용할 수 없는 상태에서 구글 서비스 사용시 크래시가 발생되지 않도록 구글 서비스 이용을 제한합니다. GCPSDK4-111
-* [Analytics][Tracking] 마케팅 어트리뷰션 툴 라이브러리가 빌드에 포함되지 않은 경우, 포함되지 않은 모듈 뿐만 아니라 다른 모듈도 정상동작하지 않는 오류를 수정합니다. GCPSDK4-122
-* [Common] Samsung Z-Flip 기기에서 나타나는 이상동작을 수정합니다. GCPSDK4-77 GCPHQ-315
+* [Auth v1/Auth v4/IAP v2/IAP v4/Push v4] Google 서비스를 이용할 수 없는 상태에서 구글 서비스 이용 시 크래시가 발생하지 않도록 이용 제한
+* [Analytics/Tracking] 마케팅 어트리뷰션 툴 라이브러리가 빌드에 포함되지 않은 경우 해당 모듈을 제외한 다른 모듈까지 동작하지 않는 오류 수정
+* [Common] Samsung Z Flip 기기에서 발생한 대배너 노출 오류 수정
 * [IAP v4] transactionFinish 오타 수정
 [/markdown]</li></ul>
 
