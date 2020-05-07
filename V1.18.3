@@ -1,0 +1,125 @@
+## 최신 다운로드
+
+#### V1.18.3.0 (Jun xx, 2020)
+<table>
+<tbody>
+<tr>
+<th>Unity®</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=unity_V1.18.3.zip">Unity_v1.18.3.0.zip</a></td>
+</tr>
+<tr>
+<th>Unreal</th>
+<td>지원하지 않음</td>
+</tr>
+<tr>
+<th>Cocos2D-X</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=cocos_V1.18.3.zip">Cocos_v1.18.3.0.zip</a></td>
+</tr>
+<tr>
+<th>iOS</th>
+<td><a href="https://developers.withhive.com/down.php?SDK=iOS_V1.18.3.zip">iOS_v1.18.3.0.zip</a></td>
+</tr>
+</tbody>
+</table>
+[markdown]
+## 릴리즈 노트
+
+#### V1.18.3.0 (Jun xx, 2020)
+
+##### New Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+  
+* 종속성있는 외부 라이브러리 일부를 Gradle과 CocoaPods를 이용해 배포하도록 배포 방식 변경
+   * Unity 
+[/markdown]</li></ul>
+[markdown]
+##### Changed Features
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* 사용 중인 Facebook SDK 버전을 변경
+   * 변경 전: [Android] v15.0.1+, [iOS] v15.0.1+
+   * 변경 후: [Android] v15.0.1+, [iOS] v15.0.1+
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+
+
+
+
+
+* 최신 Firebase와 호환되도록 라이브러리를 변경
+   * Firebase 라이브러리가 종속성을 갖는 GooglePlay Services Game Auth 라이브러리 업데이트
+      * 변경 전: [Firebase Library] v15.0.1+, [GooglePlay Services Game Auth] v15.0.1+
+      * 변경 후: [Firebase Library] v20.0.0, [GooglePlay Services Game Auth] v17.0.0
+   * GooglePlay Service Games Auth 라이브러리가 종속성을 갖는 Android Support 라이브러리 업데이트
+      * 변경 전: [Android Support Library] v27.0.1+
+      * 변경 후: [AndroidX] v1.0.0+
+[/markdown]</li></ul>
+
+[markdown]
+##### Bug Fixes
+[/markdown]
+<ul class="clList labelList">
+  <li><span class="targetLabel common">All</span>[markdown]
+
+* 프로모션 동영상 화면 종료 시 간헐적으로 크래시가 발생하는 오류 수정
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+ 	<li><span class="targetLabel android">Android</span>[markdown]
+
+* 러비 충전 화면에서 충전 수단 버튼 이미지가 잘리는 오류 수정
+* 프로모션 CPI 다운로드 로그 전송 시 VID `type` 값을 추가 전송하도록 변경
+* 일부 Android 10 기기에서 권한 고지 팝업의 글자 크기가 다르게 표시되는 오류 수정
+* Android 기기에서 네트워크 단절 시 약관 동의가 정상적으로 진행되지 않는 오류 수정
+[/markdown]</li></ul>
+
+<ul class="clList labelList">
+  <li><span class="targetLabel iOS">iOS</span>[markdown]
+
+* WKWebView 노출 도중 네트워크 단절 시 에러를 전달받을 수 없는 오류 수정
+* `Type.NEWS` 또는 `Type.NOTICE`를 포함한 **HivePromotion** 클래스의 `show()` 메서드를 호출할 때 forced 값이 동작하지 않는 오류 수정
+[/markdown]</li></ul>
+
+[markdown]
+##### 연동된 서드파티 라이브러리 버전 (HIVE SDK v1.18.2.0 기준)
+
+* Facebook SDK (Android) v5.5.1
+* Facebook SDK (iOS) v5.6.0
+* <span style="color: blue;">Firebase Library (Android) v20.0.0</span>
+* <span style="color: blue;">GooglePlay Services Game, Auth (Android) v17.0.0</span>
+* Google Sign-In SDK (iOS) v4.4.0
+* <span style="color: blue;">AndroidX (Android) v1.0.0+</span>
+* QQ Open SDK (Android) v3.3.7
+* QQ Open SDK (iOS) v3.3.7
+
+**IAP**
+
+* Galaxy Store (Android) v5.1.0
+* ONE store (Android) IAP v4 (세부 버전 v16.05.00)
+* ONE store (Android) IAP v5 (세부 버전 v17.02.00)
+* WeChat (Android) v5.0.8
+
+**Push**
+
+* Jpush (Android) v1.7.2
+
+**Marketing Tracking Analytics**
+
+* Adjust
+   * Android: v4.18.1
+   * iOS: v4.18.3
+* Singluar
+   * Android: v9.2.5
+   * iOS: v9.2.1
+
+[/markdown]
+&nbsp;
+
+<hr class="guide_line_1" />
