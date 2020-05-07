@@ -34,7 +34,8 @@ HIVE SDK는 종속성있는 외부라이브러리를 포함해 배포합니다. 
 
 
 <h4 id="unity">Unity로 적용하기</h4>
-HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 EDM4U) 패키지를 포함하여 배포합니다. EDM4U는 Unity 빌드 환경에 Google이 배포하는 PlayService 라이브러리를 쉽게 적용하기 위해 개발되었습니다.  
+HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 EDM4U) 패키지를 포함하여 배포합니다. EDM4U는 Unity 빌드 환경에 Google이 배포하는 PlayService 라이브러리를 쉽게 적용하기 위해 개발되었고, Google이 배포하는 라이브러리 뿐만 아니라 Gradle과 CocoaPods를 이용해 배포하는 라이브러리도 관리할 수 있도록 지원합니다. HIVE SDK 개별 모듈은 별도 UnityPackage 형태로 EDM4U 패키지를 배포합니다.
+
 
 
 
@@ -42,29 +43,38 @@ HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 
 <h4 id="wounity">Unity를 사용하지 않고 적용하기</h4>
 
 
-<h4 id="gradle">Gradle으로 적용하기</h4>
+
+<h4 id="gradle">Gradle로 적용하기</h4>
 
 
 
 
 
-<h4 id="cocoapods">CocoaPods로 적용하기</h4>
+<h4 id="cocoapods">CocoaPods으로 적용하기</h4>
 CocoaPods으로 배포되는 라이브러리의 특징은 다음과 같습니다. 
 
 * 동적 라이브러리 형태로 제공되는 경우가 있습니다.
-* Bitcode 미지원 라이브러리라면 최종 빌드 산출물 역시 Bitcode를 지원하지 않습니다.
+* Bitcode 미지원 라이브러리가 포함되면 최종 빌드 산출물 역시 Bitcode를 지원하지 않습니다.
 
-xcconfig 파일로 프로젝트 설정을 구성하는 경우, 빌드 타겟의 xcconfig 파일을 설정 및 지정해 CocoaPods 라이브러리와 연결합니다. 빌드 타겟에 이미 지정된 xcconfig 파일이 있다면 아래와 같은 경고메시지가 나타납니다.
+xcconfig 파일로 프로젝트 설정을 구성하는 경우, 빌드 타겟의 xcconfig 파일을 설정 및 선택하여 CocoaPods 라이브러리와 연결합니다. 빌드 타겟에 이미 지정된 xcconfig 파일이 있다면 아래와 같은 경고메시지가 나타납니다.
 
-[!] CocoaPods did not set the base configuration of your project because your project already has a custom config set. In order for CocoaPods integration to work at all, please either set the base configurations of the target `HIVE_SDK` to `Target Support Files/Pods-HIVE_SDK/Pods-HIVE_SDK.debug.xcconfig` or include the `Target Support Files/Pods-HIVE_SDK/Pods-HIVE_SDK.debug.xcconfig` in your build configuration
+[!] CocoaPods did not set the base configuration of your project because your project already has a custom config set. In order for CocoaPods integration to work at all, please either set the base configurations of the target `HIVE_SDK` to `Target Support Files/Pods-HIVE_SDK/Pods-HIVE_SDK.debug.xcconfig` or include the `Target Support Files/Pods-HIVE_SDK/Pods-HIVE_SDK.debug.xcconfig` in your build configuration.
 
+경고 메시지를 해결하려면 CocoaPods이 빌드 타겟의 xcconfig 파일을 기존에 지정된 xcconfig 파일에 포함하도록 합니다. 아래 샘플 코드를 참고하세요.
 
-
-
-
-
-
-
-
-<a href="http://developers.withhive.com/wp-content/uploads/2019/10/스크린샷-2019-10-02-16.05.48.png"><img class="alignnone size-full wp-image-38532" src="http://developers.withhive.com/wp-content/uploads/2019/10/스크린샷-2019-10-02-16.05.48.png" alt="" width="450"  /></a>
-
+<pre>
+#include "Shared/Platform/iOS.xcconfig"
+#include "Shared/Target/Application.xcconfig"
+#include "Shared/Version.xcconfig"
+ 
+PRODUCT_NAME = HIVE_SDK_Sample
+PRODUCT_BUNDLE_IDENTIFIER = com.com2us.hivesdk.normal.freefull.apple.global.ios.universal
+CURRENT_PROJECT_VERSION = $(HIVE_SDK_PROJECT_VERSION)
+INFOPLIST_FILE = $(SRCROOT)/Sources/Info.plist
+DEVELOPMENT_TEAM = MMVTCXSS58
+CODE_SIGN_STYLE = Automatic
+APP_FACEBOOK_ID = 1809615065921877
+CODE_SIGN_ENTITLEMENTS = Configurations/Hive_v2_SDK_sample.entitlements
+ 
+#include "../../Pods/Target Support Files/Pods-HIVE_SDK_Sample/Pods-HIVE_SDK_Sample.release.xcconfig"
+</pre>
