@@ -34,13 +34,60 @@ HIVE SDK는 종속성있는 외부라이브러리를 포함해 배포합니다. 
 
 
 <h4 id="unity">Unity로 적용하기</h4>
-HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 EDM4U) 패키지를 포함하여 배포합니다. EDM4U는 Unity 빌드 환경에 Google이 배포하는 PlayService 라이브러리를 쉽게 적용하기 위해 개발되었고, Google이 배포하는 라이브러리 뿐만 아니라 Gradle과 CocoaPods를 이용해 배포하는 라이브러리도 관리할 수 있도록 지원합니다. HIVE SDK와 별개로 Com2uS 모듈은 별도 UnityPackage 형태로 EDM4U 패키지를 배포합니다.
+HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 EDM4U) 패키지를 포함하여 배포합니다. EDM4U는 Unity 빌드 환경에 Google이 배포하는 PlayService 라이브러리를 쉽게 적용하기 위해 개발되었고, Google이 배포하는 라이브러리 뿐만 아니라 Gradle과 CocoaPods를 이용해 배포하는 라이브러리도 관리할 수 있도록 지원하고 있습니다. HIVE SDK는 EDM4U 설정으로 빌드에 필요한 라이브러리를 자동 설치/배포하도록 구성되어 있으며, Com2uS 모듈은 별도 UnityPackage 형태로 EDM4U 패키지를 배포합니다.
+
+<pre>
+<androidPackages>
+  <androidPackage spec="com.appsflyer:af-android-sdk:5.0.0"/>
+  <androidPackage spec="com.linecorp:linesdk:5.3.0"/>
+</androidPacakges>
+<iosPods>
+  <!-- <iosPod name="Google-Mobile-Ads-SDK" version="~> 7.0" bitcodeEnabled="true" minTargetSdk="9.0" /> -->
+  <iosPod name="FBSDKCoreKit" version="~> 5.6" bitcodeEnabled="true" minTargetSdk="9.0" />
+  <iosPod name="FBSDKLoginKit" version="~> 5.6" bitcodeEnabled="true" minTargetSdk="9.0" />
+  <iosPod name="FBSDKShareKit" version="~> 5.6" bitcodeEnabled="true" minTargetSdk="9.0" />
+  <iosPod name="GoogleSignIn" version="~> 4.4.0" bitcodeEnabled="true" minTargetSdk="9.0" />
+  <iosPod name="LineSDKSwift" version="~> 5.4.0" bitcodeEnabled="true" minTargetSdk="10.0" /><!-- LINE -->
+  <!-- <iosPod name="TwitterKit" version="~> 3.4.0" bitcodeEnabled="true" minTargetSdk="10.0" /> --><!-- Twitter -->
+  <!-- <iosPod name="VK-ios-sdk" version="~> 1.5.1" bitcodeEnabled="true" minTargetSdk="9.0" /> --><!-- VK -->
+  <!-- <iosPod name="QQ_OpenSDK" version="~> 3.3.3" bitcodeEnabled="true" minTargetSdk="9.0" /> --><!-- QQ -->
+  <!-- <iosPod name="WechatOpenSDK" version="~> 1.8.6" bitcodeEnabled="true" minTargetSdk="9.0" /> --><!-- WechatOpenSDK -->
+  <iosPod name="Adjust" version="~> 4.20.0" bitcodeEnabled="true" minTargetSdk="9.0" /><!-- Adjust -->
+  <!-- <iosPod name="Singular-SDK" version="~> 9.2.1" bitcodeEnabled="true" minTargetSdk="9.0" /> --><!-- Singular -->
+  <iosPod name="AppsFlyerFramework" version="~> 5.0" bitcodeEnabled="true" minTargetSdk="9.0" /><!-- AppsFlyer -->
+</iosPods>
+</pre>
+
+EDM4U가 동작할 수 있는 빌드 환경이 마련되지 않았다면 이를 구축해야 합니다. EDM4U에서 제공하는 GUI를 이용하거나 Unix 셸인 Bash, 다시 말해 명령줄 인터페이스(CLI, Command Line Interface)를 통해서도 가능합니다. 
 
 
 
 
 
-<h4 id="wounity">Unity를 사용하지 않고 적용하기</h4>
+
+
+
+
+Bash에서 명령줄로 CocoaPods을 설치할 수 있습니다. 
+
+**설치**
+<pre>
+> [sudo] gem install cocoapods
+>$ gem install cocoapods
+Successfully installed cocoapods-1.9.1
+Parsing documentation for cocoapods-1.9.1
+Done installing documentation for cocoapods after 3 seconds
+1 gem installed
+</pre>
+
+Android SDK와 Android Studio를 설치했다면 Gradle 관련 별도 설정이 필요하지 않습니다. 설치하지 않았다면 아래 바로가기를 클릭하세요.
+
+
+
+
+&nbsp;
+
+<h4 id="wo-unity">Unity를 사용하지 않고 적용하기</h4>
 Unity를 제외한 개발환경에서 HIVE SDK를 사용할 경우 Gradle과 CocoaPods 설정으로 외부라이브러리를 관리할 수 있습니다. 
 
 **Gradle**
@@ -82,7 +129,7 @@ dependencies {
 }
 </pre>
 
-Unix 셸인 Bash에서 명령줄(command line)로 Gradle을 실행하는 방법은 다음과 같습니다. 
+Unix 셸인 Bash에서 명령줄(command line)로 Gradle을 실행할 수 있습니다. 
 
 <pre>
 > ./gradlew build
@@ -92,6 +139,66 @@ Unix 셸인 Bash에서 명령줄(command line)로 Gradle을 실행하는 방법�
 **CocoaPods**
 다음은 HIVE SDK 샘플 프로젝트에 포함된 Podfile 파일의 일부입니다.
 
+<pre>
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks! :linkage => :static
+inhibit_all_warnings!
+ 
+workspace 'HIVE_GAME'
+project 'ProjectPath/Project/HIVE_GAME.xcodeproj'
+ 
+def analytics_libs
+ pod 'Adjust', '~> 4.20'
+ pod 'AppsFlyerFramework', '~> 5.0'
+# pod 'Singular-SDK', '~> 9.2'
+end
+def auth_libs
+ pod 'LineSDKSwift', '~> 5.4.0'
+# pod 'QQ_OpenSDK', '~> 3.3.3'
+# pod 'TwitterKit5', '~> 5.1'
+# pod 'VK-ios-sdk', '~> 1.5.1'
+# pod 'WechatOpenSDK', '~> 1.8.6'
+end
+def common_libs
+ pod 'FBSDKCoreKit', '~> 5.6'
+ pod 'FBSDKLoginKit', '~> 5.6'
+ pod 'FBSDKShareKit', '~> 5.6'
+ pod 'GoogleSignIn', '~> 5.0'
+end
+ 
+target 'HIVE_GAME_COOL' do
+ project 'ProjectPath/Project/HIVE_GAME.xcodeproj'
+ common_libs
+ auth_libs
+ analytics_libs
+end
+</pre>
+
+Bash에서 명령줄로 CocoaPods을 설치하거나 실행할 수 있습니다. 
+
+**설치**
+<pre>
+> [sudo] gem install cocoapods
+>$ gem install cocoapods
+Successfully installed cocoapods-1.9.1
+Parsing documentation for cocoapods-1.9.1
+Done installing documentation for cocoapods after 3 seconds
+1 gem installed
+</pre>
+
+**실행**
+<pre>
+> pod install
+>$ pod install
+Analyzing dependencies
+Downloading dependencies
+Generating Pods project
+Integrating client projects
+Pod installation complete! There are 10 dependencies from the Podfile and 27 total pods installed.
+</pre>
+
+각 파일을 편집하려면 참고할 수 있는 사이트가 있습니다. Gradle 파일은 [Gradle.org](https://gradle.org)과 [Android Developers](https://developer.android.com/studio/build/#settings-file)에서, podfile은 [Cocoapods.org](https://cocoapods.org)에서 확인하세요.
 
 &nbsp;
 
