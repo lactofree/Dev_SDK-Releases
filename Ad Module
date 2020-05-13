@@ -8,14 +8,12 @@ HIVE SDK는 종속성있는 외부라이브러리를 포함해 배포합니다. 
 <tr>
   <th>배포일</th>
   <th>다운로드</th>
-  <th>지원 엔진</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>2020-06-xx</td>
 <td><a href="https://developers.withhive.com/down.php?SDK=HIVE-SDK-Manager_v1.1.0.zip">HIVE-SDK-Manager_v1.1.0.zip</a></td>
-<td>Unity 2018+</td>
 </tr>
 </tbody>
 </table>
@@ -60,13 +58,16 @@ HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 
 
 EDM4U가 동작할 수 있는 빌드 환경이 마련되지 않았다면 이를 구축해야 합니다. EDM4U에서 제공하는 GUI를 이용하거나 Unix 셸인 Bash, 다시 말해 명령줄 인터페이스(CLI, Command Line Interface)를 통해서도 가능합니다. 
 
+이미지
+
+이미지
+
+이미지
 
 
 
-
-
-
-
+Android SDK와 Android Studio를 설치했다면 Gradle 관련 별도 설정이 필요하지 않습니다. 설치하지 않았다면 아래 바로가기를 클릭하세요.
+[Android Developers 바로가기](https://developer.android.com/studio)
 
 Bash에서 명령줄로 CocoaPods을 설치할 수 있습니다. 
 
@@ -80,10 +81,11 @@ Done installing documentation for cocoapods after 3 seconds
 1 gem installed
 </pre>
 
-Android SDK와 Android Studio를 설치했다면 Gradle 관련 별도 설정이 필요하지 않습니다. 설치하지 않았다면 아래 바로가기를 클릭하세요.
+CocoaPods으로 iOS에서 사용하는 외부 라이브러리를 제공받을 경우 기존 .xcodeproj 파일의 확장자를 .xcworkspace로 변경해 제공합니다. .xcworkspace 형태로 빌드를 진행할 수 없다면 GUI를 이용해 설정을 변경해보세요. 빌드할 PC의 Unity에서 수행하는 CocoaPods 적용 방식이 변경되어 실행할 수 있습니다. 
 
+이미지
 
-
+이미지
 
 &nbsp;
 
