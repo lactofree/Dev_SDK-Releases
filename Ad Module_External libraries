@@ -1,4 +1,4 @@
-HIVE SDK는 종속성있는 외부라이브러리를 포함해 배포합니다. 개발 환경이 Android이면 Gradle, iOS면 CocoaPods를 이용해 필요한 라이브러리를 설치하도록 안내합니다. Gradle과 CocoaPods에서 최신 버전을 이용할 수 없거나 별개로 관리해야 하는 라이브러리일 경우에는 SDK에 포함해 배포합니다. 본 페이지와 HIVE SDK에서 제공하는 라이브러리를 제외한 외부 플러그인이나 다른 라이브러리를 사용할 경우 버전 충돌이 발생해 정상적으로 빌드하지 못할 수 있으니 유의하세요.
+HIVE SDK v4.14.4와 v1.18.3부터 종속성있는 외부라이브러리를 포함해 배포합니다. 개발 환경이 Android이면 Gradle, iOS면 CocoaPods를 이용해 필요한 라이브러리를 설치하도록 안내합니다. Gradle과 CocoaPods에서 최신 버전을 이용할 수 없거나 별개로 관리해야 하는 라이브러리일 경우에는 SDK에 포함해 배포합니다. 본 페이지와 HIVE SDK에서 제공하는 라이브러리를 제외한 외부 플러그인이나 다른 라이브러리를 사용할 경우 버전 충돌이 발생해 정상적으로 빌드하지 못할 수 있으니 유의하세요.
 
 
 ## 다운로드
@@ -29,7 +29,7 @@ HIVE SDK는 종속성있는 외부라이브러리를 포함해 배포합니다. 
 * CocoaPods
 
 
-
+&nbsp;
 
 <h4 id="unity">Unity로 적용하기</h4>
 HIVE SDK는 UnityPackage 버전에 External-Dependency-Manager for Unity(이하 EDM4U) 패키지를 포함하여 배포합니다. EDM4U는 Unity 빌드 환경에 Google이 배포하는 PlayService 라이브러리를 쉽게 적용하기 위해 개발되었고, Google이 배포하는 라이브러리 뿐만 아니라 Gradle과 CocoaPods를 이용해 배포하는 라이브러리도 관리할 수 있도록 지원하고 있습니다. HIVE SDK는 EDM4U 설정으로 빌드에 필요한 라이브러리를 자동 설치/배포하도록 구성되어 있으며, Com2uS 모듈은 별도 UnityPackage 형태로 EDM4U 패키지를 배포합니다.
