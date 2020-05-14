@@ -67,7 +67,7 @@ AD(X)에서 제공하는 광고모듈은 AdMob/MoPub SDK를 활용해 구현되�
 
 **Rewarded Video**: [https://github.com/adxcorp/ADXLibrary_Integration/wiki/ADXUnity#rewarded-video](https://github.com/adxcorp/ADXLibrary_Integration/wiki/ADXUnity#rewarded-video)
 
-1. 리워드 비디오 초기화
+1. 보상형 광고 초기화
 <pre>
 #if UNITY_ANDROID
 string adUnitId = "<REWARDEDVIDEO_ADUNIT_ID>";
@@ -87,7 +87,7 @@ rewardedAd.OnUserEarnedReward += HandleUserEarnedReward;
 rewardedAd.OnAdClosed += HandleRewardedAdClosed;
 </pre>
 
-2. 리워드 비디오 로딩
+2. 보상형 광고 로딩
 <pre>
 if (ADXGDPRManager.GetConsentState () == 2) {
      // Create an empty ad request.
@@ -103,7 +103,7 @@ if (ADXGDPRManager.GetConsentState () == 2) {
 }
 </pre>
 
-3. 리워드 비디오 재생
+3. 보상형 광고 재생
 <pre>
 if (rewardedAd.IsLoaded()) {
      rewardedAd.Show();
@@ -115,13 +115,40 @@ if (rewardedAd.IsLoaded()) {
 
 **Rewarded Ads**: [https://developers.google.com/admob/unity/rewarded-ads?hl=ko](https://developers.google.com/admob/unity/rewarded-ads?hl=ko)
 
-1. 리워드 비디오 초기화 및 로딩
+1. 보상형 광고 초기화 및 로딩
 
 <pre>
+string adUnitId;
+#if UNITY_ANDROID
+    adUnitId = "ca-app-pub-3940256099942544/5224354917";
+#elif UNITY_IPHONE
+    adUnitId = "ca-app-pub-3940256099942544/1712485313";
+#else
+    "adUnitId = "unexpected_platform";
+#endif
 
+this.rewardedAd = new RewardedAd(adUnitId);
+
+// Called when an ad request has successfully loaded.
+this.rewardedAd.OnAdLoaded += HandleRewardedAdLoaded;
+// Called when an ad request failed to load.
+this.rewardedAd.OnAdFailedToLoad += HandleRewardedAdFailedToLoad;
+// Called when an ad is shown.
+this.rewardedAd.OnAdOpening += HandleRewardedAdOpening;
+// Called when an ad request failed to show.
+this.rewardedAd.OnAdFailedToShow += HandleRewardedAdFailedToShow;
+// Called when the user should be rewarded for interacting with the ad.
+this.rewardedAd.OnUserEarnedReward += HandleUserEarnedReward;
+// Called when the ad is closed.
+this.rewardedAd.OnAdClosed += HandleRewardedAdClosed;
+
+// Create an empty ad request.
+AdRequest request = new AdRequest.Builder().Build();
+// Load the rewarded ad with the request.
+this.rewardedAd.LoadAd(request);
 </pre>
 
-2. 리워드 비디오 재생
+2. 보상형 광고 재생
 
 <pre>
 if (this.rewardedAd.IsLoaded()) {
@@ -131,6 +158,43 @@ if (this.rewardedAd.IsLoaded()) {
 
 <h4 id="admanager">HIVE AdManager</h4>
 
+1. 보상형 광고 초기화
+<pre>
+EventHandlers eventHandlers = new EventHandlers.Builder()
+                                               .OnAdLoaded(OnAdLoadedRV)
+                                               .OnAdFailedToLoad(OnAdFailedToLoadRV)
+                                               .OnAdOpening(OnAdOpeningRV)
+                                               .OnAdFailedToShow(OnAdFailedToShowRV)
+                                               .OnAdClosed(OnAdClosedRV)
+                                               .OnUserEarnedReward(OnUserEarnedRewardRV)
+                                               .Build();
+HiveAdManager.RewardVideo.Initialize(rewardVideoUnitId, eventHandlers);
+</pre>
+
+2. 보상형 광고 로딩
+<pre>
+AdRequest request;
+if (HiveAdManager.GetConsentState() == 2)
+{
+    request = new AdRequest.Builder()
+                           .AddExtra("npa","1")
+                           .Build();
+}
+else
+{
+    request = new AdRequest.Builder()
+                           .Build();
+}
+
+HiveAdManager.RewardVideo.Load(request);
+</pre>
+
+3. 보상형 광고 재생
+<pre>
+if( HiveAdManager.RewardVideo.IsLoaded() ) {
+    HiveAdManager.RewardVideo.Show();
+}
+</pre>
 
 &nbsp;
 
