@@ -1,31 +1,31 @@
-이 가이드는 HIVE SDK 사용자가 AD(X)에서 제공하는 Unity 패키지를 적용하는 과정에서 발생하는 오류를 수정하고, 사용의 편의성을 돕기 위해 작성된 HIVE Ad Manager 적용과정을 소개합니다.
+이 가이드는 HIVE SDK 유저가 AD(X)에서 제공하는 Unity 패키지를 적용하는 과정에서 발생하는 오류를 수정하고, 사용의 편의를 돕기 위해 작성되었습니다. HIVE Ad Manager 적용 과정을 차근차근 살펴보세요.
 
-## AD(X) 배포 버전과의 차이
+## HIVE Ad Manager
 
-<h4 id="difference">AD(X) 배포 버전과의 비교</h4>
+<h4 id="difference">AD(X) 배포버전과 비교하기</h4>
 
-AD(X) 배포 버전과 차이점
-Android
-포함된 AD(X)의 Android 라이브러리를 삭제하였습니다. AD(X) 배포버전은 Android 라이브러리를 포함한 상태로 배포하고 있어 다른 라이브러리 플러그인과 충돌이 발생할 가능성이 있습니다.
-AD(X)의 Android 라이브러리를 빌드시점에 적용될 수 있도록 AD(X)의  유니티 패키지에 포함된 ‘ADXDependencies.xml’ 파일을 수정하여 제공합니다.
+* **Android**
+포함된 AD(X)의 Android 라이브러리를 삭제하였습니다. AD(X) 배포버전은 Android 라이브러리를 포함한 상태로 배포하고 있어 다른 라이브러리 플러그인과 충돌이 발생할 가능성이 있습니다. 이에 AD(X)의 Android 라이브러리가 빌드시점에 적용될 수 있도록 AD(X)의 Unity 패키지에 포함된 **ADXDependencies.xml** 파일을 수정해 제공합니다.
 
+<pre>
+<androidPackage spec="com.github.adxcorp.ADXLibrary_Android:adx-library-rewarded-video:1.15.19"/>
+<androidPackage spec="com.github.adxcorp.ADXLibrary_Android:adx-unity-plugin:1.15.19"/>
+</pre>
 
-
-iOS
+* **iOS**
 변경사항 없음
-AD(X) SDK
+* AD(X) SDK
 변경사항 없음
-ADMOB/Ads Manager SDK
+* ADMOB/Ads Manager SDK
 변경사항 없음
-MoPub SDK
+ *  MoPub SDK
 변경사항 없음
-External Dependency Manager for Unity
+* External Dependency Manager for Unity
 구버전인 Google Play Service Resolver를 대체하여 제공합니다.
-HIVE Ad Manager API
-AdMob의 보상형 광고(Rewarded Ad) API를 캡슐화 하여 제공합니다.
-HIVE SDK가 포함된 상태에서, Hive AdManager를 통해 보상형 광고 시청을 수행한다면, 보상형 광고 시청 종료 후 HIVE Analytics에 자동으로 전송이 됩니다.
+* HIVE Ad Manager API
+AdMob의 보상형 광고(Rewarded Ad) API를 캡슐화하여 제공합니다. HIVE SDK가 포함된 상태에서 HiIVE AdManager를 이용해 보상형 광고 시청을 수행한다면, 보상형 광고 시청 종료 후 HIVE 애널리틱스에 자동으로 전송이 됩니다.
 AD(X)의 API를 캡슐화하여 제공합니다.
-HIVE Ad Manager Example
+* HIVE Ad Manager Example
 Unity Scene을 포함하여 적용 예제를 제공합니다.
 아래는 샘플앱의 시연영상입니다.
 
