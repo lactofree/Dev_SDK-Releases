@@ -32,7 +32,7 @@ External library on which HIVE SDK is dependant is included from HIVE SDK v4.14.
 &nbsp;
 
 <h4 id="unity">Library Package on Unity</h4>
-HIVE SDK contains External-Dependency-Manager for Unity (EDM4U) when distributing the UnityPackage of HIVE SDK.  EDM4U는 Unity 빌드 환경에 Google이 배포하는 PlayService 라이브러리를 쉽게 적용하기 위해 개발되었고, Google이 배포하는 라이브러리 뿐만 아니라 Gradle과 CocoaPods를 이용해 배포하는 라이브러리도 관리할 수 있도록 지원하고 있습니다. HIVE SDK는 EDM4U 설정으로 빌드에 필요한 라이브러리를 자동 설치/배포하도록 구성되어 있으며, Com2uS 모듈은 별도 UnityPackage 형태로 EDM4U 패키지를 배포합니다.
+HIVE SDK contains External-Dependency-Manager for Unity (EDM4U) when distributing the UnityPackage of HIVE SDK. EDM4U 는 Unity 빌드 환경에 Google이 배포하는 PlayService 라이브러리를 쉽게 적용하기 위해 개발되었고, Google이 배포하는 라이브러리 뿐만 아니라 Gradle과 CocoaPods를 이용해 배포하는 라이브러리도 관리할 수 있도록 지원하고 있습니다. HIVE SDK는 EDM4U 설정으로 빌드에 필요한 라이브러리를 자동 설치/배포하도록 구성되어 있으며, Com2uS 모듈은 별도 UnityPackage 형태로 EDM4U 패키지를 배포합니다.
 
 <pre>
 <androidPackages>
@@ -66,12 +66,12 @@ EDM4U가 동작할 수 있는 빌드 환경이 마련되지 않았다면 이를 
 
 
 
-Android SDK와 Android Studio를 설치했다면 Gradle 관련 별도 설정이 필요하지 않습니다. 설치하지 않았다면 아래 바로가기를 클릭하세요.
-[Android Developers 바로가기](https://developer.android.com/studio)
+If you install Android SDK and Android Studio, none of additional configuration for Gradle is required. Unless the two programs are installed, click the shortcut below.
+[Shortcut to Android Developers](https://developer.android.com/studio)
 
-Bash에서 명령줄로 CocoaPods을 설치할 수 있습니다. 
+Use command lines on Bash to install the CocoaPods. 
 
-**설치**
+**Installation**
 <pre>
 > [sudo] gem install cocoapods
 >$ gem install cocoapods
@@ -81,7 +81,7 @@ Done installing documentation for cocoapods after 3 seconds
 1 gem installed
 </pre>
 
-CocoaPods으로 iOS에서 사용하는 외부 라이브러리를 제공받을 경우 기존 .xcodeproj 파일의 확장자를 .xcworkspace로 변경해 제공합니다. .xcworkspace 형태로 빌드를 진행할 수 없다면 GUI를 이용해 설정을 변경해보세요. 빌드할 PC의 Unity에서 수행하는 CocoaPods 적용 방식이 변경되어 실행할 수 있습니다. 
+If some external libraries on iOS are provided via CocoaPods, .xcodeproj file is exchanged to .xcworkspace file. 로 변경해 제공합니다. .xcworkspace 형태로 빌드를 진행할 수 없다면 GUI를 이용해 설정을 변경해보세요. 빌드할 PC의 Unity에서 수행하는 CocoaPods 적용 방식이 변경되어 실행할 수 있습니다. 
 
 이미지
 
@@ -89,11 +89,11 @@ CocoaPods으로 iOS에서 사용하는 외부 라이브러리를 제공받을 �
 
 &nbsp;
 
-<h4 id="wo-unity">Unity를 사용하지 않고 적용하기</h4>
+<h4 id="wo-unity">Library Package without Unity</h4>
 Unity를 제외한 개발환경에서 HIVE SDK를 사용할 경우 Gradle과 CocoaPods 설정으로 외부라이브러리를 관리할 수 있습니다. 
 
 **Gradle**
-다음은 HIVE SDK 샘플 프로젝트에 포함된 build.gradle 파일의 일부입니다.
+Followings are 다음은 HIVE SDK 샘플 프로젝트에 포함된 build.gradle 파일의 일부입니다.
 
 <pre>
 dependencies {
@@ -177,9 +177,9 @@ target 'HIVE_GAME_COOL' do
 end
 </pre>
 
-Bash에서 명령줄로 CocoaPods을 설치하거나 실행할 수 있습니다. 
+Use command lines on Bash to install or run the CocoaPods. 
 
-**설치**
+**Installation**
 <pre>
 > [sudo] gem install cocoapods
 >$ gem install cocoapods
@@ -189,7 +189,7 @@ Done installing documentation for cocoapods after 3 seconds
 1 gem installed
 </pre>
 
-**실행**
+**Run**
 <pre>
 > pod install
 >$ pod install
@@ -200,11 +200,11 @@ Integrating client projects
 Pod installation complete! There are 10 dependencies from the Podfile and 27 total pods installed.
 </pre>
 
-각 파일을 편집하려면 참고할 수 있는 사이트가 있습니다. Gradle 파일은 [Gradle.org](https://gradle.org)과 [Android Developers](https://developer.android.com/studio/build/#settings-file)에서, podfile은 [Cocoapods.org](https://cocoapods.org)에서 확인하세요.
+Each file has reference sites for editing. Check [Gradle.org](https://gradle.org) and [Android Developers](https://developer.android.com/studio/build/#settings-file) for editing Gradle file, and [Cocoapods.org](https://cocoapods.org) for podfile.
 
 &nbsp;
 
-<h5 id="gradle">Gradle로 적용하기</h4>
+<h5 id="gradle">Library Package on Gradle</h4>
 Unity 환경에서 EDM4U를 처음 사용하는 PC라면 구글 라이선스 이용 동의를 요구하는 경우가 있습니다. 빌드 PC 혹은 Jenkins 환경에서 Google 라이선스 이용에 대한 동의를 수행해야 하므로 해당 환경에서 1회 이상 확인해야 합니다.
 HIVE 또는 외부 라이브러리에서 AndroidX 라이브러리와 구 Android Support 라이브러리를 함께 사용하는 경우 Jetpack 라이브러리가 필요합니다. Jetpack 라이브러리 기능을 활성화하면 AndroidX와 Android Support 라이브러리의 호환 문제를 해결할 수 있습니다.
 <a href="http://developers.withhive.com/wp-content/uploads/2020/05/Admodule_library_gradle.png"><img class="wp-image-18631 alignnone" src="http://developers.withhive.com/wp-content/uploads/2020/05/Admodule_library_gradle.png" alt="" width="300" /></a>
@@ -213,8 +213,8 @@ Kotlin 라이브러리가 포함된 경우, JDK 1.8 이상 버전이 필요합�
 &nbsp;
 
 
-<h5 id="cocoapods">CocoaPods으로 적용하기</h4>
-CocoaPods으로 배포되는 라이브러리의 특징은 다음과 같습니다. 
+<h5 id="cocoapods">Library Package on CocoaPods</h4>
+Libraries distributed via CocoaPods has the following features. 
 
 * 동적 라이브러리 형태로 제공되는 경우가 있습니다.
 * Bitcode 미지원 라이브러리가 포함되면 최종 빌드 산출물 역시 Bitcode를 지원하지 않습니다.
@@ -223,7 +223,7 @@ xcconfig 파일로 프로젝트 설정을 구성하는 경우, 빌드 타겟의 
 
 [!] CocoaPods did not set the base configuration of your project because your project already has a custom config set. In order for CocoaPods integration to work at all, please either set the base configurations of the target `HIVE_SDK` to `Target Support Files/Pods-HIVE_SDK/Pods-HIVE_SDK.debug.xcconfig` or include the `Target Support Files/Pods-HIVE_SDK/Pods-HIVE_SDK.debug.xcconfig` in your build configuration.
 
-경고 메시지를 해결하려면 CocoaPods이 빌드 타겟의 xcconfig 파일을 기존에 지정된 xcconfig 파일에 포함해야 합니다. 아래 샘플 코드를 참고하세요.
+Include the xcconfig file of build target to that designated  경고 메시지를 해결하려면 CocoaPods이 빌드 타겟의 xcconfig 파일을 기존에 지정된 xcconfig 파일에 포함해야 합니다. For more details, refer to the following sample code.
 
 <pre>
 #include "Shared/Platform/iOS.xcconfig"
