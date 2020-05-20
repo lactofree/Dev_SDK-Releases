@@ -37,10 +37,10 @@
 <ul class="clList labelList">
   <li><span class="targetLabel common">All</span>[markdown]
 
-* [IAP v4/Analytics/Tracking] 구매완료 시 사용하는 TransactionFinish 사용 시 영수증 검증 결과에 따라 MarketingTrackingTool에 전송하는 기능을 추가합니다.
-* [Analytics] HIVE Console에서 로그인된 사용자 수를 집계할 수 있는 기능을 추가합니다.
-* [Promotion] Interwork 동작을 위한 스키마 커맨드라인 인터페이스를 제공합니다.
-   * 롤링 배너처럼 **Promotion** 클래스의 `getBannerInfo()` 메서드를 사용해 배너를 구성한 경우 배너액션의 동작으로 사용할 수 있습니다.
+* [IAP v4/Analytics/Tracking] 구매완료 시 `TransactionFinish()` 메서드를 호출하면 영수증 검증 결과에 따라 결과값을 마케팅 어트리뷰션 툴에 전송하는 기능 추가
+* [Analytics] HIVE Console에서 로그인한 유저수를 집계하는 기능 추가
+* [Promotion] Interwork 동작에 필요한 스키마 CLI(명령줄 인터페이스) 제공
+   * 롤링 배너처럼 **Promotion** 클래스의 `getBannerInfo()` 메서드를 호출해 배너를 구성한 경우 배너 동작으로 사용 가능
 
 [/markdown]</li></ul>
 
@@ -54,6 +54,13 @@
 * [Common] 종속성이 있는 외부 라이브러리 일부를 Gradle과 CocoaPods를 이용해 배포하도록 배포 방식을 변경
 * [Plugin/Unity] Unity 배포 패키지에 포함된 External Library Manager(구. GooglePlayServiceResolver)를 최신 버전으로 변경
 * [Plugin/CPP] Cocos2D-X 샘플에 CocoaPods 설정을 추가
+* [Auth v1/Auth v4/Promotion/UserEngagement] 더이상 지원하지 않는 폐기 API 표기
+   * 카페서비스 종료 : Authv4.showCafe() , SocialHive.showHiveDialog(HiveDialogType.CAFE, ...)
+   * HIVE v4에서 종료된 기능의 스킴 URL
+      * HIVE 메시지 (://hive/socialmessage)
+      * HIVE 친구초대 (://hive/socialinvitation)
+      * HIVE 카페 (://hive/socialcafe)
+   * 다음 주요 업데이트 시 제거 예정
 [/markdown]</li></ul>
 
 <ul class="clList labelList">
