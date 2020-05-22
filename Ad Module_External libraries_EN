@@ -56,7 +56,7 @@ HIVE SDK contains External-Dependency-Manager for Unity (EDM4U) when distributin
 </iosPods>
 </pre>
 
-EDM4U가 동작할 수 있는 빌드 환경이 마련되지 않았다면 이를 구축해야 합니다. EDM4U에서 제공하는 GUI를 이용하거나 Unix 셸인 Bash, 다시 말해 명령줄 인터페이스(CLI, Command Line Interface)를 통해서도 가능합니다. 
+EDM4U가 동작할 수 있는 빌드 환경이 마련되지 않았다면 이를 구축해야 합니다. Use EDM4U-providing GUI or Bash, which is called the Unix shell, the Command Line Interface (CLI). 
 
 이미지
 
@@ -81,7 +81,7 @@ Done installing documentation for cocoapods after 3 seconds
 1 gem installed
 </pre>
 
-If some external libraries on iOS are provided via CocoaPods, .xcodeproj file is exchanged to .xcworkspace file. 로 변경해 제공합니다. .xcworkspace 형태로 빌드를 진행할 수 없다면 GUI를 이용해 설정을 변경해보세요. 빌드할 PC의 Unity에서 수행하는 CocoaPods 적용 방식이 변경되어 실행할 수 있습니다. 
+If some external libraries on iOS are provided via CocoaPods, .xcodeproj file is exchanged to .xcworkspace file. If you can't build with the .xcworkspace format, change the settings through GUI. 빌드할 PC의 Unity에서 수행하는 CocoaPods 적용 방식이 변경되어 실행할 수 있습니다. 
 
 이미지
 
